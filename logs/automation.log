@@ -1,0 +1,12 @@
+[2026-07-07 22:59:32] INFO | TEST | Logger is working.
+[2026-07-07 22:59:32] ERROR | TEST | Example exception
+Traceback (most recent call last):
+  File "C:\Users\Shivansh Garg\OneDrive\Desktop\PYTHON\HospitalReviewAutomation\test_logger.py", line 8, in <module>
+    x = 5 / 0
+        ~~^~~
+ZeroDivisionError: division by zero
+[2026-07-07 23:01:31] INFO | CHECKPOINT | Checkpoint saved -> Apollo Hospital
+[2026-07-07 23:01:31] INFO | CHECKPOINT | Checkpoint cleared.
+[2026-07-10 23:30:32] INFO | EXCEL | Created c:\Users\Shivansh Garg\OneDrive\Desktop\PYTHON\HospitalReviewAutomation\output\hospital_names.xlsx
+[2026-07-10 23:30:32] INFO | EXCEL | Added Apollo Hospital
+[2026-07-10 23:30:32] INFO | EXCEL | Added Fortis Hospital
