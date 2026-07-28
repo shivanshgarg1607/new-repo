@@ -1,0 +1,475 @@
+[2026-07-28 11:23:01] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 11:23:02] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 11:23:09] INFO | Phase 1 [1/1115]: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 11:23:09] INFO |   DDG search: https://duckduckgo.com/?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:23:21] INFO |   hexahealth.com URL: https://www.hexahealth.com/delhi/hospitals/cardiology/reviews
+[2026-07-28 11:23:32] INFO |   hexahealth.com: scraped=0  new_unique=0
+[2026-07-28 11:23:34] INFO |   DDG search: https://duckduckgo.com/?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:23:43] INFO |   DDG search: https://duckduckgo.com/?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:23:48] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Prakash+Hospital+-+Best+Hospital+in+Noida+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Prakash+Hospital+-+Best+Hospital+in+Noida+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:23:50] INFO | Phase 1 [2/1115]: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-28 11:23:50] INFO |   DDG search: https://duckduckgo.com/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:23:52] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:23:54] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=SR+HOSPITAL+%26+MATERNITY+CENTRE" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=SR+HOSPITAL+%26+MATERNITY+CENTRE", waiting until "domcontentloaded"
+
+[2026-07-28 11:23:54] INFO |   DDG search: https://duckduckgo.com/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:24:03] INFO |   DDG search: https://duckduckgo.com/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:24:08] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:10] INFO | Phase 1 [3/1115]: Yashoda Super Speciality Hospital
+[2026-07-28 11:24:10] INFO |   DDG search: https://duckduckgo.com/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:24:12] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:14] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Yashoda+Super+Speciality+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Yashoda+Super+Speciality+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:14] INFO |   DDG search: https://duckduckgo.com/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:24:23] INFO |   DDG search: https://duckduckgo.com/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:24:28] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Yashoda+Super+Speciality+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Yashoda+Super+Speciality+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:29] INFO | Phase 1 [4/1115]: Shakuntala Devi Hospital
+[2026-07-28 11:24:29] INFO |   DDG search: https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:24:31] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:33] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Shakuntala+Devi+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Shakuntala+Devi+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:33] INFO |   DDG search: https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:24:34] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Shakuntala+Devi+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:35] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Shakuntala+Devi+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Shakuntala+Devi+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:35] INFO |   DDG search: https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:24:37] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Shakuntala+Devi+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:38] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Shakuntala+Devi+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Shakuntala+Devi+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:39] INFO | Phase 1 [5/1115]: Vinayak Hospital
+[2026-07-28 11:24:39] INFO |   DDG search: https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:24:40] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:41] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Vinayak+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Vinayak+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:41] INFO |   DDG search: https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:24:41] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Vinayak+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:43] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Vinayak+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Vinayak+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:43] INFO |   DDG search: https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:24:44] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Vinayak+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Vinayak+Hospital+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:45] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Vinayak+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Vinayak+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:47] INFO | Phase 1 [6/1115]: My Hospital
+[2026-07-28 11:24:47] INFO |   DDG search: https://duckduckgo.com/?q=My+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:24:47] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=My+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=My+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:49] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=My+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=My+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:49] INFO |   DDG search: https://duckduckgo.com/?q=My+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:24:49] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=My+Hospital+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=My+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=My+Hospital+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:50] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=My+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=My+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:50] INFO |   DDG search: https://duckduckgo.com/?q=My+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:24:51] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=My+Hospital+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=My+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=My+Hospital+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:53] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=My+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=My+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:54] INFO | Phase 1 [7/1115]: Sec 24 Esic Hospital
+[2026-07-28 11:24:54] INFO |   DDG search: https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:24:54] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:56] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Sec+24+Esic+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Sec+24+Esic+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:56] INFO |   DDG search: https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:24:56] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Sec+24+Esic+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:57] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Sec+24+Esic+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Sec+24+Esic+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:24:57] INFO |   DDG search: https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:24:59] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Sec+24+Esic+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Sec+24+Esic+Hospital+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:00] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Sec+24+Esic+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Sec+24+Esic+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:01] INFO | Phase 1 [8/1115]: Apollo Hospital
+[2026-07-28 11:25:01] INFO |   DDG search: https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:25:02] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:03] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Apollo+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Apollo+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:03] INFO |   DDG search: https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:25:03] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Apollo+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:05] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Apollo+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Apollo+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:05] INFO |   DDG search: https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:25:06] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Apollo+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Apollo+Hospital+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:08] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Apollo+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Apollo+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:09] INFO | Phase 1 [9/1115]: Raj Hospital
+[2026-07-28 11:25:09] INFO |   DDG search: https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:25:09] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:10] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Raj+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Raj+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:10] INFO |   DDG search: https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:25:11] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Raj+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:12] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Raj+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Raj+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:12] INFO |   DDG search: https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:25:14] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Raj+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Raj+Hospital+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:15] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Raj+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Raj+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:16] INFO | Phase 1 [10/1115]: Gupta hospital and maternity centre
+[2026-07-28 11:25:16] INFO |   DDG search: https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:25:17] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:18] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Gupta+hospital+and+maternity+centre" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Gupta+hospital+and+maternity+centre", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:18] INFO |   DDG search: https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:25:19] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Gupta+hospital+and+maternity+centre"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:20] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Gupta+hospital+and+maternity+centre" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Gupta+hospital+and+maternity+centre", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:20] INFO |   DDG search: https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:25:21] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Gupta+hospital+and+maternity+centre"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:23] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Gupta+hospital+and+maternity+centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Gupta+hospital+and+maternity+centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:24] INFO | Phase 1 [11/1115]: ESIC Model Hospital
+[2026-07-28 11:25:24] INFO |   DDG search: https://duckduckgo.com/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:25:24] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:26] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=ESIC+Model+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=ESIC+Model+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:26] INFO |   DDG search: https://duckduckgo.com/?q=ESIC+Model+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:25:34] INFO |   DDG search: https://duckduckgo.com/?q=ESIC+Model+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:25:39] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=ESIC+Model+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=ESIC+Model+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:41] INFO | Phase 1 [12/1115]: Metro Hospitals & Heart Institute
+[2026-07-28 11:25:41] INFO |   DDG search: https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:25:43] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:45] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Metro+Hospitals+%26+Heart+Institute" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Metro+Hospitals+%26+Heart+Institute", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:45] INFO |   DDG search: https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:25:45] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Metro+Hospitals+%26+Heart+Institute"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:47] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Metro+Hospitals+%26+Heart+Institute" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Metro+Hospitals+%26+Heart+Institute", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:47] INFO |   DDG search: https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:25:48] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Metro+Hospitals+%26+Heart+Institute"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:50] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Metro+Hospitals+%26+Heart+Institute+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Metro+Hospitals+%26+Heart+Institute+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:51] INFO | Phase 1 [13/1115]: Vinayak Dental Clinic
+[2026-07-28 11:25:51] INFO |   DDG search: https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:25:51] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:53] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Vinayak+Dental+Clinic" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Vinayak+Dental+Clinic", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:53] INFO |   DDG search: https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:25:53] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Vinayak+Dental+Clinic"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:54] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Vinayak+Dental+Clinic" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Vinayak+Dental+Clinic", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:54] INFO |   DDG search: https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:25:55] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Vinayak+Dental+Clinic"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:57] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Vinayak+Dental+Clinic+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Vinayak+Dental+Clinic+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:25:58] INFO | Phase 1 [14/1115]: Urban Health Centre
+[2026-07-28 11:25:58] INFO |   DDG search: https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:25:58] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:00] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Urban+Health+Centre" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Urban+Health+Centre", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:00] INFO |   DDG search: https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:26:00] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Urban+Health+Centre"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:02] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Urban+Health+Centre" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Urban+Health+Centre", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:02] INFO |   DDG search: https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:26:03] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Urban+Health+Centre"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:04] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Urban+Health+Centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Urban+Health+Centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:06] INFO | Phase 1 [15/1115]: Meenakshi Hospital - Best IVF center in ghaziabad
+[2026-07-28 11:26:06] INFO |   DDG search: https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:26:06] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:07] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:07] INFO |   DDG search: https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:26:08] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:09] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:09] INFO |   DDG search: https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:26:11] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:12] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:13] INFO | Phase 1 [16/1115]: DGD MAYUR VIHAR PHASE - I
+[2026-07-28 11:26:13] INFO |   DDG search: https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:26:14] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:15] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=DGD+MAYUR+VIHAR+PHASE+-+I" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=DGD+MAYUR+VIHAR+PHASE+-+I", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:15] INFO |   DDG search: https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:26:15] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=DGD+MAYUR+VIHAR+PHASE+-+I"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:17] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=DGD+MAYUR+VIHAR+PHASE+-+I" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=DGD+MAYUR+VIHAR+PHASE+-+I", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:17] INFO |   DDG search: https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:26:18] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=DGD+MAYUR+VIHAR+PHASE+-+I"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:19] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=DGD+MAYUR+VIHAR+PHASE+-+I+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=DGD+MAYUR+VIHAR+PHASE+-+I+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:20] INFO | Phase 1 [17/1115]: Ramlal Kundanlal Multi Speciality Hospital
+[2026-07-28 11:26:20] INFO |   DDG search: https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:26:21] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:22] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Ramlal+Kundanlal+Multi+Speciality+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Ramlal+Kundanlal+Multi+Speciality+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:22] INFO |   DDG search: https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:26:22] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Ramlal+Kundanlal+Multi+Speciality+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:24] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Ramlal+Kundanlal+Multi+Speciality+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Ramlal+Kundanlal+Multi+Speciality+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:24] INFO |   DDG search: https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:26:25] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Ramlal+Kundanlal+Multi+Speciality+Hospital"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:26] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:28] INFO | Phase 1 [18/1115]: Uma Medicare Ltd
+[2026-07-28 11:26:28] INFO |   DDG search: https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:26:28] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:29] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Uma+Medicare+Ltd" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Uma+Medicare+Ltd", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:29] INFO |   DDG search: https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:26:30] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Uma+Medicare+Ltd"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:31] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Uma+Medicare+Ltd" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Uma+Medicare+Ltd", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:31] INFO |   DDG search: https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:26:32] WARNING |   DDG error (justdial.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ajustdial.com&ia=web" is interrupted by another navigation to "https://www.practo.com/search/hospitals?query=Uma+Medicare+Ltd"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ajustdial.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:34] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Uma+Medicare+Ltd+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Uma+Medicare+Ltd+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:35] INFO | Phase 1 [19/1115]: Dr. Namita Dhingra Sukhda Clinic Vardhaman plaza
+[2026-07-28 11:26:35] INFO |   DDG search: https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 11:26:35] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:37] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:37] INFO |   DDG search: https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Apracto.com&ia=web
+[2026-07-28 11:26:37] WARNING |   DDG error (practo.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Apracto.com&ia=web" is interrupted by another navigation to "https://www.hexahealth.com/search?query=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Apracto.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:38] WARNING |   Direct search error (practo.com): Page.goto: Navigation to "https://www.practo.com/search/hospitals?query=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.practo.com/search/hospitals?query=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza", waiting until "domcontentloaded"
+
+[2026-07-28 11:26:38] INFO |   DDG search: https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 11:26:40] ERROR | Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed

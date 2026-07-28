@@ -1,0 +1,15 @@
+[2026-07-28 16:11:50] INFO | Hospitals sheet columns: ['internal id', 'hospital name', 'phone', 'email', 'status', 'edit url', 'google maps url', 'reviews found', 'collection status']
+[2026-07-28 16:11:50] INFO |   name_col=1, status_col=4, url_col=5, count_col=None
+[2026-07-28 16:11:50] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 16:11:51] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 16:11:56] INFO | Phase 2 [1/1426]: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 16:11:56] INFO |   Using stored URL (unknown): https://karunahealthlifepartner.com/servicemodules/editcategoryitem/1897/0
+[2026-07-28 16:12:08] INFO |   Parsed 0 reviews from https://karunahealthlifepartner.com/servicemodules/editcategoryitem/1897/0
+[2026-07-28 16:12:08] INFO | Phase 2 [2/1426]: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-28 16:12:08] INFO |   Using stored URL (unknown): https://karunahealthlifepartner.com/servicemodules/editcategoryitem/1896/0
+[2026-07-28 16:12:16] INFO |   Parsed 0 reviews from https://karunahealthlifepartner.com/servicemodules/editcategoryitem/1896/0
+[2026-07-28 16:12:16] INFO | Phase 2 [3/1426]: Yashoda Super Speciality Hospital
+[2026-07-28 16:12:16] INFO |   Using stored URL (unknown): https://karunahealthlifepartner.com/servicemodules/editcategoryitem/1895/0
+[2026-07-28 16:12:22] ERROR | Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed

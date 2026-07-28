@@ -1,0 +1,74 @@
+[2026-07-27 23:20:18] INFO | Loaded 1,426 hospitals.
+[2026-07-27 23:20:18] INFO | Loaded 3,017 existing review hashes.
+[2026-07-27 23:20:23] INFO | Phase 2 [153/311]: Dr Shah Hospital
+[2026-07-27 23:20:32] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Dr+Shah+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Dr+Shah+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:20:34] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Dr+Shah+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Dr+Shah+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 2/2)
+[2026-07-27 23:20:35] INFO | Phase 2 [154/311]: Ardent Ganpati Hospital
+[2026-07-27 23:20:44] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Ardent+Ganpati+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Ardent+Ganpati+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:20:46] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Ardent+Ganpati+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Ardent+Ganpati+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 2/2)
+[2026-07-27 23:20:47] INFO | Phase 2 [155/311]: Sonia Hospital
+[2026-07-27 23:20:56] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Sonia+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Sonia+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:20:58] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Sonia+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Sonia+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 2/2)
+[2026-07-27 23:20:59] INFO | Phase 2 [156/311]: Ujala Cygnus: Sonia Hospital Nangloi
+[2026-07-27 23:21:09] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Ujala+Cygnus%3A+Sonia+Hospital+Nangloi-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Ujala+Cygnus%3A+Sonia+Hospital+Nangloi-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:21:11] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Ujala+Cygnus%3A+Sonia+Hospital+Nangloi-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Ujala+Cygnus%3A+Sonia+Hospital+Nangloi-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 2/2)
+[2026-07-27 23:21:12] INFO | Phase 2 [157/311]: Mansaram Hospital
+[2026-07-27 23:21:22] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Mansaram+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Mansaram+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:21:24] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Mansaram+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Mansaram+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 2/2)
+[2026-07-27 23:21:25] INFO | Phase 2 [158/311]: Bankner Cow Hospital
+[2026-07-27 23:21:35] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Bankner+Cow+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Bankner+Cow+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:21:37] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/Bankner+Cow+Hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/Bankner+Cow+Hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 2/2)
+[2026-07-27 23:21:38] INFO | Phase 2 [159/311]: AADHYAA DIAGNOSTIC CENTRE
+[2026-07-27 23:21:48] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/AADHYAA+DIAGNOSTIC+CENTRE-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/AADHYAA+DIAGNOSTIC+CENTRE-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:21:50] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/AADHYAA+DIAGNOSTIC+CENTRE-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/AADHYAA+DIAGNOSTIC+CENTRE-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 2/2)
+[2026-07-27 23:21:51] INFO | Phase 2 [160/311]: balaji hospital
+[2026-07-27 23:22:00] WARNING |   Nav error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/All-Cities/balaji+hospital-Hospital/nct-11109123
+Call log:
+  - navigating to "https://www.justdial.com/All-Cities/balaji+hospital-Hospital/nct-11109123", waiting until "domcontentloaded"
+ (attempt 1/2)
+[2026-07-27 23:22:02] WARNING |   Nav error: Page.goto: Target page, context or browser has been closed (attempt 2/2)
+[2026-07-27 23:22:02] INFO | Phase 2 [161/311]: Sanjeevani The Life Saviour
+[2026-07-27 23:22:05] WARNING |   Nav error: Page.goto: Target page, context or browser has been closed (attempt 1/2)
+[2026-07-27 23:22:07] WARNING |   Nav error: Page.goto: Target page, context or browser has been closed (attempt 2/2)

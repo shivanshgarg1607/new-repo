@@ -1,0 +1,9 @@
+[2026-07-28 16:09:45] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 16:09:45] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 16:09:51] INFO | Phase 1 [1/1115]: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 16:09:51] INFO |   Bing: Prakash Hospital - Best Hospital in Noida reviews site:hexahealth.com
+[2026-07-28 16:09:54] INFO |   Bing: 0 results returned
+[2026-07-28 16:09:54] INFO |   Bing: Prakash Hospital - Best Hospital in Noida site:hexahealth.com
+[2026-07-28 16:09:56] INFO |   Bing: 0 results returned
+[2026-07-28 16:09:56] INFO |   hexahealth.com: no URL found for 'Prakash Hospital - Best Hospital in Noida'
+[2026-07-28 16:09:56] INFO |   Bing: Prakash Hospital - Best Hospital in Noida reviews site:practo.com

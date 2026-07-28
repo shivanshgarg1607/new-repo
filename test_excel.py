@@ -1,21 +1,14 @@
-from excel_writer import HospitalExcelWriter
+from excel_writer import ExcelWriter
 
-writer = HospitalExcelWriter()
+writer = ExcelWriter()
 
-writer.append_hospital(
-    1,
-    "Apollo Hospital",
-    "9876543210",
-    "apollo@test.com",
-    "ACTIVE"
-)
-
-writer.append_hospital(
-    2,
-    "Fortis Hospital",
-    "9999999999",
-    "fortis@test.com",
-    "ACTIVE"
-)
+writer.add_hospital({
+    "id": "1897",
+    "name": "Prakash Hospital",
+    "phone": "8826000033",
+    "email": "test@gmail.com",
+    "status": "Active",
+    "edit_url": "https://example.com/edit/1897"
+})
 
 print("Done")
