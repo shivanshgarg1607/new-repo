@@ -1,0 +1,738 @@
+[2026-07-28 17:53:07] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 17:53:07] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 17:53:07] INFO | URL cache has 0 cached hospitals.
+[2026-07-28 17:53:14] INFO | Phase 1 [13/1115]: Vinayak Dental Clinic
+[2026-07-28 17:53:14] INFO |   Searching hexahealth.com for: Vinayak Dental Clinic
+[2026-07-28 17:53:14] INFO |   DDG: https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:53:18] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:53:23] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:53:26] INFO |   Searching practo.com for: Vinayak Dental Clinic
+[2026-07-28 17:53:26] INFO |   DDG: https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:53:32] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:53:37] INFO |   No URL found on practo.com.
+[2026-07-28 17:53:40] INFO |   Searching justdial.com for: Vinayak Dental Clinic
+[2026-07-28 17:53:40] INFO |   DDG: https://duckduckgo.com/?q=Vinayak+Dental+Clinic+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:53:46] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:53:46] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Vinayak+Dental+Clinic+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Vinayak+Dental+Clinic+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:53:46] INFO |   No URL found on justdial.com.
+[2026-07-28 17:53:50] INFO |   No review page found for: Vinayak Dental Clinic
+[2026-07-28 17:53:50] INFO |   No URL found for 'Vinayak Dental Clinic'
+[2026-07-28 17:53:51] INFO | Phase 1 [14/1115]: Urban Health Centre
+[2026-07-28 17:53:51] INFO |   Searching hexahealth.com for: Urban Health Centre
+[2026-07-28 17:53:51] INFO |   DDG: https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:53:57] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:54:02] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:54:05] INFO |   Searching practo.com for: Urban Health Centre
+[2026-07-28 17:54:05] INFO |   DDG: https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:54:11] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:54:16] INFO |   No URL found on practo.com.
+[2026-07-28 17:54:18] INFO |   Searching justdial.com for: Urban Health Centre
+[2026-07-28 17:54:18] INFO |   DDG: https://duckduckgo.com/?q=Urban+Health+Centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:54:24] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:54:24] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Urban+Health+Centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Urban+Health+Centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:54:24] INFO |   No URL found on justdial.com.
+[2026-07-28 17:54:27] INFO |   No review page found for: Urban Health Centre
+[2026-07-28 17:54:27] INFO |   No URL found for 'Urban Health Centre'
+[2026-07-28 17:54:29] INFO | Phase 1 [15/1115]: Meenakshi Hospital - Best IVF center in ghaziabad
+[2026-07-28 17:54:29] INFO |   Searching hexahealth.com for: Meenakshi Hospital - Best IVF center in ghaziabad
+[2026-07-28 17:54:29] INFO |   DDG: https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:54:34] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:54:40] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:54:43] INFO |   Searching practo.com for: Meenakshi Hospital - Best IVF center in ghaziabad
+[2026-07-28 17:54:43] INFO |   DDG: https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:54:49] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:54:54] INFO |   No URL found on practo.com.
+[2026-07-28 17:54:57] INFO |   Searching justdial.com for: Meenakshi Hospital - Best IVF center in ghaziabad
+[2026-07-28 17:54:57] INFO |   DDG: https://duckduckgo.com/?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:55:02] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:55:02] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Meenakshi+Hospital+-+Best+IVF+center+in+ghaziabad+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:55:02] INFO |   No URL found on justdial.com.
+[2026-07-28 17:55:05] INFO |   No review page found for: Meenakshi Hospital - Best IVF center in ghaziabad
+[2026-07-28 17:55:05] INFO |   No URL found for 'Meenakshi Hospital - Best IVF center in ghaziabad'
+[2026-07-28 17:55:06] INFO | Phase 1 [16/1115]: DGD MAYUR VIHAR PHASE - I
+[2026-07-28 17:55:06] INFO |   Searching hexahealth.com for: DGD MAYUR VIHAR PHASE - I
+[2026-07-28 17:55:06] INFO |   DDG: https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:55:07] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:55:07] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:55:09] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=DGD+MAYUR+VIHAR+PHASE+-+I" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=DGD+MAYUR+VIHAR+PHASE+-+I", waiting until "domcontentloaded"
+
+[2026-07-28 17:55:09] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:55:11] INFO |   Searching practo.com for: DGD MAYUR VIHAR PHASE - I
+[2026-07-28 17:55:11] INFO |   DDG: https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:55:17] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:55:23] INFO |   No URL found on practo.com.
+[2026-07-28 17:55:25] INFO |   Searching justdial.com for: DGD MAYUR VIHAR PHASE - I
+[2026-07-28 17:55:25] INFO |   DDG: https://duckduckgo.com/?q=DGD+MAYUR+VIHAR+PHASE+-+I+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:55:31] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:55:31] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=DGD+MAYUR+VIHAR+PHASE+-+I+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=DGD+MAYUR+VIHAR+PHASE+-+I+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:55:31] INFO |   No URL found on justdial.com.
+[2026-07-28 17:55:34] INFO |   No review page found for: DGD MAYUR VIHAR PHASE - I
+[2026-07-28 17:55:34] INFO |   No URL found for 'DGD MAYUR VIHAR PHASE - I'
+[2026-07-28 17:55:36] INFO | Phase 1 [17/1115]: Ramlal Kundanlal Multi Speciality Hospital
+[2026-07-28 17:55:36] INFO |   Searching hexahealth.com for: Ramlal Kundanlal Multi Speciality Hospital
+[2026-07-28 17:55:36] INFO |   DDG: https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:55:41] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:55:45] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:55:47] INFO |   Searching practo.com for: Ramlal Kundanlal Multi Speciality Hospital
+[2026-07-28 17:55:47] INFO |   DDG: https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:55:53] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:55:57] INFO |   No URL found on practo.com.
+[2026-07-28 17:56:00] INFO |   Searching justdial.com for: Ramlal Kundanlal Multi Speciality Hospital
+[2026-07-28 17:56:00] INFO |   DDG: https://duckduckgo.com/?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:56:05] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:56:05] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Ramlal+Kundanlal+Multi+Speciality+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:56:05] INFO |   No URL found on justdial.com.
+[2026-07-28 17:56:09] INFO |   No review page found for: Ramlal Kundanlal Multi Speciality Hospital
+[2026-07-28 17:56:09] INFO |   No URL found for 'Ramlal Kundanlal Multi Speciality Hospital'
+[2026-07-28 17:56:11] INFO | Phase 1 [18/1115]: Uma Medicare Ltd
+[2026-07-28 17:56:11] INFO |   Searching hexahealth.com for: Uma Medicare Ltd
+[2026-07-28 17:56:11] INFO |   DDG: https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:56:16] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:56:21] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:56:24] INFO |   Searching practo.com for: Uma Medicare Ltd
+[2026-07-28 17:56:24] INFO |   DDG: https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:56:39] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:56:44] INFO |   No URL found on practo.com.
+[2026-07-28 17:56:46] INFO |   Searching justdial.com for: Uma Medicare Ltd
+[2026-07-28 17:56:46] INFO |   DDG: https://duckduckgo.com/?q=Uma+Medicare+Ltd+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:56:51] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:56:51] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Uma+Medicare+Ltd+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Uma+Medicare+Ltd+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:56:51] INFO |   No URL found on justdial.com.
+[2026-07-28 17:56:55] INFO |   No review page found for: Uma Medicare Ltd
+[2026-07-28 17:56:55] INFO |   No URL found for 'Uma Medicare Ltd'
+[2026-07-28 17:56:57] INFO | Phase 1 [19/1115]: Dr. Namita Dhingra Sukhda Clinic Vardhaman plaza
+[2026-07-28 17:56:57] INFO |   Searching hexahealth.com for: Dr. Namita Dhingra Sukhda Clinic Vardhaman plaza
+[2026-07-28 17:56:57] INFO |   DDG: https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:57:02] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:57:07] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:57:10] INFO |   Searching practo.com for: Dr. Namita Dhingra Sukhda Clinic Vardhaman plaza
+[2026-07-28 17:57:10] INFO |   DDG: https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:57:15] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:57:20] INFO |   No URL found on practo.com.
+[2026-07-28 17:57:23] INFO |   Searching justdial.com for: Dr. Namita Dhingra Sukhda Clinic Vardhaman plaza
+[2026-07-28 17:57:23] INFO |   DDG: https://duckduckgo.com/?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:57:28] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:57:28] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Dr.+Namita+Dhingra+Sukhda+Clinic+Vardhaman+plaza+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:57:28] INFO |   No URL found on justdial.com.
+[2026-07-28 17:57:31] INFO |   No review page found for: Dr. Namita Dhingra Sukhda Clinic Vardhaman plaza
+[2026-07-28 17:57:31] INFO |   No URL found for 'Dr. Namita Dhingra Sukhda Clinic Vardhaman plaza'
+[2026-07-28 17:57:32] INFO | Phase 1 [20/1115]: DGD Trilokpuri
+[2026-07-28 17:57:32] INFO |   Searching hexahealth.com for: DGD Trilokpuri
+[2026-07-28 17:57:32] INFO |   DDG: https://duckduckgo.com/?q=DGD+Trilokpuri+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:57:37] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:57:42] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:57:46] INFO |   Searching practo.com for: DGD Trilokpuri
+[2026-07-28 17:57:46] INFO |   DDG: https://duckduckgo.com/?q=DGD+Trilokpuri+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:57:51] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:57:56] INFO |   No URL found on practo.com.
+[2026-07-28 17:58:00] INFO |   Searching justdial.com for: DGD Trilokpuri
+[2026-07-28 17:58:00] INFO |   DDG: https://duckduckgo.com/?q=DGD+Trilokpuri+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:58:05] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:58:05] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=DGD+Trilokpuri+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=DGD+Trilokpuri+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:58:05] INFO |   No URL found on justdial.com.
+[2026-07-28 17:58:09] INFO |   No review page found for: DGD Trilokpuri
+[2026-07-28 17:58:09] INFO |   No URL found for 'DGD Trilokpuri'
+[2026-07-28 17:58:10] INFO | Phase 1 [21/1115]: Dharamshila Cancer Foundation
+[2026-07-28 17:58:10] INFO |   Searching hexahealth.com for: Dharamshila Cancer Foundation
+[2026-07-28 17:58:10] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:58:15] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:58:21] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:58:23] INFO |   Searching practo.com for: Dharamshila Cancer Foundation
+[2026-07-28 17:58:23] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:58:29] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:58:34] INFO |   No URL found on practo.com.
+[2026-07-28 17:58:36] INFO |   Searching justdial.com for: Dharamshila Cancer Foundation
+[2026-07-28 17:58:36] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:58:41] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:58:42] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Dharamshila+Cancer+Foundation+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Dharamshila+Cancer+Foundation+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:58:42] INFO |   No URL found on justdial.com.
+[2026-07-28 17:58:44] INFO |   No review page found for: Dharamshila Cancer Foundation
+[2026-07-28 17:58:44] INFO |   No URL found for 'Dharamshila Cancer Foundation'
+[2026-07-28 17:58:46] INFO | Phase 1 [22/1115]: Metro Multispeciality Hospital: Best Hospital in Noida Uttar Pradesh | Top Ranking Hospital in 2023
+[2026-07-28 17:58:46] INFO |   Searching hexahealth.com for: Metro Multispeciality Hospital: Best Hospital in Noida Uttar Pradesh | Top Ranking Hospital in 2023
+[2026-07-28 17:58:46] INFO |   DDG: https://duckduckgo.com/?q=Metro+Multispeciality+Hospital%3A+Best+Hospital+in+Noida+Uttar+Pradesh+%7C+Top+Ranking+Hospital+in+2023+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:58:51] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:58:56] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:58:59] INFO |   Searching practo.com for: Metro Multispeciality Hospital: Best Hospital in Noida Uttar Pradesh | Top Ranking Hospital in 2023
+[2026-07-28 17:58:59] INFO |   DDG: https://duckduckgo.com/?q=Metro+Multispeciality+Hospital%3A+Best+Hospital+in+Noida+Uttar+Pradesh+%7C+Top+Ranking+Hospital+in+2023+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:59:05] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:59:10] INFO |   No URL found on practo.com.
+[2026-07-28 17:59:12] INFO |   Searching justdial.com for: Metro Multispeciality Hospital: Best Hospital in Noida Uttar Pradesh | Top Ranking Hospital in 2023
+[2026-07-28 17:59:12] INFO |   DDG: https://duckduckgo.com/?q=Metro+Multispeciality+Hospital%3A+Best+Hospital+in+Noida+Uttar+Pradesh+%7C+Top+Ranking+Hospital+in+2023+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:59:17] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:59:17] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Metro+Multispeciality+Hospital%3A+Best+Hospital+in+Noida+Uttar+Pradesh+%7C+Top+Ranking+Hospital+in+2023+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Metro+Multispeciality+Hospital%3A+Best+Hospital+in+Noida+Uttar+Pradesh+%7C+Top+Ranking+Hospital+in+2023+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:59:17] INFO |   No URL found on justdial.com.
+[2026-07-28 17:59:20] INFO |   No review page found for: Metro Multispeciality Hospital: Best Hospital in Noida Uttar Pradesh | Top Ranking Hospital in 2023
+[2026-07-28 17:59:20] INFO |   No URL found for 'Metro Multispeciality Hospital: Best Hospital in Noida Uttar Pradesh | Top Ranking Hospital in 2023'
+[2026-07-28 17:59:22] INFO | Phase 1 [23/1115]: Chaturbhuj Hospital
+[2026-07-28 17:59:22] INFO |   Searching hexahealth.com for: Chaturbhuj Hospital
+[2026-07-28 17:59:22] INFO |   DDG: https://duckduckgo.com/?q=Chaturbhuj+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:59:27] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:59:32] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:59:35] INFO |   Searching practo.com for: Chaturbhuj Hospital
+[2026-07-28 17:59:35] INFO |   DDG: https://duckduckgo.com/?q=Chaturbhuj+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:59:41] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:59:46] INFO |   No URL found on practo.com.
+[2026-07-28 17:59:50] INFO |   Searching justdial.com for: Chaturbhuj Hospital
+[2026-07-28 17:59:50] INFO |   DDG: https://duckduckgo.com/?q=Chaturbhuj+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:59:55] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:59:55] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Chaturbhuj+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Chaturbhuj+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:59:55] INFO |   No URL found on justdial.com.
+[2026-07-28 17:59:58] INFO |   No review page found for: Chaturbhuj Hospital
+[2026-07-28 17:59:58] INFO |   No URL found for 'Chaturbhuj Hospital'
+[2026-07-28 18:00:00] INFO | Phase 1 [24/1115]: Saai Hospital
+[2026-07-28 18:00:00] INFO |   Searching hexahealth.com for: Saai Hospital
+[2026-07-28 18:00:00] INFO |   DDG: https://duckduckgo.com/?q=Saai+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:00:05] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:00:10] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:00:13] INFO |   Searching practo.com for: Saai Hospital
+[2026-07-28 18:00:13] INFO |   DDG: https://duckduckgo.com/?q=Saai+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:00:18] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:00:23] INFO |   No URL found on practo.com.
+[2026-07-28 18:00:27] INFO |   Searching justdial.com for: Saai Hospital
+[2026-07-28 18:00:27] INFO |   DDG: https://duckduckgo.com/?q=Saai+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:00:32] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:00:33] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Saai+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Saai+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:00:33] INFO |   No URL found on justdial.com.
+[2026-07-28 18:00:35] INFO |   No review page found for: Saai Hospital
+[2026-07-28 18:00:35] INFO |   No URL found for 'Saai Hospital'
+[2026-07-28 18:00:36] INFO | Phase 1 [25/1115]: Krishna Hospital
+[2026-07-28 18:00:36] INFO |   Searching hexahealth.com for: Krishna Hospital
+[2026-07-28 18:00:36] INFO |   DDG: https://duckduckgo.com/?q=Krishna+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:00:44] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:00:49] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:00:51] INFO |   Searching practo.com for: Krishna Hospital
+[2026-07-28 18:00:51] INFO |   DDG: https://duckduckgo.com/?q=Krishna+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:00:58] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:01:03] INFO |   No URL found on practo.com.
+[2026-07-28 18:01:05] INFO |   Searching justdial.com for: Krishna Hospital
+[2026-07-28 18:01:05] INFO |   DDG: https://duckduckgo.com/?q=Krishna+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:01:11] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:01:11] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Krishna+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Krishna+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:01:11] INFO |   No URL found on justdial.com.
+[2026-07-28 18:01:13] INFO |   No review page found for: Krishna Hospital
+[2026-07-28 18:01:13] INFO |   No URL found for 'Krishna Hospital'
+[2026-07-28 18:01:14] INFO | Phase 1 [26/1115]: Muskan MOTHER and CHILD CARE
+[2026-07-28 18:01:14] INFO |   Searching hexahealth.com for: Muskan MOTHER and CHILD CARE
+[2026-07-28 18:01:14] INFO |   DDG: https://duckduckgo.com/?q=Muskan+MOTHER+and+CHILD+CARE+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:01:15] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Muskan+MOTHER+and+CHILD+CARE+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Muskan+MOTHER+and+CHILD+CARE+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 18:01:15] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:01:16] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Muskan+MOTHER+and+CHILD+CARE" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Muskan+MOTHER+and+CHILD+CARE", waiting until "domcontentloaded"
+
+[2026-07-28 18:01:16] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:01:19] INFO |   Searching practo.com for: Muskan MOTHER and CHILD CARE
+[2026-07-28 18:01:19] INFO |   DDG: https://duckduckgo.com/?q=Muskan+MOTHER+and+CHILD+CARE+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:01:24] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:01:30] INFO |   No URL found on practo.com.
+[2026-07-28 18:01:32] INFO |   Searching justdial.com for: Muskan MOTHER and CHILD CARE
+[2026-07-28 18:01:32] INFO |   DDG: https://duckduckgo.com/?q=Muskan+MOTHER+and+CHILD+CARE+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:01:37] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:01:37] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Muskan+MOTHER+and+CHILD+CARE+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Muskan+MOTHER+and+CHILD+CARE+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:01:37] INFO |   No URL found on justdial.com.
+[2026-07-28 18:01:40] INFO |   No review page found for: Muskan MOTHER and CHILD CARE
+[2026-07-28 18:01:40] INFO |   No URL found for 'Muskan MOTHER and CHILD CARE'
+[2026-07-28 18:01:41] INFO | Phase 1 [27/1115]: Shri Suresh Chandra wellness centre
+[2026-07-28 18:01:41] INFO |   Searching hexahealth.com for: Shri Suresh Chandra wellness centre
+[2026-07-28 18:01:41] INFO |   DDG: https://duckduckgo.com/?q=Shri+Suresh+Chandra+wellness+centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:01:46] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:01:51] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:01:55] INFO |   Searching practo.com for: Shri Suresh Chandra wellness centre
+[2026-07-28 18:01:55] INFO |   DDG: https://duckduckgo.com/?q=Shri+Suresh+Chandra+wellness+centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:02:00] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:02:05] INFO |   No URL found on practo.com.
+[2026-07-28 18:02:08] INFO |   Searching justdial.com for: Shri Suresh Chandra wellness centre
+[2026-07-28 18:02:08] INFO |   DDG: https://duckduckgo.com/?q=Shri+Suresh+Chandra+wellness+centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:02:13] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:02:13] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Shri+Suresh+Chandra+wellness+centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Shri+Suresh+Chandra+wellness+centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:02:13] INFO |   No URL found on justdial.com.
+[2026-07-28 18:02:17] INFO |   No review page found for: Shri Suresh Chandra wellness centre
+[2026-07-28 18:02:17] INFO |   No URL found for 'Shri Suresh Chandra wellness centre'
+[2026-07-28 18:02:18] INFO | Phase 1 [28/1115]: Ajay Clinic
+[2026-07-28 18:02:18] INFO |   Searching hexahealth.com for: Ajay Clinic
+[2026-07-28 18:02:18] INFO |   DDG: https://duckduckgo.com/?q=Ajay+Clinic+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:02:23] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:02:28] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:02:31] INFO |   Searching practo.com for: Ajay Clinic
+[2026-07-28 18:02:31] INFO |   DDG: https://duckduckgo.com/?q=Ajay+Clinic+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:02:36] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:02:41] INFO |   No URL found on practo.com.
+[2026-07-28 18:02:45] INFO |   Searching justdial.com for: Ajay Clinic
+[2026-07-28 18:02:45] INFO |   DDG: https://duckduckgo.com/?q=Ajay+Clinic+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:02:50] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:02:50] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Ajay+Clinic+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Ajay+Clinic+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:02:50] INFO |   No URL found on justdial.com.
+[2026-07-28 18:02:53] INFO |   No review page found for: Ajay Clinic
+[2026-07-28 18:02:53] INFO |   No URL found for 'Ajay Clinic'
+[2026-07-28 18:02:54] INFO | Phase 1 [29/1115]: DGD KONDLI
+[2026-07-28 18:02:54] INFO |   Searching hexahealth.com for: DGD KONDLI
+[2026-07-28 18:02:54] INFO |   DDG: https://duckduckgo.com/?q=DGD+KONDLI+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:03:00] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:03:05] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:03:08] INFO |   Searching practo.com for: DGD KONDLI
+[2026-07-28 18:03:08] INFO |   DDG: https://duckduckgo.com/?q=DGD+KONDLI+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:03:13] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:03:18] INFO |   No URL found on practo.com.
+[2026-07-28 18:03:21] INFO |   Searching justdial.com for: DGD KONDLI
+[2026-07-28 18:03:21] INFO |   DDG: https://duckduckgo.com/?q=DGD+KONDLI+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:03:27] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:03:27] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=DGD+KONDLI+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=DGD+KONDLI+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:03:27] INFO |   No URL found on justdial.com.
+[2026-07-28 18:03:30] INFO |   No review page found for: DGD KONDLI
+[2026-07-28 18:03:30] INFO |   No URL found for 'DGD KONDLI'
+[2026-07-28 18:03:32] INFO | Phase 1 [30/1115]: Boon Medicare Centre
+[2026-07-28 18:03:32] INFO |   Searching hexahealth.com for: Boon Medicare Centre
+[2026-07-28 18:03:32] INFO |   DDG: https://duckduckgo.com/?q=Boon+Medicare+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:03:37] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:03:42] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:03:46] INFO |   Searching practo.com for: Boon Medicare Centre
+[2026-07-28 18:03:46] INFO |   DDG: https://duckduckgo.com/?q=Boon+Medicare+Centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:03:52] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:03:57] INFO |   No URL found on practo.com.
+[2026-07-28 18:04:00] INFO |   Searching justdial.com for: Boon Medicare Centre
+[2026-07-28 18:04:00] INFO |   DDG: https://duckduckgo.com/?q=Boon+Medicare+Centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:04:08] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:04:08] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Boon+Medicare+Centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Boon+Medicare+Centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:04:08] INFO |   No URL found on justdial.com.
+[2026-07-28 18:04:11] INFO |   No review page found for: Boon Medicare Centre
+[2026-07-28 18:04:11] INFO |   No URL found for 'Boon Medicare Centre'
+[2026-07-28 18:04:13] INFO | Phase 1 [31/1115]: Dharamshila Rahat Medical Centre | Palliative Care Centre
+[2026-07-28 18:04:13] INFO |   Searching hexahealth.com for: Dharamshila Rahat Medical Centre | Palliative Care Centre
+[2026-07-28 18:04:13] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Rahat+Medical+Centre+%7C+Palliative+Care+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:04:22] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:04:27] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:04:31] INFO |   Searching practo.com for: Dharamshila Rahat Medical Centre | Palliative Care Centre
+[2026-07-28 18:04:31] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Rahat+Medical+Centre+%7C+Palliative+Care+Centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:04:41] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:04:47] INFO |   No URL found on practo.com.
+[2026-07-28 18:04:50] INFO |   Searching justdial.com for: Dharamshila Rahat Medical Centre | Palliative Care Centre
+[2026-07-28 18:04:50] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Rahat+Medical+Centre+%7C+Palliative+Care+Centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:04:56] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:04:56] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Dharamshila+Rahat+Medical+Centre+%7C+Palliative+Care+Centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Dharamshila+Rahat+Medical+Centre+%7C+Palliative+Care+Centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:04:56] INFO |   No URL found on justdial.com.
+[2026-07-28 18:05:00] INFO |   No review page found for: Dharamshila Rahat Medical Centre | Palliative Care Centre
+[2026-07-28 18:05:00] INFO |   No URL found for 'Dharamshila Rahat Medical Centre | Palliative Care Centre'
+[2026-07-28 18:05:01] INFO | Phase 1 [32/1115]: Rajdhani Medical Centre
+[2026-07-28 18:05:01] INFO |   Searching hexahealth.com for: Rajdhani Medical Centre
+[2026-07-28 18:05:01] INFO |   DDG: https://duckduckgo.com/?q=Rajdhani+Medical+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:05:07] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:05:12] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:05:15] INFO |   Searching practo.com for: Rajdhani Medical Centre
+[2026-07-28 18:05:15] INFO |   DDG: https://duckduckgo.com/?q=Rajdhani+Medical+Centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:05:21] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:05:26] INFO |   No URL found on practo.com.
+[2026-07-28 18:05:29] INFO |   Searching justdial.com for: Rajdhani Medical Centre
+[2026-07-28 18:05:29] INFO |   DDG: https://duckduckgo.com/?q=Rajdhani+Medical+Centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:05:35] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:05:35] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Rajdhani+Medical+Centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Rajdhani+Medical+Centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:05:35] INFO |   No URL found on justdial.com.
+[2026-07-28 18:05:37] INFO |   No review page found for: Rajdhani Medical Centre
+[2026-07-28 18:05:37] INFO |   No URL found for 'Rajdhani Medical Centre'
+[2026-07-28 18:05:40] INFO | Phase 1 [33/1115]: RAJRANI HOSPITAL
+[2026-07-28 18:05:40] INFO |   Searching hexahealth.com for: RAJRANI HOSPITAL
+[2026-07-28 18:05:40] INFO |   DDG: https://duckduckgo.com/?q=RAJRANI+HOSPITAL+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:05:45] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:05:50] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:05:54] INFO |   Searching practo.com for: RAJRANI HOSPITAL
+[2026-07-28 18:05:54] INFO |   DDG: https://duckduckgo.com/?q=RAJRANI+HOSPITAL+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:05:59] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:06:04] INFO |   No URL found on practo.com.
+[2026-07-28 18:06:07] INFO |   Searching justdial.com for: RAJRANI HOSPITAL
+[2026-07-28 18:06:07] INFO |   DDG: https://duckduckgo.com/?q=RAJRANI+HOSPITAL+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:06:12] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:06:13] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=RAJRANI+HOSPITAL+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=RAJRANI+HOSPITAL+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:06:13] INFO |   No URL found on justdial.com.
+[2026-07-28 18:06:16] INFO |   No review page found for: RAJRANI HOSPITAL
+[2026-07-28 18:06:16] INFO |   No URL found for 'RAJRANI HOSPITAL'
+[2026-07-28 18:06:17] INFO | Phase 1 [34/1115]: East End Hospital
+[2026-07-28 18:06:17] INFO |   Searching hexahealth.com for: East End Hospital
+[2026-07-28 18:06:17] INFO |   DDG: https://duckduckgo.com/?q=East+End+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:06:23] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:06:28] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:06:31] INFO |   Searching practo.com for: East End Hospital
+[2026-07-28 18:06:31] INFO |   DDG: https://duckduckgo.com/?q=East+End+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:06:37] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:06:42] INFO |   No URL found on practo.com.
+[2026-07-28 18:06:45] INFO |   Searching justdial.com for: East End Hospital
+[2026-07-28 18:06:45] INFO |   DDG: https://duckduckgo.com/?q=East+End+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:06:50] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:06:50] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=East+End+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=East+End+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:06:50] INFO |   No URL found on justdial.com.
+[2026-07-28 18:06:53] INFO |   No review page found for: East End Hospital
+[2026-07-28 18:06:53] INFO |   No URL found for 'East End Hospital'
+[2026-07-28 18:06:55] INFO | Phase 1 [35/1115]: Sai Nursing Home and Diagnostic Centre
+[2026-07-28 18:06:55] INFO |   Searching hexahealth.com for: Sai Nursing Home and Diagnostic Centre
+[2026-07-28 18:06:55] INFO |   DDG: https://duckduckgo.com/?q=Sai+Nursing+Home+and+Diagnostic+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:07:01] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:07:05] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:07:08] INFO |   Searching practo.com for: Sai Nursing Home and Diagnostic Centre
+[2026-07-28 18:07:08] INFO |   DDG: https://duckduckgo.com/?q=Sai+Nursing+Home+and+Diagnostic+Centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:07:13] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:07:18] INFO |   No URL found on practo.com.
+[2026-07-28 18:07:22] INFO |   Searching justdial.com for: Sai Nursing Home and Diagnostic Centre
+[2026-07-28 18:07:22] INFO |   DDG: https://duckduckgo.com/?q=Sai+Nursing+Home+and+Diagnostic+Centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:07:27] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:07:27] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Sai+Nursing+Home+and+Diagnostic+Centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Sai+Nursing+Home+and+Diagnostic+Centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:07:27] INFO |   No URL found on justdial.com.
+[2026-07-28 18:07:31] INFO |   No review page found for: Sai Nursing Home and Diagnostic Centre
+[2026-07-28 18:07:31] INFO |   No URL found for 'Sai Nursing Home and Diagnostic Centre'
+[2026-07-28 18:07:32] INFO | Phase 1 [36/1115]: DR. SANKHWAR HOSPITAL
+[2026-07-28 18:07:32] INFO |   Searching hexahealth.com for: DR. SANKHWAR HOSPITAL
+[2026-07-28 18:07:32] INFO |   DDG: https://duckduckgo.com/?q=DR.+SANKHWAR+HOSPITAL+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:07:38] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:07:43] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:07:46] INFO |   Searching practo.com for: DR. SANKHWAR HOSPITAL
+[2026-07-28 18:07:46] INFO |   DDG: https://duckduckgo.com/?q=DR.+SANKHWAR+HOSPITAL+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:07:51] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:07:57] INFO |   No URL found on practo.com.
+[2026-07-28 18:07:59] INFO |   Searching justdial.com for: DR. SANKHWAR HOSPITAL
+[2026-07-28 18:07:59] INFO |   DDG: https://duckduckgo.com/?q=DR.+SANKHWAR+HOSPITAL+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:08:04] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:08:04] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=DR.+SANKHWAR+HOSPITAL+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=DR.+SANKHWAR+HOSPITAL+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:08:04] INFO |   No URL found on justdial.com.
+[2026-07-28 18:08:07] INFO |   No review page found for: DR. SANKHWAR HOSPITAL
+[2026-07-28 18:08:07] INFO |   No URL found for 'DR. SANKHWAR HOSPITAL'
+[2026-07-28 18:08:09] INFO | Phase 1 [37/1115]: SHALINI SANKHWAR HOSPITAL
+[2026-07-28 18:08:09] INFO |   Searching hexahealth.com for: SHALINI SANKHWAR HOSPITAL
+[2026-07-28 18:08:09] INFO |   DDG: https://duckduckgo.com/?q=SHALINI+SANKHWAR+HOSPITAL+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:08:15] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:08:20] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:08:22] INFO |   Searching practo.com for: SHALINI SANKHWAR HOSPITAL
+[2026-07-28 18:08:22] INFO |   DDG: https://duckduckgo.com/?q=SHALINI+SANKHWAR+HOSPITAL+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:08:27] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:08:33] INFO |   No URL found on practo.com.
+[2026-07-28 18:08:35] INFO |   Searching justdial.com for: SHALINI SANKHWAR HOSPITAL
+[2026-07-28 18:08:35] INFO |   DDG: https://duckduckgo.com/?q=SHALINI+SANKHWAR+HOSPITAL+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:08:41] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:08:41] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=SHALINI+SANKHWAR+HOSPITAL+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=SHALINI+SANKHWAR+HOSPITAL+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:08:41] INFO |   No URL found on justdial.com.
+[2026-07-28 18:08:43] INFO |   No review page found for: SHALINI SANKHWAR HOSPITAL
+[2026-07-28 18:08:43] INFO |   No URL found for 'SHALINI SANKHWAR HOSPITAL'
+[2026-07-28 18:08:45] INFO | Phase 1 [38/1115]: Pocket-D 496-540 Flats, Pocket-D, D-648, Tahirpur Rd, Taharpur, Taharpur Village, Dilshad Garden, Delhi, 110095
+[2026-07-28 18:08:45] INFO |   Searching hexahealth.com for: Pocket-D 496-540 Flats, Pocket-D, D-648, Tahirpur Rd, Taharpur, Taharpur Village, Dilshad Garden, Delhi, 110095
+[2026-07-28 18:08:45] INFO |   DDG: https://duckduckgo.com/?q=Pocket-D+496-540+Flats%2C+Pocket-D%2C+D-648%2C+Tahirpur+Rd%2C+Taharpur%2C+Taharpur+Village%2C+Dilshad+Garden%2C+Delhi%2C+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:08:51] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:08:56] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:08:59] INFO |   Searching practo.com for: Pocket-D 496-540 Flats, Pocket-D, D-648, Tahirpur Rd, Taharpur, Taharpur Village, Dilshad Garden, Delhi, 110095
+[2026-07-28 18:08:59] INFO |   DDG: https://duckduckgo.com/?q=Pocket-D+496-540+Flats%2C+Pocket-D%2C+D-648%2C+Tahirpur+Rd%2C+Taharpur%2C+Taharpur+Village%2C+Dilshad+Garden%2C+Delhi%2C+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:09:05] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:09:10] INFO |   No URL found on practo.com.
+[2026-07-28 18:09:13] INFO |   Searching justdial.com for: Pocket-D 496-540 Flats, Pocket-D, D-648, Tahirpur Rd, Taharpur, Taharpur Village, Dilshad Garden, Delhi, 110095
+[2026-07-28 18:09:13] INFO |   DDG: https://duckduckgo.com/?q=Pocket-D+496-540+Flats%2C+Pocket-D%2C+D-648%2C+Tahirpur+Rd%2C+Taharpur%2C+Taharpur+Village%2C+Dilshad+Garden%2C+Delhi%2C+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:09:18] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:09:19] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Pocket-D+496-540+Flats%2C+Pocket-D%2C+D-648%2C+Tahirpur+Rd%2C+Taharpur%2C+Taharpur+Village%2C+Dilshad+Garden%2C+Delhi%2C+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Pocket-D+496-540+Flats%2C+Pocket-D%2C+D-648%2C+Tahirpur+Rd%2C+Taharpur%2C+Taharpur+Village%2C+Dilshad+Garden%2C+Delhi%2C+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:09:19] INFO |   No URL found on justdial.com.
+[2026-07-28 18:09:22] INFO |   No review page found for: Pocket-D 496-540 Flats, Pocket-D, D-648, Tahirpur Rd, Taharpur, Taharpur Village, Dilshad Garden, Delhi, 110095
+[2026-07-28 18:09:22] INFO |   No URL found for 'Pocket-D 496-540 Flats, Pocket-D, D-648, Tahirpur Rd, Taharpur, Taharpur Village, Dilshad Garden, Delhi, 110095'
+[2026-07-28 18:09:23] INFO | Phase 1 [39/1115]: Rd Number 69, Nand Nagri, Dilshad Garden, Delhi, 93
+[2026-07-28 18:09:23] INFO |   Searching hexahealth.com for: Rd Number 69, Nand Nagri, Dilshad Garden, Delhi, 93
+[2026-07-28 18:09:23] INFO |   DDG: https://duckduckgo.com/?q=Rd+Number+69%2C+Nand+Nagri%2C+Dilshad+Garden%2C+Delhi%2C+93+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:09:29] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:09:34] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:09:36] INFO |   Searching practo.com for: Rd Number 69, Nand Nagri, Dilshad Garden, Delhi, 93
+[2026-07-28 18:09:36] INFO |   DDG: https://duckduckgo.com/?q=Rd+Number+69%2C+Nand+Nagri%2C+Dilshad+Garden%2C+Delhi%2C+93+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:09:42] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:09:47] INFO |   No URL found on practo.com.
+[2026-07-28 18:09:50] INFO |   Searching justdial.com for: Rd Number 69, Nand Nagri, Dilshad Garden, Delhi, 93
+[2026-07-28 18:09:50] INFO |   DDG: https://duckduckgo.com/?q=Rd+Number+69%2C+Nand+Nagri%2C+Dilshad+Garden%2C+Delhi%2C+93+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:09:55] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:09:55] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Rd+Number+69%2C+Nand+Nagri%2C+Dilshad+Garden%2C+Delhi%2C+93+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Rd+Number+69%2C+Nand+Nagri%2C+Dilshad+Garden%2C+Delhi%2C+93+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:09:55] INFO |   No URL found on justdial.com.
+[2026-07-28 18:09:58] INFO |   No review page found for: Rd Number 69, Nand Nagri, Dilshad Garden, Delhi, 93
+[2026-07-28 18:09:58] INFO |   No URL found for 'Rd Number 69, Nand Nagri, Dilshad Garden, Delhi, 93'
+[2026-07-28 18:10:00] INFO | Phase 1 [40/1115]: 488-15, Dilshad Garden, Near Radha Krishan Mandir, Dilshad Garden, New Delhi, Delhi 110092
+[2026-07-28 18:10:00] INFO |   Searching hexahealth.com for: 488-15, Dilshad Garden, Near Radha Krishan Mandir, Dilshad Garden, New Delhi, Delhi 110092
+[2026-07-28 18:10:00] INFO |   DDG: https://duckduckgo.com/?q=488-15%2C+Dilshad+Garden%2C+Near+Radha+Krishan+Mandir%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110092+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:10:06] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:10:11] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:10:14] INFO |   Searching practo.com for: 488-15, Dilshad Garden, Near Radha Krishan Mandir, Dilshad Garden, New Delhi, Delhi 110092
+[2026-07-28 18:10:14] INFO |   DDG: https://duckduckgo.com/?q=488-15%2C+Dilshad+Garden%2C+Near+Radha+Krishan+Mandir%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110092+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:10:19] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:10:24] INFO |   No URL found on practo.com.
+[2026-07-28 18:10:27] INFO |   Searching justdial.com for: 488-15, Dilshad Garden, Near Radha Krishan Mandir, Dilshad Garden, New Delhi, Delhi 110092
+[2026-07-28 18:10:27] INFO |   DDG: https://duckduckgo.com/?q=488-15%2C+Dilshad+Garden%2C+Near+Radha+Krishan+Mandir%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110092+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:10:33] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:10:33] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=488-15%2C+Dilshad+Garden%2C+Near+Radha+Krishan+Mandir%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110092+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=488-15%2C+Dilshad+Garden%2C+Near+Radha+Krishan+Mandir%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110092+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:10:33] INFO |   No URL found on justdial.com.
+[2026-07-28 18:10:35] INFO |   No review page found for: 488-15, Dilshad Garden, Near Radha Krishan Mandir, Dilshad Garden, New Delhi, Delhi 110092
+[2026-07-28 18:10:35] INFO |   No URL found for '488-15, Dilshad Garden, Near Radha Krishan Mandir, Dilshad Garden, New Delhi, Delhi 110092'
+[2026-07-28 18:10:37] INFO | Phase 1 [41/1115]: House No. 181 to 186-191, Labour Colony, Vishwakarma Nagar, Shahdara, New Delhi, Delhi 110095
+[2026-07-28 18:10:37] INFO |   Searching hexahealth.com for: House No. 181 to 186-191, Labour Colony, Vishwakarma Nagar, Shahdara, New Delhi, Delhi 110095
+[2026-07-28 18:10:37] INFO |   DDG: https://duckduckgo.com/?q=House+No.+181+to+186-191%2C+Labour+Colony%2C+Vishwakarma+Nagar%2C+Shahdara%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:10:42] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:10:47] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:10:50] INFO |   Searching practo.com for: House No. 181 to 186-191, Labour Colony, Vishwakarma Nagar, Shahdara, New Delhi, Delhi 110095
+[2026-07-28 18:10:50] INFO |   DDG: https://duckduckgo.com/?q=House+No.+181+to+186-191%2C+Labour+Colony%2C+Vishwakarma+Nagar%2C+Shahdara%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:10:56] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:11:01] INFO |   No URL found on practo.com.
+[2026-07-28 18:11:04] INFO |   Searching justdial.com for: House No. 181 to 186-191, Labour Colony, Vishwakarma Nagar, Shahdara, New Delhi, Delhi 110095
+[2026-07-28 18:11:04] INFO |   DDG: https://duckduckgo.com/?q=House+No.+181+to+186-191%2C+Labour+Colony%2C+Vishwakarma+Nagar%2C+Shahdara%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:11:09] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:11:09] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=House+No.+181+to+186-191%2C+Labour+Colony%2C+Vishwakarma+Nagar%2C+Shahdara%2C+New+Delhi%2C+Delhi+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=House+No.+181+to+186-191%2C+Labour+Colony%2C+Vishwakarma+Nagar%2C+Shahdara%2C+New+Delhi%2C+Delhi+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:11:09] INFO |   No URL found on justdial.com.
+[2026-07-28 18:11:11] INFO |   No review page found for: House No. 181 to 186-191, Labour Colony, Vishwakarma Nagar, Shahdara, New Delhi, Delhi 110095
+[2026-07-28 18:11:11] INFO |   No URL found for 'House No. 181 to 186-191, Labour Colony, Vishwakarma Nagar, Shahdara, New Delhi, Delhi 110095'
+[2026-07-28 18:11:13] INFO | Phase 1 [42/1115]: 5-6, Krishna Market Main Road, Vivek Vihar II, Jhilmil Colony, New Delhi, Delhi 110095
+[2026-07-28 18:11:13] INFO |   Searching hexahealth.com for: 5-6, Krishna Market Main Road, Vivek Vihar II, Jhilmil Colony, New Delhi, Delhi 110095
+[2026-07-28 18:11:13] INFO |   DDG: https://duckduckgo.com/?q=5-6%2C+Krishna+Market+Main+Road%2C+Vivek+Vihar+II%2C+Jhilmil+Colony%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:11:19] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:11:24] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:11:27] INFO |   Searching practo.com for: 5-6, Krishna Market Main Road, Vivek Vihar II, Jhilmil Colony, New Delhi, Delhi 110095
+[2026-07-28 18:11:27] INFO |   DDG: https://duckduckgo.com/?q=5-6%2C+Krishna+Market+Main+Road%2C+Vivek+Vihar+II%2C+Jhilmil+Colony%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:11:33] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:11:38] INFO |   No URL found on practo.com.
+[2026-07-28 18:11:41] INFO |   Searching justdial.com for: 5-6, Krishna Market Main Road, Vivek Vihar II, Jhilmil Colony, New Delhi, Delhi 110095
+[2026-07-28 18:11:41] INFO |   DDG: https://duckduckgo.com/?q=5-6%2C+Krishna+Market+Main+Road%2C+Vivek+Vihar+II%2C+Jhilmil+Colony%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:11:46] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:11:46] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=5-6%2C+Krishna+Market+Main+Road%2C+Vivek+Vihar+II%2C+Jhilmil+Colony%2C+New+Delhi%2C+Delhi+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=5-6%2C+Krishna+Market+Main+Road%2C+Vivek+Vihar+II%2C+Jhilmil+Colony%2C+New+Delhi%2C+Delhi+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:11:46] INFO |   No URL found on justdial.com.
+[2026-07-28 18:11:48] INFO |   No review page found for: 5-6, Krishna Market Main Road, Vivek Vihar II, Jhilmil Colony, New Delhi, Delhi 110095
+[2026-07-28 18:11:48] INFO |   No URL found for '5-6, Krishna Market Main Road, Vivek Vihar II, Jhilmil Colony, New Delhi, Delhi 110095'
+[2026-07-28 18:11:50] INFO | Phase 1 [43/1115]: M8RF+CM2, New Light Colony, Leprosy Home Complex, Dilshad Colony, Ghaziabad, Delhi, 110093
+[2026-07-28 18:11:50] INFO |   Searching hexahealth.com for: M8RF+CM2, New Light Colony, Leprosy Home Complex, Dilshad Colony, Ghaziabad, Delhi, 110093
+[2026-07-28 18:11:50] INFO |   DDG: https://duckduckgo.com/?q=M8RF%2BCM2%2C+New+Light+Colony%2C+Leprosy+Home+Complex%2C+Dilshad+Colony%2C+Ghaziabad%2C+Delhi%2C+110093+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:11:57] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:12:02] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:12:05] INFO |   Searching practo.com for: M8RF+CM2, New Light Colony, Leprosy Home Complex, Dilshad Colony, Ghaziabad, Delhi, 110093
+[2026-07-28 18:12:05] INFO |   DDG: https://duckduckgo.com/?q=M8RF%2BCM2%2C+New+Light+Colony%2C+Leprosy+Home+Complex%2C+Dilshad+Colony%2C+Ghaziabad%2C+Delhi%2C+110093+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:12:10] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:12:15] INFO |   No URL found on practo.com.
+[2026-07-28 18:12:18] INFO |   Searching justdial.com for: M8RF+CM2, New Light Colony, Leprosy Home Complex, Dilshad Colony, Ghaziabad, Delhi, 110093
+[2026-07-28 18:12:18] INFO |   DDG: https://duckduckgo.com/?q=M8RF%2BCM2%2C+New+Light+Colony%2C+Leprosy+Home+Complex%2C+Dilshad+Colony%2C+Ghaziabad%2C+Delhi%2C+110093+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:12:23] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:12:23] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=M8RF%2BCM2%2C+New+Light+Colony%2C+Leprosy+Home+Complex%2C+Dilshad+Colony%2C+Ghaziabad%2C+Delhi%2C+110093+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=M8RF%2BCM2%2C+New+Light+Colony%2C+Leprosy+Home+Complex%2C+Dilshad+Colony%2C+Ghaziabad%2C+Delhi%2C+110093+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:12:23] INFO |   No URL found on justdial.com.
+[2026-07-28 18:12:26] INFO |   No review page found for: M8RF+CM2, New Light Colony, Leprosy Home Complex, Dilshad Colony, Ghaziabad, Delhi, 110093
+[2026-07-28 18:12:26] INFO |   No URL found for 'M8RF+CM2, New Light Colony, Leprosy Home Complex, Dilshad Colony, Ghaziabad, Delhi, 110093'
+[2026-07-28 18:12:28] INFO | Phase 1 [44/1115]: Block D, Jhilmil Colony, Delhi, 110095
+[2026-07-28 18:12:28] INFO |   Searching hexahealth.com for: Block D, Jhilmil Colony, Delhi, 110095
+[2026-07-28 18:12:28] INFO |   DDG: https://duckduckgo.com/?q=Block+D%2C+Jhilmil+Colony%2C+Delhi%2C+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:12:33] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:12:38] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:12:42] INFO |   Searching practo.com for: Block D, Jhilmil Colony, Delhi, 110095
+[2026-07-28 18:12:42] INFO |   DDG: https://duckduckgo.com/?q=Block+D%2C+Jhilmil+Colony%2C+Delhi%2C+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:12:48] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:12:53] INFO |   No URL found on practo.com.
+[2026-07-28 18:12:57] INFO |   Searching justdial.com for: Block D, Jhilmil Colony, Delhi, 110095
+[2026-07-28 18:12:57] INFO |   DDG: https://duckduckgo.com/?q=Block+D%2C+Jhilmil+Colony%2C+Delhi%2C+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:13:02] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:13:03] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Block+D%2C+Jhilmil+Colony%2C+Delhi%2C+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Block+D%2C+Jhilmil+Colony%2C+Delhi%2C+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:13:03] INFO |   No URL found on justdial.com.
+[2026-07-28 18:13:05] INFO |   No review page found for: Block D, Jhilmil Colony, Delhi, 110095
+[2026-07-28 18:13:05] INFO |   No URL found for 'Block D, Jhilmil Colony, Delhi, 110095'
+[2026-07-28 18:13:07] INFO | Phase 1 [45/1115]: Tahirpur Road, Swami Dayanand Hospital Rd, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:13:07] INFO |   Searching hexahealth.com for: Tahirpur Road, Swami Dayanand Hospital Rd, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:13:07] INFO |   DDG: https://duckduckgo.com/?q=Tahirpur+Road%2C+Swami+Dayanand+Hospital+Rd%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:13:13] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:13:18] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:13:21] INFO |   Searching practo.com for: Tahirpur Road, Swami Dayanand Hospital Rd, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:13:21] INFO |   DDG: https://duckduckgo.com/?q=Tahirpur+Road%2C+Swami+Dayanand+Hospital+Rd%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:13:26] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:13:32] INFO |   No URL found on practo.com.
+[2026-07-28 18:13:35] INFO |   Searching justdial.com for: Tahirpur Road, Swami Dayanand Hospital Rd, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:13:35] INFO |   DDG: https://duckduckgo.com/?q=Tahirpur+Road%2C+Swami+Dayanand+Hospital+Rd%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:13:40] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:13:40] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Tahirpur+Road%2C+Swami+Dayanand+Hospital+Rd%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Tahirpur+Road%2C+Swami+Dayanand+Hospital+Rd%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:13:40] INFO |   No URL found on justdial.com.
+[2026-07-28 18:13:43] INFO |   No review page found for: Tahirpur Road, Swami Dayanand Hospital Rd, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:13:43] INFO |   No URL found for 'Tahirpur Road, Swami Dayanand Hospital Rd, Dilshad Garden, New Delhi, Delhi 110095'
+[2026-07-28 18:13:45] INFO | Phase 1 [46/1115]: M8HF+529, Aradhak Marg, Chikamberpur Village, Chikamberpur, New Delhi, Delhi, 110095
+[2026-07-28 18:13:45] INFO |   Searching hexahealth.com for: M8HF+529, Aradhak Marg, Chikamberpur Village, Chikamberpur, New Delhi, Delhi, 110095
+[2026-07-28 18:13:45] INFO |   DDG: https://duckduckgo.com/?q=M8HF%2B529%2C+Aradhak+Marg%2C+Chikamberpur+Village%2C+Chikamberpur%2C+New+Delhi%2C+Delhi%2C+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:13:50] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:13:55] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:13:57] INFO |   Searching practo.com for: M8HF+529, Aradhak Marg, Chikamberpur Village, Chikamberpur, New Delhi, Delhi, 110095
+[2026-07-28 18:13:57] INFO |   DDG: https://duckduckgo.com/?q=M8HF%2B529%2C+Aradhak+Marg%2C+Chikamberpur+Village%2C+Chikamberpur%2C+New+Delhi%2C+Delhi%2C+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:14:03] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:14:08] INFO |   No URL found on practo.com.
+[2026-07-28 18:14:11] INFO |   Searching justdial.com for: M8HF+529, Aradhak Marg, Chikamberpur Village, Chikamberpur, New Delhi, Delhi, 110095
+[2026-07-28 18:14:11] INFO |   DDG: https://duckduckgo.com/?q=M8HF%2B529%2C+Aradhak+Marg%2C+Chikamberpur+Village%2C+Chikamberpur%2C+New+Delhi%2C+Delhi%2C+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:14:17] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:14:17] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=M8HF%2B529%2C+Aradhak+Marg%2C+Chikamberpur+Village%2C+Chikamberpur%2C+New+Delhi%2C+Delhi%2C+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=M8HF%2B529%2C+Aradhak+Marg%2C+Chikamberpur+Village%2C+Chikamberpur%2C+New+Delhi%2C+Delhi%2C+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:14:17] INFO |   No URL found on justdial.com.
+[2026-07-28 18:14:20] INFO |   No review page found for: M8HF+529, Aradhak Marg, Chikamberpur Village, Chikamberpur, New Delhi, Delhi, 110095
+[2026-07-28 18:14:20] INFO |   No URL found for 'M8HF+529, Aradhak Marg, Chikamberpur Village, Chikamberpur, New Delhi, Delhi, 110095'
+[2026-07-28 18:14:22] INFO | Phase 1 [47/1115]: Suraksha Nursing Home, E - 22, Dilshad Colony, New Delhi, Delhi 110095
+[2026-07-28 18:14:22] INFO |   Searching hexahealth.com for: Suraksha Nursing Home, E - 22, Dilshad Colony, New Delhi, Delhi 110095
+[2026-07-28 18:14:22] INFO |   DDG: https://duckduckgo.com/?q=Suraksha+Nursing+Home%2C+E+-+22%2C+Dilshad+Colony%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:14:27] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:14:32] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:14:35] INFO |   Searching practo.com for: Suraksha Nursing Home, E - 22, Dilshad Colony, New Delhi, Delhi 110095
+[2026-07-28 18:14:35] INFO |   DDG: https://duckduckgo.com/?q=Suraksha+Nursing+Home%2C+E+-+22%2C+Dilshad+Colony%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:14:40] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:14:45] INFO |   No URL found on practo.com.
+[2026-07-28 18:14:47] INFO |   Searching justdial.com for: Suraksha Nursing Home, E - 22, Dilshad Colony, New Delhi, Delhi 110095
+[2026-07-28 18:14:47] INFO |   DDG: https://duckduckgo.com/?q=Suraksha+Nursing+Home%2C+E+-+22%2C+Dilshad+Colony%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:14:53] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:14:53] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Suraksha+Nursing+Home%2C+E+-+22%2C+Dilshad+Colony%2C+New+Delhi%2C+Delhi+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Suraksha+Nursing+Home%2C+E+-+22%2C+Dilshad+Colony%2C+New+Delhi%2C+Delhi+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:14:53] INFO |   No URL found on justdial.com.
+[2026-07-28 18:14:57] INFO |   No review page found for: Suraksha Nursing Home, E - 22, Dilshad Colony, New Delhi, Delhi 110095
+[2026-07-28 18:14:57] INFO |   No URL found for 'Suraksha Nursing Home, E - 22, Dilshad Colony, New Delhi, Delhi 110095'
+[2026-07-28 18:14:58] INFO | Phase 1 [48/1115]: F-20, F-20, near Chawla Medicos, Block F, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:14:58] INFO |   Searching hexahealth.com for: F-20, F-20, near Chawla Medicos, Block F, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:14:58] INFO |   DDG: https://duckduckgo.com/?q=F-20%2C+F-20%2C+near+Chawla+Medicos%2C+Block+F%2C+Dilshad+Colony%2C+Delhi%2C+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:15:04] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:15:09] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:15:13] INFO |   Searching practo.com for: F-20, F-20, near Chawla Medicos, Block F, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:15:13] INFO |   DDG: https://duckduckgo.com/?q=F-20%2C+F-20%2C+near+Chawla+Medicos%2C+Block+F%2C+Dilshad+Colony%2C+Delhi%2C+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:15:19] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:15:24] INFO |   No URL found on practo.com.
+[2026-07-28 18:15:27] INFO |   Searching justdial.com for: F-20, F-20, near Chawla Medicos, Block F, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:15:27] INFO |   DDG: https://duckduckgo.com/?q=F-20%2C+F-20%2C+near+Chawla+Medicos%2C+Block+F%2C+Dilshad+Colony%2C+Delhi%2C+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:15:33] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:15:33] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=F-20%2C+F-20%2C+near+Chawla+Medicos%2C+Block+F%2C+Dilshad+Colony%2C+Delhi%2C+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=F-20%2C+F-20%2C+near+Chawla+Medicos%2C+Block+F%2C+Dilshad+Colony%2C+Delhi%2C+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:15:33] INFO |   No URL found on justdial.com.
+[2026-07-28 18:15:36] INFO |   No review page found for: F-20, F-20, near Chawla Medicos, Block F, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:15:36] INFO |   No URL found for 'F-20, F-20, near Chawla Medicos, Block F, Dilshad Colony, Delhi, 110095'
+[2026-07-28 18:15:38] INFO | Phase 1 [49/1115]: 78 A Opposite IHBAS C-Block Near post office, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:15:38] INFO |   Searching hexahealth.com for: 78 A Opposite IHBAS C-Block Near post office, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:15:38] INFO |   DDG: https://duckduckgo.com/?q=78+A+Opposite+IHBAS+C-Block+Near+post+office%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:15:44] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:15:49] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:15:51] INFO |   Searching practo.com for: 78 A Opposite IHBAS C-Block Near post office, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:15:51] INFO |   DDG: https://duckduckgo.com/?q=78+A+Opposite+IHBAS+C-Block+Near+post+office%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:16:01] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:16:07] INFO |   No URL found on practo.com.
+[2026-07-28 18:16:09] INFO |   Searching justdial.com for: 78 A Opposite IHBAS C-Block Near post office, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:16:09] INFO |   DDG: https://duckduckgo.com/?q=78+A+Opposite+IHBAS+C-Block+Near+post+office%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 18:16:15] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:16:15] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=78+A+Opposite+IHBAS+C-Block+Near+post+office%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=78+A+Opposite+IHBAS+C-Block+Near+post+office%2C+Dilshad+Garden%2C+New+Delhi%2C+Delhi+110095+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 18:16:15] INFO |   No URL found on justdial.com.
+[2026-07-28 18:16:17] INFO |   No review page found for: 78 A Opposite IHBAS C-Block Near post office, Dilshad Garden, New Delhi, Delhi 110095
+[2026-07-28 18:16:17] INFO |   No URL found for '78 A Opposite IHBAS C-Block Near post office, Dilshad Garden, New Delhi, Delhi 110095'
+[2026-07-28 18:16:18] INFO | Phase 1 [50/1115]: G-22/1, Pocket 1, Block G, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:16:18] INFO |   Searching hexahealth.com for: G-22/1, Pocket 1, Block G, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:16:18] INFO |   DDG: https://duckduckgo.com/?q=G-22%2F1%2C+Pocket+1%2C+Block+G%2C+Dilshad+Colony%2C+Delhi%2C+110095+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 18:16:21] WARNING |   DDG error (hexahealth.com): Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://duckduckgo.com/?q=G-22%2F1%2C+Pocket+1%2C+Block+G%2C+Dilshad+Colony%2C+Delhi%2C+110095+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 18:16:21] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:16:21] WARNING |   Direct search error (hexahealth.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 18:16:21] INFO |   No URL found on hexahealth.com.
+[2026-07-28 18:16:24] INFO |   Searching practo.com for: G-22/1, Pocket 1, Block G, Dilshad Colony, Delhi, 110095
+[2026-07-28 18:16:24] INFO |   DDG: https://duckduckgo.com/?q=G-22%2F1%2C+Pocket+1%2C+Block+G%2C+Dilshad+Colony%2C+Delhi%2C+110095+reviews+site%3Apracto.com&ia=web
+[2026-07-28 18:16:24] WARNING |   DDG error (practo.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 18:16:24] INFO |   DDG empty — trying direct site search…
+[2026-07-28 18:16:24] WARNING |   Direct search error (practo.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 18:16:24] INFO |   No URL found on practo.com.

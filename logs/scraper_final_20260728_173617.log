@@ -1,0 +1,290 @@
+[2026-07-28 17:36:18] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 17:36:18] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 17:36:18] INFO | URL cache has 2 cached hospitals.
+[2026-07-28 17:36:26] INFO | Phase 2 [1/311]: Demo Hospital
+[2026-07-28 17:36:26] INFO |   Cache hit (hexahealth.com): https://www.hexahealth.com/delhi/hospitals/cardiology/reviews
+[2026-07-28 17:36:30] INFO |   Found 51 long paragraphs — likely reviews.
+[2026-07-28 17:36:30] INFO |   ✓ Cached URL still valid
+[2026-07-28 17:36:37] INFO | Phase 2 [2/311]: Max Hospital
+[2026-07-28 17:36:37] INFO |   Cache hit (hexahealth.com): https://www.hexahealth.com/delhi/hospitals/cardiology/reviews
+[2026-07-28 17:36:41] INFO |   Found 51 long paragraphs — likely reviews.
+[2026-07-28 17:36:41] INFO |   ✓ Cached URL still valid
+[2026-07-28 17:36:48] INFO | Phase 2 [3/311]: DGD VASUNDHARA ENCLAVE
+[2026-07-28 17:36:48] INFO |   Searching hexahealth.com for: DGD VASUNDHARA ENCLAVE
+[2026-07-28 17:36:48] INFO |   DDG: https://duckduckgo.com/?q=DGD+VASUNDHARA+ENCLAVE+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:36:57] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:37:00] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:37:02] INFO |   Searching practo.com for: DGD VASUNDHARA ENCLAVE
+[2026-07-28 17:37:02] INFO |   DDG: https://duckduckgo.com/?q=DGD+VASUNDHARA+ENCLAVE+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:37:12] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:37:17] INFO |   No URL found on practo.com.
+[2026-07-28 17:37:20] INFO |   Searching justdial.com for: DGD VASUNDHARA ENCLAVE
+[2026-07-28 17:37:20] INFO |   DDG: https://duckduckgo.com/?q=DGD+VASUNDHARA+ENCLAVE+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:37:30] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:37:30] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=DGD+VASUNDHARA+ENCLAVE+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=DGD+VASUNDHARA+ENCLAVE+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:37:30] INFO |   No URL found on justdial.com.
+[2026-07-28 17:37:32] INFO |   No review page found for: DGD VASUNDHARA ENCLAVE
+[2026-07-28 17:37:32] INFO |   No URL found for 'DGD VASUNDHARA ENCLAVE'
+[2026-07-28 17:37:32] INFO | Phase 2 [4/311]: Bala Ji nursing bureau
+[2026-07-28 17:37:32] INFO |   Searching hexahealth.com for: Bala Ji nursing bureau
+[2026-07-28 17:37:32] INFO |   DDG: https://duckduckgo.com/?q=Bala+Ji+nursing+bureau+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:37:34] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Bala+Ji+nursing+bureau+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Bala+Ji+nursing+bureau+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:37:34] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:37:36] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Bala+Ji+nursing+bureau" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Bala+Ji+nursing+bureau", waiting until "domcontentloaded"
+
+[2026-07-28 17:37:36] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:37:38] INFO |   Searching practo.com for: Bala Ji nursing bureau
+[2026-07-28 17:37:38] INFO |   DDG: https://duckduckgo.com/?q=Bala+Ji+nursing+bureau+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:37:43] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:37:49] INFO |   No URL found on practo.com.
+[2026-07-28 17:37:52] INFO |   Searching justdial.com for: Bala Ji nursing bureau
+[2026-07-28 17:37:52] INFO |   DDG: https://duckduckgo.com/?q=Bala+Ji+nursing+bureau+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:37:57] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:37:57] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Bala+Ji+nursing+bureau+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Bala+Ji+nursing+bureau+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:37:57] INFO |   No URL found on justdial.com.
+[2026-07-28 17:38:01] INFO |   No review page found for: Bala Ji nursing bureau
+[2026-07-28 17:38:01] INFO |   No URL found for 'Bala Ji nursing bureau'
+[2026-07-28 17:38:01] INFO | Phase 2 [5/311]: R.S. Healthcare
+[2026-07-28 17:38:01] INFO |   Searching hexahealth.com for: R.S. Healthcare
+[2026-07-28 17:38:01] INFO |   DDG: https://duckduckgo.com/?q=R.S.+Healthcare+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:38:01] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=R.S.+Healthcare+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=R.S.+Healthcare+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:38:01] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:38:03] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=R.S.+Healthcare" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=R.S.+Healthcare", waiting until "domcontentloaded"
+
+[2026-07-28 17:38:03] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:38:07] INFO |   Searching practo.com for: R.S. Healthcare
+[2026-07-28 17:38:07] INFO |   DDG: https://duckduckgo.com/?q=R.S.+Healthcare+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:38:12] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:38:17] INFO |   No URL found on practo.com.
+[2026-07-28 17:38:20] INFO |   Searching justdial.com for: R.S. Healthcare
+[2026-07-28 17:38:20] INFO |   DDG: https://duckduckgo.com/?q=R.S.+Healthcare+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:38:25] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:38:25] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=R.S.+Healthcare+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=R.S.+Healthcare+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:38:25] INFO |   No URL found on justdial.com.
+[2026-07-28 17:38:29] INFO |   No review page found for: R.S. Healthcare
+[2026-07-28 17:38:29] INFO |   No URL found for 'R.S. Healthcare'
+[2026-07-28 17:38:29] INFO | Phase 2 [6/311]: GEO hospital
+[2026-07-28 17:38:29] INFO |   Searching hexahealth.com for: GEO hospital
+[2026-07-28 17:38:29] INFO |   DDG: https://duckduckgo.com/?q=GEO+hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:38:34] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:38:37] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:38:40] INFO |   Searching practo.com for: GEO hospital
+[2026-07-28 17:38:40] INFO |   DDG: https://duckduckgo.com/?q=GEO+hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:38:46] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:38:51] INFO |   No URL found on practo.com.
+[2026-07-28 17:38:54] INFO |   Searching justdial.com for: GEO hospital
+[2026-07-28 17:38:54] INFO |   DDG: https://duckduckgo.com/?q=GEO+hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:39:00] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:00] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=GEO+hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=GEO+hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:00] INFO |   No URL found on justdial.com.
+[2026-07-28 17:39:03] INFO |   No review page found for: GEO hospital
+[2026-07-28 17:39:03] INFO |   No URL found for 'GEO hospital'
+[2026-07-28 17:39:03] INFO | Phase 2 [7/311]: Dharamshila Cancer Foundation And Research Centre
+[2026-07-28 17:39:03] INFO |   Searching hexahealth.com for: Dharamshila Cancer Foundation And Research Centre
+[2026-07-28 17:39:03] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+And+Research+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:39:04] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+And+Research+Centre+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+And+Research+Centre+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:04] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:05] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Dharamshila+Cancer+Foundation+And+Research+Centre" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Dharamshila+Cancer+Foundation+And+Research+Centre", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:05] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:39:09] INFO |   Searching practo.com for: Dharamshila Cancer Foundation And Research Centre
+[2026-07-28 17:39:09] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+And+Research+Centre+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:39:14] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:19] INFO |   No URL found on practo.com.
+[2026-07-28 17:39:21] INFO |   Searching justdial.com for: Dharamshila Cancer Foundation And Research Centre
+[2026-07-28 17:39:21] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Cancer+Foundation+And+Research+Centre+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:39:27] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:27] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Dharamshila+Cancer+Foundation+And+Research+Centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Dharamshila+Cancer+Foundation+And+Research+Centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:27] INFO |   No URL found on justdial.com.
+[2026-07-28 17:39:30] INFO |   No review page found for: Dharamshila Cancer Foundation And Research Centre
+[2026-07-28 17:39:30] INFO |   No URL found for 'Dharamshila Cancer Foundation And Research Centre'
+[2026-07-28 17:39:30] INFO | Phase 2 [8/311]: DELHI HOSPITAL
+[2026-07-28 17:39:30] INFO |   Searching hexahealth.com for: DELHI HOSPITAL
+[2026-07-28 17:39:30] INFO |   DDG: https://duckduckgo.com/?q=DELHI+HOSPITAL+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:39:31] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=DELHI+HOSPITAL+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=DELHI+HOSPITAL+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:31] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:32] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=DELHI+HOSPITAL" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=DELHI+HOSPITAL", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:32] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:39:35] INFO |   Searching practo.com for: DELHI HOSPITAL
+[2026-07-28 17:39:35] INFO |   DDG: https://duckduckgo.com/?q=DELHI+HOSPITAL+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:39:41] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:46] INFO |   No URL found on practo.com.
+[2026-07-28 17:39:50] INFO |   Searching justdial.com for: DELHI HOSPITAL
+[2026-07-28 17:39:50] INFO |   DDG: https://duckduckgo.com/?q=DELHI+HOSPITAL+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:39:55] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:55] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=DELHI+HOSPITAL+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=DELHI+HOSPITAL+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:55] INFO |   No URL found on justdial.com.
+[2026-07-28 17:39:57] INFO |   No review page found for: DELHI HOSPITAL
+[2026-07-28 17:39:57] INFO |   No URL found for 'DELHI HOSPITAL'
+[2026-07-28 17:39:57] INFO | Phase 2 [9/311]: Max Healthcare Institute Ltd
+[2026-07-28 17:39:57] INFO |   Searching hexahealth.com for: Max Healthcare Institute Ltd
+[2026-07-28 17:39:57] INFO |   DDG: https://duckduckgo.com/?q=Max+Healthcare+Institute+Ltd+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:39:58] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Max+Healthcare+Institute+Ltd+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Max+Healthcare+Institute+Ltd+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:58] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:39:59] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Max+Healthcare+Institute+Ltd" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Max+Healthcare+Institute+Ltd", waiting until "domcontentloaded"
+
+[2026-07-28 17:39:59] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:40:02] INFO |   Searching practo.com for: Max Healthcare Institute Ltd
+[2026-07-28 17:40:02] INFO |   DDG: https://duckduckgo.com/?q=Max+Healthcare+Institute+Ltd+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:40:07] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:40:12] INFO |   No URL found on practo.com.
+[2026-07-28 17:40:15] INFO |   Searching justdial.com for: Max Healthcare Institute Ltd
+[2026-07-28 17:40:15] INFO |   DDG: https://duckduckgo.com/?q=Max+Healthcare+Institute+Ltd+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:40:22] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:40:22] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Max+Healthcare+Institute+Ltd+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Max+Healthcare+Institute+Ltd+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:40:22] INFO |   No URL found on justdial.com.
+[2026-07-28 17:40:25] INFO |   No review page found for: Max Healthcare Institute Ltd
+[2026-07-28 17:40:25] INFO |   No URL found for 'Max Healthcare Institute Ltd'
+[2026-07-28 17:40:25] INFO | Phase 2 [10/311]: AIIMS Rotary Midtown Eye/Dental Hospital Trilokpuri
+[2026-07-28 17:40:25] INFO |   Searching hexahealth.com for: AIIMS Rotary Midtown Eye/Dental Hospital Trilokpuri
+[2026-07-28 17:40:25] INFO |   DDG: https://duckduckgo.com/?q=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:40:26] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:40:26] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:40:28] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri", waiting until "domcontentloaded"
+
+[2026-07-28 17:40:28] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:40:30] INFO |   Searching practo.com for: AIIMS Rotary Midtown Eye/Dental Hospital Trilokpuri
+[2026-07-28 17:40:30] INFO |   DDG: https://duckduckgo.com/?q=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:40:35] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:40:40] INFO |   No URL found on practo.com.
+[2026-07-28 17:40:44] INFO |   Searching justdial.com for: AIIMS Rotary Midtown Eye/Dental Hospital Trilokpuri
+[2026-07-28 17:40:44] INFO |   DDG: https://duckduckgo.com/?q=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:40:49] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:40:49] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=AIIMS+Rotary+Midtown+Eye%2FDental+Hospital+Trilokpuri+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:40:49] INFO |   No URL found on justdial.com.
+[2026-07-28 17:40:52] INFO |   No review page found for: AIIMS Rotary Midtown Eye/Dental Hospital Trilokpuri
+[2026-07-28 17:40:52] INFO |   No URL found for 'AIIMS Rotary Midtown Eye/Dental Hospital Trilokpuri'
+[2026-07-28 17:40:52] INFO | Phase 2 [11/311]: Dharamshila Narayana Superspeciality Hospital Delhi
+[2026-07-28 17:40:52] INFO |   Searching hexahealth.com for: Dharamshila Narayana Superspeciality Hospital Delhi
+[2026-07-28 17:40:52] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Narayana+Superspeciality+Hospital+Delhi+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:40:53] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Dharamshila+Narayana+Superspeciality+Hospital+Delhi+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Dharamshila+Narayana+Superspeciality+Hospital+Delhi+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:40:53] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:40:54] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Dharamshila+Narayana+Superspeciality+Hospital+Delhi" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Dharamshila+Narayana+Superspeciality+Hospital+Delhi", waiting until "domcontentloaded"
+
+[2026-07-28 17:40:54] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:40:57] INFO |   Searching practo.com for: Dharamshila Narayana Superspeciality Hospital Delhi
+[2026-07-28 17:40:57] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Narayana+Superspeciality+Hospital+Delhi+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:41:02] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:07] INFO |   No URL found on practo.com.
+[2026-07-28 17:41:10] INFO |   Searching justdial.com for: Dharamshila Narayana Superspeciality Hospital Delhi
+[2026-07-28 17:41:10] INFO |   DDG: https://duckduckgo.com/?q=Dharamshila+Narayana+Superspeciality+Hospital+Delhi+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:41:15] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:15] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Dharamshila+Narayana+Superspeciality+Hospital+Delhi+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Dharamshila+Narayana+Superspeciality+Hospital+Delhi+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:41:15] INFO |   No URL found on justdial.com.
+[2026-07-28 17:41:18] INFO |   No review page found for: Dharamshila Narayana Superspeciality Hospital Delhi
+[2026-07-28 17:41:18] INFO |   No URL found for 'Dharamshila Narayana Superspeciality Hospital Delhi'
+[2026-07-28 17:41:18] INFO | Phase 2 [12/311]: Paschim Vihar
+[2026-07-28 17:41:18] INFO |   Searching hexahealth.com for: Paschim Vihar
+[2026-07-28 17:41:18] INFO |   DDG: https://duckduckgo.com/?q=Paschim+Vihar+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:41:19] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Paschim+Vihar+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Paschim+Vihar+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:41:19] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:20] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Paschim+Vihar" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Paschim+Vihar", waiting until "domcontentloaded"
+
+[2026-07-28 17:41:20] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:41:24] INFO |   Searching practo.com for: Paschim Vihar
+[2026-07-28 17:41:24] INFO |   DDG: https://duckduckgo.com/?q=Paschim+Vihar+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:41:29] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:34] INFO |   No URL found on practo.com.
+[2026-07-28 17:41:37] INFO |   Searching justdial.com for: Paschim Vihar
+[2026-07-28 17:41:37] INFO |   DDG: https://duckduckgo.com/?q=Paschim+Vihar+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:41:43] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:43] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Paschim+Vihar+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Paschim+Vihar+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:41:43] INFO |   No URL found on justdial.com.
+[2026-07-28 17:41:45] INFO |   No review page found for: Paschim Vihar
+[2026-07-28 17:41:45] INFO |   No URL found for 'Paschim Vihar'
+[2026-07-28 17:41:45] INFO | Phase 2 [13/311]: Paras Hospital
+[2026-07-28 17:41:45] INFO |   Searching hexahealth.com for: Paras Hospital
+[2026-07-28 17:41:45] INFO |   DDG: https://duckduckgo.com/?q=Paras+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:41:46] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://duckduckgo.com/?q=Paras+Hospital+reviews+site%3Ahexahealth.com&ia=web" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://duckduckgo.com/?q=Paras+Hospital+reviews+site%3Ahexahealth.com&ia=web", waiting until "domcontentloaded"
+
+[2026-07-28 17:41:46] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:47] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Paras+Hospital" is interrupted by another navigation to "https://duckduckgo.com/static-pages/418.html?bno=84f2&is_tor=0&is_ar=0&is_netp=0"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Paras+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:41:47] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:41:49] INFO |   Searching practo.com for: Paras Hospital
+[2026-07-28 17:41:49] INFO |   DDG: https://duckduckgo.com/?q=Paras+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-28 17:41:53] WARNING |   DDG error (practo.com): Page.wait_for_timeout: Target page, context or browser has been closed
+[2026-07-28 17:41:53] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:53] WARNING |   Direct search error (practo.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 17:41:53] INFO |   No URL found on practo.com.
+[2026-07-28 17:41:57] INFO |   Searching justdial.com for: Paras Hospital
+[2026-07-28 17:41:57] INFO |   DDG: https://duckduckgo.com/?q=Paras+Hospital+reviews+site%3Ajustdial.com&ia=web
+[2026-07-28 17:41:57] WARNING |   DDG error (justdial.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 17:41:57] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:41:57] WARNING |   Direct search error (justdial.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 17:41:57] INFO |   No URL found on justdial.com.

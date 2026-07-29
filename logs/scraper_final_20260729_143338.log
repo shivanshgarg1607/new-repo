@@ -1,0 +1,298 @@
+[2026-07-29 14:33:38] INFO | Loaded 2,665 hospitals from Excel.
+[2026-07-29 14:33:39] INFO | Loaded 3,976 existing review keys for dedup.
+[2026-07-29 14:33:41] INFO | Phase 1 [100/2084]: Dhruv Surgical Centre (Dhruv Hospital)
+[2026-07-29 14:33:41] INFO | Processing: Dhruv Surgical Centre (Dhruv Hospital)
+[2026-07-29 14:33:41] INFO | Trying hexahealth.com for: Dhruv Surgical Centre (Dhruv Hospital)
+[2026-07-29 14:33:41] INFO |   DDG: https://duckduckgo.com/?q=Dhruv+Surgical+Centre+%28Dhruv+Hospital%29+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:33:44] INFO |   DDG result: https://www.hexahealth.com/amritsar/hospital/dhruv-nursing-and-maternity-home-kashmir-avenue
+[2026-07-29 14:33:44] INFO |   Candidate URL: https://www.hexahealth.com/amritsar/hospital/dhruv-nursing-and-maternity-home-kashmir-avenue/reviews
+[2026-07-29 14:33:46] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:33:46] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:33:48] INFO | Summary row: Dhruv Surgical Centre (Dhruv Hospital) → No Reviews (0 reviews)
+[2026-07-29 14:33:49] ERROR |   Unhandled error for 'Dhruv Surgical Centre (Dhruv Hospital)': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:33:49] INFO | Checkpoint saved -> Dhruv Surgical Centre (Dhruv Hospital)
+[2026-07-29 14:33:49] INFO | Phase 1 [101/2084]: Government Hospital
+[2026-07-29 14:33:49] INFO | Processing: Government Hospital
+[2026-07-29 14:33:49] INFO | Trying hexahealth.com for: Government Hospital
+[2026-07-29 14:33:49] INFO |   DDG: https://duckduckgo.com/?q=Government+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:33:52] INFO |   DDG result: https://www.hexahealth.com/blog/best-government-hospitals-in-delhi
+[2026-07-29 14:33:52] INFO |   Candidate URL: https://www.hexahealth.com/blog/best-government-hospitals-in-delhi/reviews
+[2026-07-29 14:33:54] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:33:54] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:33:56] INFO | Summary row: Government Hospital → No Reviews (0 reviews)
+[2026-07-29 14:33:56] ERROR |   Unhandled error for 'Government Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:33:56] INFO | Checkpoint saved -> Government Hospital
+[2026-07-29 14:33:56] INFO | Phase 1 [102/2084]: Dhruv Hospital
+[2026-07-29 14:33:56] INFO | Processing: Dhruv Hospital
+[2026-07-29 14:33:56] INFO | Trying hexahealth.com for: Dhruv Hospital
+[2026-07-29 14:33:56] INFO |   DDG: https://duckduckgo.com/?q=Dhruv+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:33:59] INFO |   DDG result: https://www.hexahealth.com/bareilly/hospital/dhruv-hospital-sanjay-nagar-road
+[2026-07-29 14:33:59] INFO |   Candidate URL: https://www.hexahealth.com/bareilly/hospital/dhruv-hospital-sanjay-nagar-road/reviews
+[2026-07-29 14:34:02] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:34:02] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:34:03] INFO | Summary row: Dhruv Hospital → No Reviews (0 reviews)
+[2026-07-29 14:34:04] ERROR |   Unhandled error for 'Dhruv Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:34:04] INFO | Checkpoint saved -> Dhruv Hospital
+[2026-07-29 14:34:04] INFO | Phase 1 [103/2084]: Srg Hospital
+[2026-07-29 14:34:04] INFO | Processing: Srg Hospital
+[2026-07-29 14:34:04] INFO | Trying hexahealth.com for: Srg Hospital
+[2026-07-29 14:34:04] INFO |   DDG: https://duckduckgo.com/?q=Srg+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:34:07] INFO |   DDG result: https://www.hexahealth.com/jaipur/hospital/srg-hospital-heerapura
+[2026-07-29 14:34:07] INFO |   Candidate URL: https://www.hexahealth.com/jaipur/hospital/srg-hospital-heerapura/reviews
+[2026-07-29 14:34:10] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:34:10] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:34:11] INFO | Summary row: Srg Hospital → No Reviews (0 reviews)
+[2026-07-29 14:34:12] ERROR |   Unhandled error for 'Srg Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:34:12] INFO | Checkpoint saved -> Srg Hospital
+[2026-07-29 14:34:12] INFO | Phase 1 [104/2084]: Dharamveer Solanki Hospital
+[2026-07-29 14:34:12] INFO | Processing: Dharamveer Solanki Hospital
+[2026-07-29 14:34:12] INFO | Trying hexahealth.com for: Dharamveer Solanki Hospital
+[2026-07-29 14:34:12] INFO |   DDG: https://duckduckgo.com/?q=Dharamveer+Solanki+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:34:15] INFO |   DDG empty — trying direct site search…
+[2026-07-29 14:34:18] INFO |   Candidate URL: https://www.hexahealth.com/delhi/hospitals/cardiology/reviews
+[2026-07-29 14:34:21] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:34:21] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:34:24] INFO | Summary row: Dharamveer Solanki Hospital → No Reviews (0 reviews)
+[2026-07-29 14:34:24] ERROR |   Unhandled error for 'Dharamveer Solanki Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:34:24] INFO | Checkpoint saved -> Dharamveer Solanki Hospital
+[2026-07-29 14:34:24] INFO | Phase 1 [105/2084]: H Malika Hospital
+[2026-07-29 14:34:24] INFO | Processing: H Malika Hospital
+[2026-07-29 14:34:24] INFO | Trying hexahealth.com for: H Malika Hospital
+[2026-07-29 14:34:24] INFO |   DDG: https://duckduckgo.com/?q=H+Malika+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:34:27] INFO |   DDG result: https://www.hexahealth.com/mumbai/hospital/malika-super-speciality-hospital-jogeshwari-west
+[2026-07-29 14:34:27] INFO |   Candidate URL: https://www.hexahealth.com/mumbai/hospital/malika-super-speciality-hospital-jogeshwari-west/reviews
+[2026-07-29 14:34:30] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:34:30] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:34:32] INFO | Summary row: H Malika Hospital → No Reviews (0 reviews)
+[2026-07-29 14:34:32] ERROR |   Unhandled error for 'H Malika Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:34:32] INFO | Checkpoint saved -> H Malika Hospital
+[2026-07-29 14:34:32] INFO | Phase 1 [106/2084]: Lalita Hospital
+[2026-07-29 14:34:32] INFO | Processing: Lalita Hospital
+[2026-07-29 14:34:32] INFO | Trying hexahealth.com for: Lalita Hospital
+[2026-07-29 14:34:32] INFO |   DDG: https://duckduckgo.com/?q=Lalita+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:34:37] INFO |   DDG result: https://www.hexahealth.com/rewari/hospital/lalita-memorial-multispeciality-hospital-bara-ralab
+[2026-07-29 14:34:37] INFO |   Candidate URL: https://www.hexahealth.com/rewari/hospital/lalita-memorial-multispeciality-hospital-bara-ralab/reviews
+[2026-07-29 14:34:39] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:34:39] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:34:41] INFO | Summary row: Lalita Hospital → No Reviews (0 reviews)
+[2026-07-29 14:34:42] ERROR |   Unhandled error for 'Lalita Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:34:42] INFO | Checkpoint saved -> Lalita Hospital
+[2026-07-29 14:34:42] INFO | Phase 1 [107/2084]: Pal Hospital
+[2026-07-29 14:34:42] INFO | Processing: Pal Hospital
+[2026-07-29 14:34:42] INFO | Trying hexahealth.com for: Pal Hospital
+[2026-07-29 14:34:42] INFO |   DDG: https://duckduckgo.com/?q=Pal+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:34:45] INFO |   DDG result: https://www.hexahealth.com/delhi/doctor/dr-sujoy-pal-surgical-gastroenterology
+[2026-07-29 14:34:45] INFO |   Candidate URL: https://www.hexahealth.com/delhi/doctor/dr-sujoy-pal-surgical-gastroenterology/reviews
+[2026-07-29 14:34:47] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:34:47] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:34:49] INFO | Summary row: Pal Hospital → No Reviews (0 reviews)
+[2026-07-29 14:34:50] ERROR |   Unhandled error for 'Pal Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:34:50] INFO | Checkpoint saved -> Pal Hospital
+[2026-07-29 14:34:50] INFO | Phase 1 [108/2084]: Asha Hospital
+[2026-07-29 14:34:50] INFO | Processing: Asha Hospital
+[2026-07-29 14:34:50] INFO | Trying hexahealth.com for: Asha Hospital
+[2026-07-29 14:34:50] INFO |   DDG: https://duckduckgo.com/?q=Asha+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:34:53] INFO |   DDG result: https://www.hexahealth.com/hyderabad/hospital/asha-hospital-banjara-hills
+[2026-07-29 14:34:53] INFO |   Candidate URL: https://www.hexahealth.com/hyderabad/hospital/asha-hospital-banjara-hills/reviews
+[2026-07-29 14:34:55] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:34:55] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:34:57] INFO | Summary row: Asha Hospital → No Reviews (0 reviews)
+[2026-07-29 14:34:58] ERROR |   Unhandled error for 'Asha Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:34:58] INFO | Checkpoint saved -> Asha Hospital
+[2026-07-29 14:34:58] INFO | Phase 1 [109/2084]: S R M?dical Centre
+[2026-07-29 14:34:58] INFO | Processing: S R M?dical Centre
+[2026-07-29 14:34:58] INFO | Trying hexahealth.com for: S R M?dical Centre
+[2026-07-29 14:34:58] INFO |   DDG: https://duckduckgo.com/?q=S+R+M%3Fdical+Centre+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:35:01] INFO |   DDG result: https://www.hexahealth.com/agra/hospital/s-r-medical-institute-and-research-centre
+[2026-07-29 14:35:01] INFO |   Candidate URL: https://www.hexahealth.com/agra/hospital/s-r-medical-institute-and-research-centre/reviews
+[2026-07-29 14:35:03] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:35:03] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:35:05] INFO | Summary row: S R M?dical Centre → No Reviews (0 reviews)
+[2026-07-29 14:35:05] ERROR |   Unhandled error for 'S R M?dical Centre': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:35:05] INFO | Checkpoint saved -> S R M?dical Centre
+[2026-07-29 14:35:05] INFO | Phase 1 [110/2084]: Swavalamban Evening Health Clinic
+[2026-07-29 14:35:05] INFO | Processing: Swavalamban Evening Health Clinic
+[2026-07-29 14:35:05] INFO | Trying hexahealth.com for: Swavalamban Evening Health Clinic
+[2026-07-29 14:35:05] INFO |   DDG: https://duckduckgo.com/?q=Swavalamban+Evening+Health+Clinic+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:35:08] INFO |   DDG result: https://www.hexahealth.com/reviews
+[2026-07-29 14:35:08] INFO |   Candidate URL: https://www.hexahealth.com/reviews
+[2026-07-29 14:35:14] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:35:14] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:35:16] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:17] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:18] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:19] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:20] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:21] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:22] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:24] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:25] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:25] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:27] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:28] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:29] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:30] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:31] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:32] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:33] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:34] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:35] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:36] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:37] INFO | Added review: Swavalamban Evening Health Clinic — Unknown
+[2026-07-29 14:35:38] INFO | Summary row: Swavalamban Evening Health Clinic → Success (21 reviews)
+[2026-07-29 14:35:39] ERROR |   Unhandled error for 'Swavalamban Evening Health Clinic': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:35:39] INFO | Checkpoint saved -> Swavalamban Evening Health Clinic
+[2026-07-29 14:35:39] INFO | Phase 1 [111/2084]: ESIC Dispensary
+[2026-07-29 14:35:39] INFO | Processing: ESIC Dispensary
+[2026-07-29 14:35:39] INFO | Trying hexahealth.com for: ESIC Dispensary
+[2026-07-29 14:35:39] INFO |   DDG: https://duckduckgo.com/?q=ESIC+Dispensary+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:35:42] INFO |   DDG result: https://www.hexahealth.com/mumbai/hospital/esis-hospital-kandivali-east
+[2026-07-29 14:35:42] INFO |   Candidate URL: https://www.hexahealth.com/mumbai/hospital/esis-hospital-kandivali-east/reviews
+[2026-07-29 14:35:44] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:35:44] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:35:46] INFO | Summary row: ESIC Dispensary → No Reviews (0 reviews)
+[2026-07-29 14:35:46] ERROR |   Unhandled error for 'ESIC Dispensary': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:35:46] INFO | Checkpoint saved -> ESIC Dispensary
+[2026-07-29 14:35:46] INFO | Phase 1 [112/2084]: CRIBS HOSPITAL
+[2026-07-29 14:35:46] INFO | Processing: CRIBS HOSPITAL
+[2026-07-29 14:35:46] INFO | Trying hexahealth.com for: CRIBS HOSPITAL
+[2026-07-29 14:35:46] INFO |   DDG: https://duckduckgo.com/?q=CRIBS+HOSPITAL+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:35:49] INFO |   DDG result: https://www.hexahealth.com/delhi/hospital/cribs-hospital-jasola-vihar
+[2026-07-29 14:35:49] INFO |   Candidate URL: https://www.hexahealth.com/delhi/hospital/cribs-hospital-jasola-vihar/reviews
+[2026-07-29 14:35:52] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:35:52] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:35:53] INFO | Summary row: CRIBS HOSPITAL → No Reviews (0 reviews)
+[2026-07-29 14:35:54] ERROR |   Unhandled error for 'CRIBS HOSPITAL': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:35:54] INFO | Checkpoint saved -> CRIBS HOSPITAL
+[2026-07-29 14:35:54] INFO | Phase 1 [113/2084]: Sangam
+[2026-07-29 14:35:54] INFO | Processing: Sangam
+[2026-07-29 14:35:54] INFO | Trying hexahealth.com for: Sangam
+[2026-07-29 14:35:54] INFO |   DDG: https://duckduckgo.com/?q=Sangam+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:35:57] INFO |   DDG result: https://www.hexahealth.com/gorakhpur/hospital/sangam-super-speciality-eye-hospital-taramandal
+[2026-07-29 14:35:57] INFO |   Candidate URL: https://www.hexahealth.com/gorakhpur/hospital/sangam-super-speciality-eye-hospital-taramandal/reviews
+[2026-07-29 14:35:59] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:35:59] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:36:01] INFO | Summary row: Sangam → No Reviews (0 reviews)
+[2026-07-29 14:36:02] ERROR |   Unhandled error for 'Sangam': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:36:02] INFO | Checkpoint saved -> Sangam
+[2026-07-29 14:36:02] INFO | Phase 1 [114/2084]: Health Point Hospital
+[2026-07-29 14:36:02] INFO | Processing: Health Point Hospital
+[2026-07-29 14:36:02] INFO | Trying hexahealth.com for: Health Point Hospital
+[2026-07-29 14:36:02] INFO |   DDG: https://duckduckgo.com/?q=Health+Point+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:36:05] INFO |   DDG result: https://www.hexahealth.com/ranchi/hospital/health-point-hospital
+[2026-07-29 14:36:05] INFO |   Candidate URL: https://www.hexahealth.com/ranchi/hospital/health-point-hospital/reviews
+[2026-07-29 14:36:07] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:36:07] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:36:09] INFO | Summary row: Health Point Hospital → No Reviews (0 reviews)
+[2026-07-29 14:36:10] ERROR |   Unhandled error for 'Health Point Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:36:10] INFO | Checkpoint saved -> Health Point Hospital
+[2026-07-29 14:36:10] INFO | Phase 1 [115/2084]: Sai Hospital
+[2026-07-29 14:36:10] INFO | Processing: Sai Hospital
+[2026-07-29 14:36:10] INFO | Trying hexahealth.com for: Sai Hospital
+[2026-07-29 14:36:10] INFO |   DDG: https://duckduckgo.com/?q=Sai+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:36:13] INFO |   DDG result: https://www.hexahealth.com/faridabad/hospital/sai-hospital-sector-30
+[2026-07-29 14:36:13] INFO |   Candidate URL: https://www.hexahealth.com/faridabad/hospital/sai-hospital-sector-30/reviews
+[2026-07-29 14:36:15] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:36:15] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:36:17] INFO | Summary row: Sai Hospital → No Reviews (0 reviews)
+[2026-07-29 14:36:17] ERROR |   Unhandled error for 'Sai Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:36:17] INFO | Checkpoint saved -> Sai Hospital
+[2026-07-29 14:36:17] INFO | Phase 1 [116/2084]: RK Hospital
+[2026-07-29 14:36:17] INFO | Processing: RK Hospital
+[2026-07-29 14:36:17] INFO | Trying hexahealth.com for: RK Hospital
+[2026-07-29 14:36:17] INFO |   DDG: https://duckduckgo.com/?q=RK+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:36:20] INFO |   DDG result: https://www.hexahealth.com/salem/hospital/rk-hospital-meyyanur
+[2026-07-29 14:36:20] INFO |   Candidate URL: https://www.hexahealth.com/salem/hospital/rk-hospital-meyyanur/reviews
+[2026-07-29 14:36:22] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:36:22] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:36:25] INFO | Summary row: RK Hospital → No Reviews (0 reviews)
+[2026-07-29 14:36:25] ERROR |   Unhandled error for 'RK Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:36:25] INFO | Checkpoint saved -> RK Hospital
+[2026-07-29 14:36:25] INFO | Phase 1 [117/2084]: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi
+[2026-07-29 14:36:25] INFO | Processing: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi
+[2026-07-29 14:36:25] INFO | Trying hexahealth.com for: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi
+[2026-07-29 14:36:25] INFO |   DDG: https://duckduckgo.com/?q=Sri+Vaidya+Ayurveda+Kerla+Panchkarma+Hospital-Best+Ayurvedic+Treatment+%26+Doctors+Dwarka+Delhi+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:36:29] INFO |   DDG result: https://www.hexahealth.com/
+[2026-07-29 14:36:29] INFO |   Candidate URL: https://www.hexahealth.com/reviews
+[2026-07-29 14:36:31] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:36:31] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:36:33] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:34] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:35] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:36] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:38] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:38] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:39] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:40] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:42] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:43] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:44] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:45] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:45] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:47] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:48] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:49] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:50] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:52] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:52] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:53] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:54] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:55] INFO | Added review: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi — Unknown
+[2026-07-29 14:36:57] INFO | Summary row: Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi → Success (22 reviews)
+[2026-07-29 14:36:57] ERROR |   Unhandled error for 'Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:36:57] INFO | Checkpoint saved -> Sri Vaidya Ayurveda Kerla Panchkarma Hospital-Best Ayurvedic Treatment & Doctors Dwarka Delhi
+[2026-07-29 14:36:57] INFO | Phase 1 [118/2084]: Sarthak Medical Center
+[2026-07-29 14:36:57] INFO | Processing: Sarthak Medical Center
+[2026-07-29 14:36:57] INFO | Trying hexahealth.com for: Sarthak Medical Center
+[2026-07-29 14:36:57] INFO |   DDG: https://duckduckgo.com/?q=Sarthak+Medical+Center+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:37:00] INFO |   DDG result: https://www.hexahealth.com/nashik/hospital/sarthak-health-clinic
+[2026-07-29 14:37:00] INFO |   Candidate URL: https://www.hexahealth.com/nashik/hospital/sarthak-health-clinic/reviews
+[2026-07-29 14:37:02] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:37:02] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:37:04] INFO | Summary row: Sarthak Medical Center → No Reviews (0 reviews)
+[2026-07-29 14:37:05] ERROR |   Unhandled error for 'Sarthak Medical Center': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:37:05] INFO | Checkpoint saved -> Sarthak Medical Center
+[2026-07-29 14:37:05] INFO | Phase 1 [119/2084]: Aman Medical Clinic
+[2026-07-29 14:37:05] INFO | Processing: Aman Medical Clinic
+[2026-07-29 14:37:05] INFO | Trying hexahealth.com for: Aman Medical Clinic
+[2026-07-29 14:37:05] INFO |   DDG: https://duckduckgo.com/?q=Aman+Medical+Clinic+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:37:08] INFO |   DDG result: https://www.hexahealth.com/ahmedabad/doctor/dr-aman-priya-khanna-general-surgery
+[2026-07-29 14:37:08] INFO |   Candidate URL: https://www.hexahealth.com/ahmedabad/doctor/dr-aman-priya-khanna-general-surgery/reviews
+[2026-07-29 14:37:11] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:37:11] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:37:13] INFO | Added review: Aman Medical Clinic — Hemant Salvi
+[2026-07-29 14:37:15] INFO | Added review: Aman Medical Clinic — YASHPAL
+[2026-07-29 14:37:16] INFO | Added review: Aman Medical Clinic — Praval Dubey
+[2026-07-29 14:37:18] INFO | Added review: Aman Medical Clinic — Praval Kumar Dubey
+[2026-07-29 14:37:19] INFO | Added review: Aman Medical Clinic — Rahul singh
+[2026-07-29 14:37:20] INFO | Summary row: Aman Medical Clinic → Success (5 reviews)
+[2026-07-29 14:37:21] ERROR |   Unhandled error for 'Aman Medical Clinic': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:37:21] INFO | Checkpoint saved -> Aman Medical Clinic
+[2026-07-29 14:37:21] INFO | Phase 1 [120/2084]: Walia Medical & Maternity Centre { Physician Gynaecologist Dental }
+[2026-07-29 14:37:21] INFO | Processing: Walia Medical & Maternity Centre { Physician Gynaecologist Dental }
+[2026-07-29 14:37:21] INFO | Trying hexahealth.com for: Walia Medical & Maternity Centre { Physician Gynaecologist Dental }
+[2026-07-29 14:37:21] INFO |   DDG: https://duckduckgo.com/?q=Walia+Medical+%26+Maternity+Centre+%7B+Physician+Gynaecologist+Dental+%7D+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:37:24] INFO |   DDG result: https://www.hexahealth.com/delhi/hospital/walia-medical-and-maternity-centre-sarita-vihar
+[2026-07-29 14:37:24] INFO |   Candidate URL: https://www.hexahealth.com/delhi/hospital/walia-medical-and-maternity-centre-sarita-vihar/reviews
+[2026-07-29 14:37:26] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:37:26] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:37:29] INFO | Summary row: Walia Medical & Maternity Centre { Physician Gynaecologist Dental } → No Reviews (0 reviews)
+[2026-07-29 14:37:30] ERROR |   Unhandled error for 'Walia Medical & Maternity Centre { Physician Gynaecologist Dental }': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:37:30] INFO | Checkpoint saved -> Walia Medical & Maternity Centre { Physician Gynaecologist Dental }
+[2026-07-29 14:37:30] INFO | Phase 1 [121/2084]: CGHS Wellness Centre Sarita Vihar
+[2026-07-29 14:37:30] INFO | Processing: CGHS Wellness Centre Sarita Vihar
+[2026-07-29 14:37:30] INFO | Trying hexahealth.com for: CGHS Wellness Centre Sarita Vihar
+[2026-07-29 14:37:30] INFO |   DDG: https://duckduckgo.com/?q=CGHS+Wellness+Centre+Sarita+Vihar+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:37:33] INFO |   DDG result: https://www.hexahealth.com/hospitals/insurance/cghs-empanelled-hospitals-list-in-delhi
+[2026-07-29 14:37:33] INFO |   Candidate URL: https://www.hexahealth.com/hospitals/insurance/cghs-empanelled-hospitals-list-in-delhi/reviews
+[2026-07-29 14:37:36] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:37:36] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:37:38] INFO | Summary row: CGHS Wellness Centre Sarita Vihar → No Reviews (0 reviews)
+[2026-07-29 14:37:38] ERROR |   Unhandled error for 'CGHS Wellness Centre Sarita Vihar': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:37:38] INFO | Checkpoint saved -> CGHS Wellness Centre Sarita Vihar
+[2026-07-29 14:37:38] INFO | Phase 1 [122/2084]: Epilepsy Clinic
+[2026-07-29 14:37:38] INFO | Processing: Epilepsy Clinic
+[2026-07-29 14:37:38] INFO | Trying hexahealth.com for: Epilepsy Clinic
+[2026-07-29 14:37:38] INFO |   DDG: https://duckduckgo.com/?q=Epilepsy+Clinic+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:37:41] INFO |   DDG result: https://www.hexahealth.com/delhi/doctors/epilepsy-doctors
+[2026-07-29 14:37:41] INFO |   Candidate URL: https://www.hexahealth.com/delhi/doctors/epilepsy-doctors/reviews

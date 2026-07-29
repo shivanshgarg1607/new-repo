@@ -1,0 +1,339 @@
+[2026-07-28 17:41:37] INFO | Discarding stale phase2 checkpoint (0 reviews) — starting fresh.
+[2026-07-28 17:41:37] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 17:41:38] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 17:41:38] INFO | Removed 2 bad cached URL(s) (category pages).
+[2026-07-28 17:41:38] INFO | URL cache has 0 cached hospitals.
+[2026-07-28 17:41:45] INFO | Phase 1 [1/1115]: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 17:41:45] INFO |   Searching hexahealth.com for: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 17:41:45] INFO |   DDG: https://html.duckduckgo.com/html/?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Ahexahealth.com
+[2026-07-28 17:41:48] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:41:48] INFO |   Bing: https://www.bing.com/search?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Ahexahealth.com
+[2026-07-28 17:41:52] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:41:58] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:42:01] INFO |   Searching practo.com for: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 17:42:01] INFO |   DDG: https://html.duckduckgo.com/html/?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Apracto.com
+[2026-07-28 17:42:05] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:42:05] INFO |   Bing: https://www.bing.com/search?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Apracto.com
+[2026-07-28 17:42:09] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:42:15] INFO |   No URL found on practo.com.
+[2026-07-28 17:42:18] INFO |   Searching justdial.com for: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 17:42:18] INFO |   DDG: https://html.duckduckgo.com/html/?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Ajustdial.com
+[2026-07-28 17:42:22] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:42:22] INFO |   Bing: https://www.bing.com/search?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Ajustdial.com
+[2026-07-28 17:42:26] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:42:27] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Prakash+Hospital+-+Best+Hospital+in+Noida+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Prakash+Hospital+-+Best+Hospital+in+Noida+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:42:27] INFO |   No URL found on justdial.com.
+[2026-07-28 17:42:29] INFO |   No review page found for: Prakash Hospital - Best Hospital in Noida
+[2026-07-28 17:42:29] INFO |   No URL found for 'Prakash Hospital - Best Hospital in Noida'
+[2026-07-28 17:42:31] INFO | Phase 1 [2/1115]: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-28 17:42:31] INFO |   Searching hexahealth.com for: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-28 17:42:31] INFO |   DDG: https://html.duckduckgo.com/html/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ahexahealth.com
+[2026-07-28 17:42:35] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:42:35] INFO |   Bing: https://www.bing.com/search?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ahexahealth.com
+[2026-07-28 17:42:40] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:42:46] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:42:49] INFO |   Searching practo.com for: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-28 17:42:49] INFO |   DDG: https://html.duckduckgo.com/html/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Apracto.com
+[2026-07-28 17:42:53] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:42:53] INFO |   Bing: https://www.bing.com/search?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Apracto.com
+[2026-07-28 17:42:57] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:43:03] INFO |   No URL found on practo.com.
+[2026-07-28 17:43:06] INFO |   Searching justdial.com for: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-28 17:43:06] INFO |   DDG: https://html.duckduckgo.com/html/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ajustdial.com
+[2026-07-28 17:43:11] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:43:11] INFO |   Bing: https://www.bing.com/search?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ajustdial.com
+[2026-07-28 17:43:15] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:43:15] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:43:15] INFO |   No URL found on justdial.com.
+[2026-07-28 17:43:17] INFO |   No review page found for: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-28 17:43:17] INFO |   No URL found for 'SR HOSPITAL & MATERNITY CENTRE'
+[2026-07-28 17:43:19] INFO | Phase 1 [3/1115]: Yashoda Super Speciality Hospital
+[2026-07-28 17:43:19] INFO |   Searching hexahealth.com for: Yashoda Super Speciality Hospital
+[2026-07-28 17:43:19] INFO |   DDG: https://html.duckduckgo.com/html/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:43:22] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:43:22] INFO |   Bing: https://www.bing.com/search?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:43:26] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:43:31] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:43:34] INFO |   Searching practo.com for: Yashoda Super Speciality Hospital
+[2026-07-28 17:43:34] INFO |   DDG: https://html.duckduckgo.com/html/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:43:38] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:43:38] INFO |   Bing: https://www.bing.com/search?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:43:43] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:43:48] INFO |   No URL found on practo.com.
+[2026-07-28 17:43:50] INFO |   Searching justdial.com for: Yashoda Super Speciality Hospital
+[2026-07-28 17:43:50] INFO |   DDG: https://html.duckduckgo.com/html/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:43:55] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:43:55] INFO |   Bing: https://www.bing.com/search?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:43:59] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:43:59] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Yashoda+Super+Speciality+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Yashoda+Super+Speciality+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:43:59] INFO |   No URL found on justdial.com.
+[2026-07-28 17:44:03] INFO |   No review page found for: Yashoda Super Speciality Hospital
+[2026-07-28 17:44:03] INFO |   No URL found for 'Yashoda Super Speciality Hospital'
+[2026-07-28 17:44:04] INFO | Phase 1 [4/1115]: Shakuntala Devi Hospital
+[2026-07-28 17:44:04] INFO |   Searching hexahealth.com for: Shakuntala Devi Hospital
+[2026-07-28 17:44:04] INFO |   DDG: https://html.duckduckgo.com/html/?q=Shakuntala+Devi+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:44:07] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:44:07] INFO |   Bing: https://www.bing.com/search?q=Shakuntala+Devi+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:44:11] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:44:17] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:44:21] INFO |   Searching practo.com for: Shakuntala Devi Hospital
+[2026-07-28 17:44:21] INFO |   DDG: https://html.duckduckgo.com/html/?q=Shakuntala+Devi+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:44:25] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:44:25] INFO |   Bing: https://www.bing.com/search?q=Shakuntala+Devi+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:44:29] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:44:35] INFO |   No URL found on practo.com.
+[2026-07-28 17:44:37] INFO |   Searching justdial.com for: Shakuntala Devi Hospital
+[2026-07-28 17:44:37] INFO |   DDG: https://html.duckduckgo.com/html/?q=Shakuntala+Devi+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:44:41] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:44:41] INFO |   Bing: https://www.bing.com/search?q=Shakuntala+Devi+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:44:46] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:44:46] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Shakuntala+Devi+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Shakuntala+Devi+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:44:46] INFO |   No URL found on justdial.com.
+[2026-07-28 17:44:48] INFO |   No review page found for: Shakuntala Devi Hospital
+[2026-07-28 17:44:48] INFO |   No URL found for 'Shakuntala Devi Hospital'
+[2026-07-28 17:44:50] INFO | Phase 1 [5/1115]: Vinayak Hospital
+[2026-07-28 17:44:50] INFO |   Searching hexahealth.com for: Vinayak Hospital
+[2026-07-28 17:44:50] INFO |   DDG: https://html.duckduckgo.com/html/?q=Vinayak+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:44:54] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:44:54] INFO |   Bing: https://www.bing.com/search?q=Vinayak+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:44:59] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:45:05] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:45:08] INFO |   Searching practo.com for: Vinayak Hospital
+[2026-07-28 17:45:08] INFO |   DDG: https://html.duckduckgo.com/html/?q=Vinayak+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:45:13] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:45:13] INFO |   Bing: https://www.bing.com/search?q=Vinayak+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:45:17] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:45:23] INFO |   No URL found on practo.com.
+[2026-07-28 17:45:27] INFO |   Searching justdial.com for: Vinayak Hospital
+[2026-07-28 17:45:27] INFO |   DDG: https://html.duckduckgo.com/html/?q=Vinayak+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:45:31] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:45:31] INFO |   Bing: https://www.bing.com/search?q=Vinayak+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:45:35] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:45:36] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Vinayak+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Vinayak+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:45:36] INFO |   No URL found on justdial.com.
+[2026-07-28 17:45:40] INFO |   No review page found for: Vinayak Hospital
+[2026-07-28 17:45:40] INFO |   No URL found for 'Vinayak Hospital'
+[2026-07-28 17:45:41] INFO | Phase 1 [6/1115]: My Hospital
+[2026-07-28 17:45:41] INFO |   Searching hexahealth.com for: My Hospital
+[2026-07-28 17:45:41] INFO |   DDG: https://html.duckduckgo.com/html/?q=My+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:45:42] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://html.duckduckgo.com/html/?q=My+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://html.duckduckgo.com/html/?q=My+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:45:42] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:45:42] INFO |   Bing: https://www.bing.com/search?q=My+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:45:43] WARNING |   Bing error (hexahealth.com): Page.goto: Navigation to "https://www.bing.com/search?q=My+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "https://html.duckduckgo.com/html/?q=My+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.bing.com/search?q=My+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:45:43] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:45:44] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=My+Hospital" is interrupted by another navigation to "https://www.bing.com/search?q=My+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=My+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:45:44] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:45:46] INFO |   Searching practo.com for: My Hospital
+[2026-07-28 17:45:46] INFO |   DDG: https://html.duckduckgo.com/html/?q=My+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:45:50] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:45:50] INFO |   Bing: https://www.bing.com/search?q=My+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:45:54] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:45:59] INFO |   No URL found on practo.com.
+[2026-07-28 17:46:03] INFO |   Searching justdial.com for: My Hospital
+[2026-07-28 17:46:03] INFO |   DDG: https://html.duckduckgo.com/html/?q=My+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:46:07] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:46:07] INFO |   Bing: https://www.bing.com/search?q=My+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:46:11] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:46:11] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=My+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=My+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:46:11] INFO |   No URL found on justdial.com.
+[2026-07-28 17:46:14] INFO |   No review page found for: My Hospital
+[2026-07-28 17:46:14] INFO |   No URL found for 'My Hospital'
+[2026-07-28 17:46:15] INFO | Phase 1 [7/1115]: Sec 24 Esic Hospital
+[2026-07-28 17:46:15] INFO |   Searching hexahealth.com for: Sec 24 Esic Hospital
+[2026-07-28 17:46:15] INFO |   DDG: https://html.duckduckgo.com/html/?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:46:16] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://html.duckduckgo.com/html/?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://html.duckduckgo.com/html/?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:46:16] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:46:16] INFO |   Bing: https://www.bing.com/search?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:46:17] WARNING |   Bing error (hexahealth.com): Page.goto: Navigation to "https://www.bing.com/search?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "https://html.duckduckgo.com/html/?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.bing.com/search?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:46:17] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:46:18] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Sec+24+Esic+Hospital" is interrupted by another navigation to "https://www.bing.com/search?q=Sec+24+Esic+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Sec+24+Esic+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:46:18] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:46:21] INFO |   Searching practo.com for: Sec 24 Esic Hospital
+[2026-07-28 17:46:21] INFO |   DDG: https://html.duckduckgo.com/html/?q=Sec+24+Esic+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:46:25] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:46:25] INFO |   Bing: https://www.bing.com/search?q=Sec+24+Esic+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:46:29] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:46:35] INFO |   No URL found on practo.com.
+[2026-07-28 17:46:38] INFO |   Searching justdial.com for: Sec 24 Esic Hospital
+[2026-07-28 17:46:38] INFO |   DDG: https://html.duckduckgo.com/html/?q=Sec+24+Esic+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:46:42] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:46:42] INFO |   Bing: https://www.bing.com/search?q=Sec+24+Esic+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:46:46] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:46:46] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Sec+24+Esic+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Sec+24+Esic+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:46:46] INFO |   No URL found on justdial.com.
+[2026-07-28 17:46:48] INFO |   No review page found for: Sec 24 Esic Hospital
+[2026-07-28 17:46:48] INFO |   No URL found for 'Sec 24 Esic Hospital'
+[2026-07-28 17:46:50] INFO | Phase 1 [8/1115]: Apollo Hospital
+[2026-07-28 17:46:50] INFO |   Searching hexahealth.com for: Apollo Hospital
+[2026-07-28 17:46:50] INFO |   DDG: https://html.duckduckgo.com/html/?q=Apollo+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:46:53] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:46:53] INFO |   Bing: https://www.bing.com/search?q=Apollo+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:46:57] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:47:03] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:47:05] INFO |   Searching practo.com for: Apollo Hospital
+[2026-07-28 17:47:05] INFO |   DDG: https://html.duckduckgo.com/html/?q=Apollo+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:47:09] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:47:09] INFO |   Bing: https://www.bing.com/search?q=Apollo+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:47:12] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:47:18] INFO |   No URL found on practo.com.
+[2026-07-28 17:47:20] INFO |   Searching justdial.com for: Apollo Hospital
+[2026-07-28 17:47:20] INFO |   DDG: https://html.duckduckgo.com/html/?q=Apollo+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:47:24] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:47:24] INFO |   Bing: https://www.bing.com/search?q=Apollo+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:47:28] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:47:28] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Apollo+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Apollo+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:47:28] INFO |   No URL found on justdial.com.
+[2026-07-28 17:47:31] INFO |   No review page found for: Apollo Hospital
+[2026-07-28 17:47:31] INFO |   No URL found for 'Apollo Hospital'
+[2026-07-28 17:47:32] INFO | Phase 1 [9/1115]: Raj Hospital
+[2026-07-28 17:47:32] INFO |   Searching hexahealth.com for: Raj Hospital
+[2026-07-28 17:47:32] INFO |   DDG: https://html.duckduckgo.com/html/?q=Raj+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:47:33] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://html.duckduckgo.com/html/?q=Raj+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://html.duckduckgo.com/html/?q=Raj+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:47:33] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:47:33] INFO |   Bing: https://www.bing.com/search?q=Raj+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:47:34] WARNING |   Bing error (hexahealth.com): Page.goto: Navigation to "https://www.bing.com/search?q=Raj+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "https://html.duckduckgo.com/html/?q=Raj+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.bing.com/search?q=Raj+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:47:34] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:47:36] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Raj+Hospital" is interrupted by another navigation to "https://www.bing.com/search?q=Raj+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Raj+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:47:36] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:47:38] INFO |   Searching practo.com for: Raj Hospital
+[2026-07-28 17:47:38] INFO |   DDG: https://html.duckduckgo.com/html/?q=Raj+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:47:42] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:47:42] INFO |   Bing: https://www.bing.com/search?q=Raj+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:47:47] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:47:52] INFO |   No URL found on practo.com.
+[2026-07-28 17:47:55] INFO |   Searching justdial.com for: Raj Hospital
+[2026-07-28 17:47:55] INFO |   DDG: https://html.duckduckgo.com/html/?q=Raj+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:47:59] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:47:59] INFO |   Bing: https://www.bing.com/search?q=Raj+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:48:04] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:48:04] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Raj+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Raj+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:04] INFO |   No URL found on justdial.com.
+[2026-07-28 17:48:07] INFO |   No review page found for: Raj Hospital
+[2026-07-28 17:48:07] INFO |   No URL found for 'Raj Hospital'
+[2026-07-28 17:48:08] INFO | Phase 1 [10/1115]: Gupta hospital and maternity centre
+[2026-07-28 17:48:08] INFO |   Searching hexahealth.com for: Gupta hospital and maternity centre
+[2026-07-28 17:48:08] INFO |   DDG: https://html.duckduckgo.com/html/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com
+[2026-07-28 17:48:09] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://html.duckduckgo.com/html/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://html.duckduckgo.com/html/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:09] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:48:09] INFO |   Bing: https://www.bing.com/search?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com
+[2026-07-28 17:48:10] WARNING |   Bing error (hexahealth.com): Page.goto: Navigation to "https://www.bing.com/search?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "https://html.duckduckgo.com/html/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.bing.com/search?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:10] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:48:11] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=Gupta+hospital+and+maternity+centre" is interrupted by another navigation to "https://www.bing.com/search?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=Gupta+hospital+and+maternity+centre", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:11] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:48:15] INFO |   Searching practo.com for: Gupta hospital and maternity centre
+[2026-07-28 17:48:15] INFO |   DDG: https://html.duckduckgo.com/html/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Apracto.com
+[2026-07-28 17:48:19] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:48:19] INFO |   Bing: https://www.bing.com/search?q=Gupta+hospital+and+maternity+centre+reviews+site%3Apracto.com
+[2026-07-28 17:48:23] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:48:29] INFO |   No URL found on practo.com.
+[2026-07-28 17:48:31] INFO |   Searching justdial.com for: Gupta hospital and maternity centre
+[2026-07-28 17:48:31] INFO |   DDG: https://html.duckduckgo.com/html/?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ajustdial.com
+[2026-07-28 17:48:36] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:48:36] INFO |   Bing: https://www.bing.com/search?q=Gupta+hospital+and+maternity+centre+reviews+site%3Ajustdial.com
+[2026-07-28 17:48:40] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:48:40] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=Gupta+hospital+and+maternity+centre+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=Gupta+hospital+and+maternity+centre+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:40] INFO |   No URL found on justdial.com.
+[2026-07-28 17:48:42] INFO |   No review page found for: Gupta hospital and maternity centre
+[2026-07-28 17:48:42] INFO |   No URL found for 'Gupta hospital and maternity centre'
+[2026-07-28 17:48:44] INFO | Phase 1 [11/1115]: ESIC Model Hospital
+[2026-07-28 17:48:44] INFO |   Searching hexahealth.com for: ESIC Model Hospital
+[2026-07-28 17:48:44] INFO |   DDG: https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:48:44] WARNING |   DDG error (hexahealth.com): Page.goto: Navigation to "https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:44] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:48:44] INFO |   Bing: https://www.bing.com/search?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:48:45] WARNING |   Bing error (hexahealth.com): Page.goto: Navigation to "https://www.bing.com/search?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com" is interrupted by another navigation to "https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.bing.com/search?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:45] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:48:47] WARNING |   Direct search error (hexahealth.com): Page.goto: Navigation to "https://www.hexahealth.com/search?query=ESIC+Model+Hospital" is interrupted by another navigation to "https://www.bing.com/search?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com"
+Call log:
+  - navigating to "https://www.hexahealth.com/search?query=ESIC+Model+Hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:48:47] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:48:50] INFO |   Searching practo.com for: ESIC Model Hospital
+[2026-07-28 17:48:50] INFO |   DDG: https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:48:54] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:48:54] INFO |   Bing: https://www.bing.com/search?q=ESIC+Model+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:48:57] WARNING |   Bing error (practo.com): Page.wait_for_timeout: Target page, context or browser has been closed
+[2026-07-28 17:48:57] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:48:57] WARNING |   Direct search error (practo.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 17:48:57] INFO |   No URL found on practo.com.
+[2026-07-28 17:49:01] INFO |   Searching justdial.com for: ESIC Model Hospital
+[2026-07-28 17:49:01] INFO |   DDG: https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:49:01] WARNING |   DDG error (justdial.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 17:49:01] INFO |   DDG empty — trying Bing…
+[2026-07-28 17:49:01] INFO |   Bing: https://www.bing.com/search?q=ESIC+Model+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:49:01] WARNING |   Bing error (justdial.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 17:49:01] INFO |   Bing empty — trying direct site search…
+[2026-07-28 17:49:01] WARNING |   Direct search error (justdial.com): Page.goto: Target page, context or browser has been closed
+[2026-07-28 17:49:01] INFO |   No URL found on justdial.com.

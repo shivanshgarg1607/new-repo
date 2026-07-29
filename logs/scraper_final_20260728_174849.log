@@ -1,0 +1,77 @@
+[2026-07-28 17:48:49] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 17:48:49] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 17:48:49] INFO | URL cache has 0 cached hospitals.
+[2026-07-28 17:48:56] INFO | Phase 1 [11/1115]: ESIC Model Hospital
+[2026-07-28 17:48:56] INFO |   Searching hexahealth.com for: ESIC Model Hospital
+[2026-07-28 17:48:56] INFO |   Google: https://www.google.com/search?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com&num=5&hl=en
+[2026-07-28 17:48:56] INFO |   Google returned 429
+[2026-07-28 17:48:56] INFO |   Google empty — trying DDG…
+[2026-07-28 17:48:56] INFO |   DDG: https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Ahexahealth.com
+[2026-07-28 17:48:57] INFO |   DDG returned 202
+[2026-07-28 17:48:57] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:49:00] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:49:04] INFO |   Searching practo.com for: ESIC Model Hospital
+[2026-07-28 17:49:04] INFO |   Google: https://www.google.com/search?q=ESIC+Model+Hospital+reviews+site%3Apracto.com&num=5&hl=en
+[2026-07-28 17:49:15] INFO |   Google returned 429
+[2026-07-28 17:49:15] INFO |   Google empty — trying DDG…
+[2026-07-28 17:49:15] INFO |   DDG: https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Apracto.com
+[2026-07-28 17:49:15] INFO |   DDG returned 202
+[2026-07-28 17:49:15] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:49:20] INFO |   No URL found on practo.com.
+[2026-07-28 17:49:24] INFO |   Searching justdial.com for: ESIC Model Hospital
+[2026-07-28 17:49:24] INFO |   Google: https://www.google.com/search?q=ESIC+Model+Hospital+reviews+site%3Ajustdial.com&num=5&hl=en
+[2026-07-28 17:49:30] INFO |   Google returned 429
+[2026-07-28 17:49:30] INFO |   Google empty — trying DDG…
+[2026-07-28 17:49:30] INFO |   DDG: https://html.duckduckgo.com/html/?q=ESIC+Model+Hospital+reviews+site%3Ajustdial.com
+[2026-07-28 17:49:32] INFO |   DDG returned 202
+[2026-07-28 17:49:32] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:49:32] WARNING |   Direct search error (justdial.com): Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.justdial.com/search?q=ESIC+Model+Hospital+hospital
+Call log:
+  - navigating to "https://www.justdial.com/search?q=ESIC+Model+Hospital+hospital", waiting until "domcontentloaded"
+
+[2026-07-28 17:49:32] INFO |   No URL found on justdial.com.
+[2026-07-28 17:49:35] INFO |   No review page found for: ESIC Model Hospital
+[2026-07-28 17:49:35] INFO |   No URL found for 'ESIC Model Hospital'
+[2026-07-28 17:49:37] INFO | Phase 1 [12/1115]: Metro Hospitals & Heart Institute
+[2026-07-28 17:49:37] INFO |   Searching hexahealth.com for: Metro Hospitals & Heart Institute
+[2026-07-28 17:49:37] INFO |   Google: https://www.google.com/search?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ahexahealth.com&num=5&hl=en
+[2026-07-28 17:49:37] INFO |   Google hit: /search?q=Metro+Hospitals+%26+Heart+Institute+reviews+site:hexahealth.com
+[2026-07-28 17:49:37] INFO |   Rejecting category page: /search?q=Metro+Hospitals+%26+Heart+Institute+reviews+site:hexahealth.com
+[2026-07-28 17:49:37] INFO |   URL rejected (category page), trying next site…
+[2026-07-28 17:49:40] INFO |   Searching practo.com for: Metro Hospitals & Heart Institute
+[2026-07-28 17:49:40] INFO |   Google: https://www.google.com/search?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Apracto.com&num=5&hl=en
+[2026-07-28 17:49:40] INFO |   Google hit: /search?q=Metro+Hospitals+%26+Heart+Institute+reviews+site:practo.com
+[2026-07-28 17:49:40] INFO |   Candidate URL: /search/reviews
+[2026-07-28 17:49:40] WARNING |   Could not verify /search/reviews: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "/search/reviews", waiting until "domcontentloaded"
+
+[2026-07-28 17:49:40] INFO |   No reviews confirmed on practo.com, trying next…
+[2026-07-28 17:49:44] INFO |   Searching justdial.com for: Metro Hospitals & Heart Institute
+[2026-07-28 17:49:44] INFO |   Google: https://www.google.com/search?q=Metro+Hospitals+%26+Heart+Institute+reviews+site%3Ajustdial.com&num=5&hl=en
+[2026-07-28 17:49:44] INFO |   Google hit: /search?q=Metro+Hospitals+%26+Heart+Institute+reviews+site:justdial.com
+[2026-07-28 17:49:44] INFO |   Candidate URL: /search/reviews
+[2026-07-28 17:49:44] WARNING |   Could not verify /search/reviews: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "/search/reviews", waiting until "domcontentloaded"
+
+[2026-07-28 17:49:44] INFO |   No reviews confirmed on justdial.com, trying next…
+[2026-07-28 17:49:47] INFO |   No review page found for: Metro Hospitals & Heart Institute
+[2026-07-28 17:49:47] INFO |   No URL found for 'Metro Hospitals & Heart Institute'
+[2026-07-28 17:49:48] INFO | Phase 1 [13/1115]: Vinayak Dental Clinic
+[2026-07-28 17:49:48] INFO |   Searching hexahealth.com for: Vinayak Dental Clinic
+[2026-07-28 17:49:48] INFO |   Google: https://www.google.com/search?q=Vinayak+Dental+Clinic+reviews+site%3Ahexahealth.com&num=5&hl=en
+[2026-07-28 17:49:49] INFO |   Google returned 429
+[2026-07-28 17:49:49] INFO |   Google empty — trying DDG…
+[2026-07-28 17:49:49] INFO |   DDG: https://html.duckduckgo.com/html/?q=Vinayak+Dental+Clinic+reviews+site%3Ahexahealth.com
+[2026-07-28 17:49:49] INFO |   DDG returned 202
+[2026-07-28 17:49:49] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:49:55] INFO |   No URL found on hexahealth.com.
+[2026-07-28 17:49:58] INFO |   Searching practo.com for: Vinayak Dental Clinic
+[2026-07-28 17:49:58] INFO |   Google: https://www.google.com/search?q=Vinayak+Dental+Clinic+reviews+site%3Apracto.com&num=5&hl=en
+[2026-07-28 17:49:59] INFO |   Google returned 429
+[2026-07-28 17:49:59] INFO |   Google empty — trying DDG…
+[2026-07-28 17:49:59] INFO |   DDG: https://html.duckduckgo.com/html/?q=Vinayak+Dental+Clinic+reviews+site%3Apracto.com
+[2026-07-28 17:49:59] INFO |   DDG returned 202
+[2026-07-28 17:49:59] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:50:04] INFO |   No URL found on practo.com.

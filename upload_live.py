@@ -1,5 +1,5 @@
 """
-upload_live.py
+upload_live.py  (v2 — no excel_lock dependency)
 --------------
 Live Upload Watcher — runs ALONGSIDE scraper_main.py in a second terminal.
 
@@ -43,7 +43,6 @@ try:
     from logger import get_logger
     log = get_logger("UPLOAD_LIVE")
 except ImportError:
-    # Fallback if run outside the project folder
     BASE_URL  = "https://karunahealthlifepartner.com/index.php/account/admin"
     USERNAME  = "karuna__admin"
     PASSWORD  = "karuna__admin"
@@ -72,7 +71,7 @@ SKIP_STATUSES = {"uploaded", "not found on site", "failed", "pending"}
 # =============================================================================
 
 def _load_wb_safe():
-    """Open the workbook with retry in case the scraper has it locked."""
+    """Open the workbook with retry in case the file is locked."""
     for attempt in range(1, FILE_ATTEMPTS + 1):
         try:
             return load_workbook(EXCEL_FILE)
@@ -91,51 +90,51 @@ def claim_new_rows() -> list[dict]:
     and return their data.
     """
     try:
-        wb = _load_wb_safe()
+        wb = load_workbook(EXCEL_FILE)
+        if "Reviews" not in wb.sheetnames:
+            log.info("Reviews sheet not created yet — waiting for scraper to add it.")
+            wb.close()
+            return []
+        ws = wb["Reviews"]
+        found = []
+
+        for i, row in enumerate(ws.iter_rows(min_row=2, values_only=False), start=2):
+            status_cell = row[6]  # column G = Upload Status
+            status_val  = str(status_cell.value or "").strip().lower()
+
+            if status_val in SKIP_STATUSES:
+                continue
+
+            hospital_name = str(row[0].value or "").strip()
+            review_text   = str(row[3].value or "").strip()
+
+            if not hospital_name or not review_text:
+                continue
+
+            # Claim the row right now so another instance doesn't pick it up
+            status_cell.value = "Pending"
+
+            found.append({
+                "hospital_name": hospital_name,
+                "reviewer":      str(row[1].value or "Unknown").strip(),
+                "rating":        row[2].value or 0,
+                "review":        review_text,
+                "review_date":   str(row[4].value or "").strip(),
+                "source":        str(row[5].value or "").strip(),
+                "row_index":     i,
+            })
+
+        if found:
+            wb.save(str(EXCEL_FILE))
+            wb.close()
+            log.info(f"Claimed {len(found)} new row(s) for upload.")
+        else:
+            wb.close()
+
+        return found
     except Exception as e:
         log.warning(f"Could not open Excel to scan: {e}")
         return []
-
-    ws    = wb["Reviews"]
-    found = []
-
-    for i, row in enumerate(ws.iter_rows(min_row=2, values_only=False), start=2):
-        status_cell = row[6]  # column G = Upload Status
-        status_val  = str(status_cell.value or "").strip().lower()
-
-        if status_val in SKIP_STATUSES:
-            continue
-
-        hospital_name = str(row[0].value or "").strip()
-        review_text   = str(row[3].value or "").strip()
-
-        if not hospital_name or not review_text:
-            continue
-
-        # Claim the row right now so another instance doesn't pick it up
-        status_cell.value = "Pending"
-
-        found.append({
-            "hospital_name": hospital_name,
-            "reviewer":      str(row[1].value or "Unknown").strip(),
-            "rating":        row[2].value or 0,
-            "review":        review_text,
-            "review_date":   str(row[4].value or "").strip(),
-            "source":        str(row[5].value or "").strip(),
-            "row_index":     i,
-        })
-
-    if found:
-        try:
-            wb.save(EXCEL_FILE)
-            log.info(f"Claimed {len(found)} new row(s) for upload.")
-        except Exception as e:
-            log.warning(f"Could not save claimed rows: {e}")
-            wb.close()
-            return []
-
-    wb.close()
-    return found
 
 
 def mark_row(row_index: int, status: str) -> None:
@@ -143,9 +142,13 @@ def mark_row(row_index: int, status: str) -> None:
     for attempt in range(1, FILE_ATTEMPTS + 1):
         try:
             wb = load_workbook(EXCEL_FILE)
+            if "Reviews" not in wb.sheetnames:
+                log.warning("Reviews sheet missing; cannot mark row.")
+                wb.close()
+                return
             ws = wb["Reviews"]
             ws.cell(row=row_index, column=7, value=status)
-            wb.save(EXCEL_FILE)
+            wb.save(str(EXCEL_FILE))
             wb.close()
             return
         except Exception as e:
@@ -284,6 +287,7 @@ def main():
     print(f"  Admin URL     : {BASE_URL}")
     print(f"  Started at    : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 70)
+    print("  *** upload_live.py v2 — no excel_lock dependency ***")
     print("\nRun scraper_main.py in another terminal window.")
     print("This script will upload reviews as they are scraped.")
     print("Press Ctrl+C to stop.\n")

@@ -1,31 +1,19 @@
 """
-scraper_final.py  v11.0
+scraper_final.py  v13.0
 ------------------------
-Architecture (mirrors the original working scripts exactly):
+Unified scraper that runs BOTH phases (search + collect) using the proven
+review_finder.py (DuckDuckGo in a real browser) and review_scraper.py
+modules — the same approach that collected ~750 reviews in collect_reviews.py.
 
-  review_finder.py  — used DuckDuckGo INSIDE the real Playwright browser.
-                      A real browser avoids the bot blocks that kill plain
-                      HTTP requests to DDG/Bing/Google from cloud IPs.
-  review_scraper.py — scraped pages using URLs already stored in Excel.
-                      No searching needed when the URL is already known.
+Key fixes vs old scraper_final.py:
+  1. Uses review_finder.py (DDG in real browser) instead of Google HTTP.
+  2. Browser is VISIBLE (headless=False) so you can watch it work.
+  3. Does NOT block images/fonts — full page rendering for reliable scraping.
+  4. Uses review_scraper.py + site-specific parsers from collect_reviews.py.
+  5. Two-phase approach retained but both phases use the proven search method.
 
-v11 combines both into one script with the same core logic:
-
-  1. Read "Edit URL" from the Hospitals sheet.
-     If a URL already exists → go straight to scraping (no DDG needed).
-     If no URL → use DDG browser search (same as original review_finder.py).
-
-  2. DDG browser search tries hexahealth.com → practo.com → justdial.com.
-     Fallback: site's own search page.
-     Newly found URLs are saved back to Excel so future runs are instant.
-
-  3. Scrape review pages with the confirmed selectors:
-       HexaHealth : div.reviewCard  /  p.review  /  span.text-capitalize
-       Practo     : div[data-qa-id='review_card'] and several fallbacks
-       JustDial   : div.reviewBox / div.rating-text / multiple fallbacks
-
-  4. Phase 1 — non-success hospitals (need URL + reviews).
-     Phase 2 — gap fill on already-successful hospitals (URL known, just scrape more).
+Phase 1 — hospitals whose Collection Status is not "Success".
+Phase 2 — gap fill on already-successful hospitals to reach the target.
 
 Pre-flight (run once):
     pip install playwright openpyxl beautifulsoup4 requests lxml
@@ -45,7 +33,6 @@ from pathlib import Path
 from urllib.parse import quote_plus
 
 try:
-    import requests
     from bs4 import BeautifulSoup
     from openpyxl import load_workbook
     from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
@@ -57,6 +44,19 @@ except ImportError as _e:
         "  python -m playwright install chromium\n"
     )
 
+from config import (
+    HEADLESS,
+    MAX_REVIEWS_PER_HOSPITAL,
+    LOW_REVIEW_THRESHOLD,
+    SEARCH_DELAY_MIN,
+    SEARCH_DELAY_MAX,
+)
+from logger import get_logger
+from checkpoint import save_checkpoint, load_checkpoint, clear_checkpoint
+from excel_writer import ExcelWriter
+from review_finder import find_review_url
+from review_scraper import scrape_reviews
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Paths
 # ─────────────────────────────────────────────────────────────────────────────
@@ -67,29 +67,25 @@ LOG_DIR         = _ROOT / "logs"
 CACHE_DIR       = _ROOT / "cache"
 LOG_DIR.mkdir(exist_ok=True)
 CACHE_DIR.mkdir(exist_ok=True)
-CHECKPOINT_FILE = CACHE_DIR / "scraper_final_checkpoint.json"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Config
 # ─────────────────────────────────────────────────────────────────────────────
 
-TARGET_NEW_REVIEWS    = 1500
-PHASE1_MAX_PER_SOURCE = 10
-PHASE2_PER_HOSPITAL   = 4
-SCROLL_ROUNDS         = 4
-SEARCH_DELAY_MIN      = 2.0   # delay between DDG searches (be polite)
-SEARCH_DELAY_MAX      = 4.0
-HEADLESS              = True
-BROWSER_TIMEOUT       = 30_000
-PAGE_WAIT_MS          = 2_500
-SCROLL_WAIT_MS        = 1_500
+TARGET_NEW_REVIEWS      = 1500
+PHASE1_MAX_PER_HOSPITAL = 50      # max reviews per hospital in phase 1
+PHASE2_PER_HOSPITAL     = 10      # extra reviews per successful hospital in phase 2
 
+BROWSER_TIMEOUT    = 30_000
+PAGE_WAIT_MS       = 2_500
+SCROLL_WAIT_MS     = 1_500
+SCROLL_ROUNDS      = 20
+
+# Hospitals whose Collection Status is one of these need fresh searching.
 NON_SUCCESS_STATUSES = {
     "No Match", "No Reviews", "Failed", "Scraper Error",
     "No Review", "Not Found", "Error", "Pending", "Low Reviews", None, "",
 }
-
-SEARCH_ORDER = ["hexahealth.com", "practo.com", "justdial.com"]
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Logging
@@ -108,614 +104,385 @@ logging.basicConfig(
 log = logging.getLogger("scraper_final")
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Checkpoint
+# Site-specific scrapers (from collect_reviews.py — proven to work)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def save_checkpoint(phase, index, name, total_new):
-    with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
-        json.dump({"phase": phase, "index": index, "name": name,
-                   "total_new": total_new, "saved_at": datetime.now().isoformat()}, f, indent=2)
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/138.0 Safari/537.36"
+    )
+}
 
-def load_checkpoint():
-    if CHECKPOINT_FILE.exists():
-        with open(CHECKPOINT_FILE, encoding="utf-8") as f:
-            return json.load(f)
-    return None
 
-def clear_checkpoint():
-    if CHECKPOINT_FILE.exists():
-        CHECKPOINT_FILE.unlink()
+def _scrape_practo(url: str, max_reviews: int = 50, page=None) -> list[dict]:
+    """Scrape reviews from a Practo hospital page using rendered browser HTML."""
+    if page is not None:
+        prev_count = 0
+        for _scroll in range(SCROLL_ROUNDS):
+            try:
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(2_000)
+            except Exception:
+                pass
+            try:
+                cur_count = page.locator(
+                    "div.doctor-review-text, div[class*='review-card'], "
+                    "div[class*='review_card'], div[class*='ReviewCard'], "
+                    "div[data-qa-id='review_card']"
+                ).count()
+            except Exception:
+                cur_count = 0
+            if cur_count <= prev_count and _scroll >= 2:
+                break
+            prev_count = cur_count
+        html = page.content()
+    else:
+        import requests
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        html = resp.text
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Deduplication
-# ─────────────────────────────────────────────────────────────────────────────
+    soup = BeautifulSoup(html, "html.parser")
+    reviews = []
+    cards = (
+        soup.select("div.doctor-review-text")
+        or soup.select("div[class*='review-card']")
+        or soup.select("div[class*='review_card']")
+        or soup.select("div[class*='ReviewCard']")
+        or soup.select("div[data-qa-id='review_card']")
+    )
 
-def _hash(hospital, reviewer, review_text):
-    raw = f"{hospital.strip().lower()}|{reviewer.strip().lower()}|{review_text.strip().lower()}"
-    return hashlib.sha256(raw.encode()).hexdigest()
+    for card in cards:
+        name_tag = (
+            card.find("p", class_=re.compile(r"reviewer|author|username", re.I))
+            or card.find("span", class_=re.compile(r"reviewer|author|username", re.I))
+            or card.find("strong")
+        )
+        reviewer = name_tag.get_text(strip=True) if name_tag else "Unknown"
+
+        stars = card.select("i.fa-star, span.fa-star, img[alt*='star']")
+        rating = len(stars) if stars else 0
+        if rating == 0:
+            rating_tag = card.find(class_=re.compile(r"rating|score", re.I))
+            if rating_tag:
+                try:
+                    rating = float(re.search(r"\d+\.?\d*", rating_tag.get_text()).group())
+                except Exception:
+                    rating = 0
+
+        text_tag = (
+            card.find("p", class_=re.compile(r"review.?text|comment|body", re.I))
+            or card.find("div", class_=re.compile(r"review.?text|comment|body", re.I))
+            or card.find("p")
+        )
+        review_text = text_tag.get_text(strip=True) if text_tag else ""
+
+        date_tag = card.find(class_=re.compile(r"date|time|when", re.I))
+        date = date_tag.get_text(strip=True) if date_tag else ""
+
+        reviews.append({
+            "reviewer": reviewer,
+            "rating": rating,
+            "review": review_text,
+            "date": date,
+        })
+        if len(reviews) >= max_reviews:
+            break
+    return reviews
+
+
+def _scrape_justdial(url: str, max_reviews: int = 50, page=None) -> list[dict]:
+    """Scrape reviews from a Justdial listing page using rendered browser HTML."""
+    if page is not None:
+        prev_count = 0
+        for _scroll in range(SCROLL_ROUNDS):
+            try:
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(2_000)
+            except Exception:
+                pass
+            try:
+                cur_count = page.locator(
+                    "div.review-box, div[class*='reviewdesc'], "
+                    "div[class*='review_box'], div[class*='ReviewBox'], "
+                    "li.review-item"
+                ).count()
+            except Exception:
+                cur_count = 0
+            if cur_count <= prev_count and _scroll >= 2:
+                break
+            prev_count = cur_count
+        html = page.content()
+    else:
+        import requests
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        html = resp.text
+
+    soup = BeautifulSoup(html, "html.parser")
+    reviews = []
+    cards = (
+        soup.select("div.review-box")
+        or soup.select("div[class*='reviewdesc']")
+        or soup.select("div[class*='review_box']")
+        or soup.select("div[class*='ReviewBox']")
+        or soup.select("li.review-item")
+    )
+
+    for card in cards:
+        name_tag = (
+            card.find(class_=re.compile(r"reviewer|user.?name|author", re.I))
+            or card.find("span")
+        )
+        reviewer = name_tag.get_text(strip=True) if name_tag else "Unknown"
+
+        stars = card.select("i.icon-star-full, span[class*='star'], em[class*='star']")
+        rating = len(stars) if stars else 0
+        if rating == 0:
+            rating_tag = card.find(class_=re.compile(r"rating|score|star", re.I))
+            if rating_tag:
+                try:
+                    rating = float(re.search(r"\d+\.?\d*", rating_tag.get_text()).group())
+                except Exception:
+                    rating = 0
+
+        text_tag = (
+            card.find("p", class_=re.compile(r"review.?text|comment|desc", re.I))
+            or card.find("div", class_=re.compile(r"review.?text|comment|desc", re.I))
+            or card.find("p")
+        )
+        review_text = text_tag.get_text(strip=True) if text_tag else ""
+
+        date_tag = card.find(class_=re.compile(r"date|time|posted", re.I))
+        date = date_tag.get_text(strip=True) if date_tag else ""
+
+        reviews.append({
+            "reviewer": reviewer,
+            "rating": rating,
+            "review": review_text,
+            "date": date,
+        })
+        if len(reviews) >= max_reviews:
+            break
+    return reviews
+
+
+def scrape_for_site(site: str, url: str, max_reviews: int = 50, page=None) -> list[dict]:
+    """Dispatch to the right scraper based on which site the URL is from."""
+    if site == "hexahealth.com":
+        return scrape_reviews(url, max_reviews=max_reviews, page=page)
+    elif site == "practo.com":
+        return _scrape_practo(url, max_reviews=max_reviews, page=page)
+    elif site == "justdial.com":
+        return _scrape_justdial(url, max_reviews=max_reviews, page=page)
+    else:
+        return scrape_reviews(url, max_reviews=max_reviews, page=page)
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Excel helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
-def load_existing_hashes():
-    wb = load_workbook(EXCEL_FILE, read_only=True, data_only=True)
-    ws = wb["Reviews"]
-    hashes = set()
-    for row in ws.iter_rows(min_row=2, values_only=True):
-        try:
-            h = _hash(str(row[0] or ""), str(row[1] or ""), str(row[3] or ""))
-            hashes.add(h)
-        except Exception:
-            pass
-    wb.close()
-    log.info(f"Loaded {len(hashes):,} existing review hashes.")
-    return hashes
-
-
-def load_hospitals():
+def load_hospitals() -> list[dict]:
     """
-    Load hospitals from the 'Hospitals' sheet.
-    Reads all columns so we can find 'Edit URL' by header name.
-    Returns list of dicts with: name, status, edit_url, row_number
+    Read all hospital names + collection statuses from the Excel file.
+    Prefers the 'Hospitals' sheet; falls back to the 'Summary' sheet if
+    'Hospitals' is not present (some copies of the workbook only have
+    Reviews + Summary).
     """
     if not EXCEL_FILE.exists():
         sys.exit(f"\n[FATAL] Excel file not found: {EXCEL_FILE}")
-    wb = load_workbook(EXCEL_FILE, read_only=True, data_only=True)
-    if "Hospitals" not in wb.sheetnames:
-        sys.exit(f"\n[FATAL] Sheet 'Hospitals' not found. Sheets: {wb.sheetnames}")
-    ws = wb["Hospitals"]
-
-    # Read header row to find column indices
-    headers = {}
-    header_row = next(ws.iter_rows(min_row=1, max_row=1, values_only=True), [])
-    for idx, h in enumerate(header_row):
-        if h:
-            headers[str(h).strip().lower()] = idx
-
-    log.info(f"Hospitals sheet columns: {list(headers.keys())}")
-
-    # Identify key columns — try multiple possible names
-    name_col   = _find_col(headers, ["hospital name", "name", "hospital"])
-    status_col = _find_col(headers, ["status", "scrape status", "review status"])
-    url_col    = _find_col(headers, ["edit url", "editurl", "url", "review url",
-                                      "hexahealth url", "source url", "link"])
-    count_col  = _find_col(headers, ["review count", "reviews", "count", "total reviews"])
-
-    log.info(f"  name_col={name_col}, status_col={status_col}, "
-             f"url_col={url_col}, count_col={count_col}")
+    wb = load_workbook(EXCEL_FILE, read_only=True)
 
     out = []
-    for rn, row in enumerate(ws.iter_rows(min_row=2, values_only=True), start=2):
-        name = _cell(row, name_col)
-        if not name:
-            continue
-        out.append({
-            "name":       name,
-            "status":     _cell(row, status_col),
-            "edit_url":   _cell(row, url_col),
-            "count_col":  count_col,
-            "row_number": rn,
-        })
+
+    if "Hospitals" in wb.sheetnames:
+        ws = wb["Hospitals"]
+        for rn, row in enumerate(ws.iter_rows(min_row=2, values_only=True), start=2):
+            name = str(row[1] or "").strip() if len(row) > 1 else ""
+            if not name:
+                continue
+            collection_status = str(row[8] or "").strip() if len(row) > 8 else ""
+            out.append({
+                "name":              name,
+                "collection_status": collection_status,
+                "row_number":        rn,
+            })
+    elif "Summary" in wb.sheetnames:
+        ws = wb["Summary"]
+        for rn, row in enumerate(ws.iter_rows(min_row=2, values_only=True), start=2):
+            name = str(row[0] or "").strip() if len(row) > 0 else ""
+            if not name:
+                continue
+            status = str(row[1] or "").strip() if len(row) > 1 else ""
+            out.append({
+                "name":              name,
+                "collection_status": status,
+                "row_number":        rn,
+            })
+    else:
+        sys.exit(
+            f"\n[FATAL] No 'Hospitals' or 'Summary' sheet found. "
+            f"Sheets: {wb.sheetnames}"
+        )
 
     wb.close()
     log.info(f"Loaded {len(out):,} hospitals from Excel.")
     return out
 
 
-def _find_col(headers: dict, candidates: list) -> int | None:
-    for c in candidates:
-        if c in headers:
-            return headers[c]
-    return None
-
-
-def _cell(row, idx):
-    if idx is None or idx >= len(row):
-        return ""
-    return str(row[idx] or "").strip()
-
-
-def append_reviews(new_rows):
-    if not new_rows:
-        return
-    wb = load_workbook(EXCEL_FILE)
+def load_existing_review_keys() -> set:
+    """Load existing review texts keyed by hospital name for dedup."""
+    wb = load_workbook(EXCEL_FILE, read_only=True)
     ws = wb["Reviews"]
-    for r in new_rows:
-        ws.append([
-            r.get("hospital_name", ""),
-            r.get("reviewer",      "Unknown"),
-            r.get("rating",        0),
-            r.get("review",        ""),
-            r.get("date",          ""),
-            r.get("source",        ""),
-            "",
-        ])
-    wb.save(EXCEL_FILE)
+    keys = set()
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        hospital = str(row[0] or "").strip().lower()
+        text = str(row[3] or "").strip().lower()
+        if hospital and text:
+            keys.add(f"{hospital}|{text}")
     wb.close()
+    log.info(f"Loaded {len(keys):,} existing review keys for dedup.")
+    return keys
 
-
-def update_hospital_status(hospital_name: str, reviews_added: int, status: str):
-    try:
-        wb = load_workbook(EXCEL_FILE)
-        ws = wb["Hospitals"]
-        header_row = [c.value for c in ws[1]]
-        status_idx = _header_idx(header_row, ["status", "scrape status", "review status"])
-        count_idx  = _header_idx(header_row, ["review count", "reviews", "count", "total reviews"])
-        for row in ws.iter_rows(min_row=2):
-            name_cell = row[1] if len(row) > 1 else None
-            if name_cell and str(name_cell.value or "").strip() == hospital_name:
-                if status_idx is not None:
-                    row[status_idx].value = status
-                if count_idx is not None:
-                    row[count_idx].value = reviews_added
-                break
-        wb.save(EXCEL_FILE)
-        wb.close()
-    except Exception as e:
-        log.warning(f"Could not update status for '{hospital_name}': {e}")
-
-
-def save_url_to_excel(hospital_name: str, url: str):
-    """Save a newly-discovered URL back to the Hospitals sheet."""
-    try:
-        wb = load_workbook(EXCEL_FILE)
-        ws = wb["Hospitals"]
-        header_row = [c.value for c in ws[1]]
-        url_idx = _header_idx(header_row, ["edit url", "editurl", "url", "review url",
-                                            "hexahealth url", "source url", "link"])
-        if url_idx is None:
-            wb.close()
-            return
-        for row in ws.iter_rows(min_row=2):
-            name_cell = row[1] if len(row) > 1 else None
-            if name_cell and str(name_cell.value or "").strip() == hospital_name:
-                row[url_idx].value = url
-                break
-        wb.save(EXCEL_FILE)
-        wb.close()
-        log.info(f"  Saved URL to Excel for '{hospital_name}'")
-    except Exception as e:
-        log.warning(f"Could not save URL for '{hospital_name}': {e}")
-
-
-def _header_idx(header_row, candidates):
-    lower = [str(h or "").strip().lower() for h in header_row]
-    for c in candidates:
-        if c in lower:
-            return lower.index(c)
-    return None
-
-# ─────────────────────────────────────────────────────────────────────────────
-# URL discovery — DDG inside the real Playwright browser
-# (same approach as the original review_finder.py that worked)
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _duckduckgo_search(page, hospital_name: str, site: str) -> str | None:
-    """
-    Search DuckDuckGo using the real Playwright browser.
-    This is what the original review_finder.py used — it avoids the
-    bot-detection blocks that kill plain HTTP requests from cloud IPs.
-    """
-    query   = f"{hospital_name} reviews site:{site}"
-    ddg_url = f"https://duckduckgo.com/?q={quote_plus(query)}&ia=web"
-    log.info(f"  DDG: {ddg_url}")
-    try:
-        page.goto(ddg_url, wait_until="domcontentloaded", timeout=BROWSER_TIMEOUT)
-        page.wait_for_timeout(2_500)
-        for anchor in page.locator("a[href]").all():
-            href = (anchor.get_attribute("href") or "").strip()
-            if (href.startswith("http")
-                    and site in href
-                    and "duckduckgo.com" not in href):
-                log.info(f"  DDG hit: {href}")
-                return href
-    except Exception as e:
-        log.warning(f"  DDG error ({site}): {e}")
-    return None
-
-
-def _site_direct_search(page, hospital_name: str, site: str) -> str | None:
-    """
-    Fallback: use the site's own search page when DDG returns nothing.
-    """
-    try:
-        if site == "hexahealth.com":
-            page.goto(
-                f"https://www.hexahealth.com/search?query={quote_plus(hospital_name)}",
-                wait_until="domcontentloaded", timeout=BROWSER_TIMEOUT,
-            )
-            page.wait_for_timeout(2_500)
-            # Correct pattern: /hospital/ (singular) — confirmed from real URL
-            for sel in ["a[href*='/hospital/']", "a[href*='/hospitals/']"]:
-                link = page.locator(sel).first
-                if link.count():
-                    href = link.get_attribute("href") or ""
-                    if not href.startswith("http"):
-                        href = "https://www.hexahealth.com" + href
-                    return href
-
-        elif site == "practo.com":
-            page.goto(
-                f"https://www.practo.com/search/hospitals?query={quote_plus(hospital_name)}",
-                wait_until="domcontentloaded", timeout=BROWSER_TIMEOUT,
-            )
-            page.wait_for_timeout(2_500)
-            # Practo uses /clinic/ and /hospital/ — check both
-            for sel in ["a[href*='/clinic/']", "a[href*='/hospital/']"]:
-                link = page.locator(sel).first
-                if link.count():
-                    href = link.get_attribute("href") or ""
-                    if not href.startswith("http"):
-                        href = "https://www.practo.com" + href
-                    return href
-
-        elif site == "justdial.com":
-            page.goto(
-                f"https://www.justdial.com/search?q={quote_plus(hospital_name + ' hospital')}",
-                wait_until="domcontentloaded", timeout=BROWSER_TIMEOUT,
-            )
-            page.wait_for_timeout(2_500)
-            link = page.locator("a[href*='justdial.com']").first
-            if link.count():
-                href = link.get_attribute("href") or ""
-                if not href.startswith("http"):
-                    href = "https://www.justdial.com" + href
-                return href
-
-    except Exception as e:
-        log.warning(f"  Direct search error ({site}): {e}")
-    return None
-
-
-def _fix_url(url: str, site: str) -> str:
-    """
-    Clean the URL and ensure it points to the reviews page.
-
-    HexaHealth review URLs must be:  /{city}/hospital/{slug}/reviews
-    DDG sometimes returns deep sub-pages like:
-        /{city}/hospital/{slug}/doctors-list/endocrinologist
-    Strip everything after the slug, then append /reviews.
-    """
-    if site == "hexahealth.com":
-        match = re.match(
-            r"(https?://[^/]+/[^/]+/(?:hospital|doctor)/[^/?#]+)", url
-        )
-        if match:
-            url = match.group(1).rstrip("/") + "/reviews"
-        elif "/reviews" not in url.lower():
-            url = url.rstrip("/") + "/reviews"
-
-    elif site in ("practo.com", "justdial.com"):
-        # Append /reviews if not already present and not already on a reviews URL
-        clean = url.split("?")[0].rstrip("/")
-        if not clean.endswith("/reviews"):
-            url = clean + "/reviews"
-
-    return url
-
-
-def _has_reviews(page, url: str) -> bool:
-    """
-    Navigate to URL and do a lenient keyword check.
-    Returns True if the page looks like it has review content.
-    (Same approach as original review_finder._has_reviews)
-    """
-    keywords = ["review", "rating", "stars", "rated", "experience",
-                "patient", "recommended", "helpful"]
-    try:
-        page.goto(url, wait_until="domcontentloaded", timeout=BROWSER_TIMEOUT)
-        page.wait_for_timeout(2_000)
-        body = page.locator("body").inner_text().lower()
-        for kw in keywords:
-            if kw in body:
-                log.info(f"  Keyword '{kw}' found — page has reviews.")
-                return True
-        log.info(f"  No review keywords on: {url}")
-        return False
-    except Exception as e:
-        log.warning(f"  Could not verify {url}: {e}")
-        return False
-
-
-def _detect_site(url: str) -> str:
-    for site in ["hexahealth.com", "practo.com", "justdial.com"]:
-        if site in url:
-            return site
-    return "unknown"
-
-
-def find_review_url(page, hospital_name: str) -> tuple:
-    """
-    Find a verified review page URL for a hospital.
-    Tries DDG browser search → site direct search for each site in order.
-    Returns (site, url) or (None, None).
-    """
-    for site in SEARCH_ORDER:
-        log.info(f"  Searching {site} for: {hospital_name}")
-        try:
-            url = _duckduckgo_search(page, hospital_name, site)
-            if not url:
-                log.info("  DDG empty — trying direct site search…")
-                url = _site_direct_search(page, hospital_name, site)
-            if not url:
-                log.info(f"  No URL found on {site}.")
-                time.sleep(random.uniform(SEARCH_DELAY_MIN, SEARCH_DELAY_MAX))
-                continue
-
-            url = _fix_url(url, site)
-            log.info(f"  Candidate URL: {url}")
-
-            if _has_reviews(page, url):
-                log.info(f"  ✓ Reviews confirmed on {site}")
-                return site, url
-            else:
-                log.info(f"  No reviews confirmed on {site}, trying next…")
-
-        except Exception as e:
-            log.error(f"  Error on {site}: {e}")
-
-        time.sleep(random.uniform(SEARCH_DELAY_MIN, SEARCH_DELAY_MAX))
-
-    log.info(f"  No review page found for: {hospital_name}")
-    return None, None
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Browser helpers
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _safe_navigate(page, url):
-    for attempt in range(1, 3):
-        try:
-            page.goto(url, wait_until="domcontentloaded", timeout=BROWSER_TIMEOUT)
-            return True
-        except PWTimeout:
-            log.warning(f"  Timeout (attempt {attempt}): {url}")
-        except Exception as e:
-            msg = str(e)
-            if "interrupted by another navigation" in msg:
-                try:
-                    page.wait_for_load_state("domcontentloaded", timeout=8_000)
-                except Exception:
-                    pass
-                time.sleep(1)
-                continue
-            log.warning(f"  Nav error (attempt {attempt}): {msg[:120]}")
-        if attempt < 2:
-            time.sleep(2)
-    return False
-
-
-def _scroll_and_load(page):
-    load_more_sels = [
-        "button:has-text('Load More')",
-        "button:has-text('Show More')",
-        "button:has-text('See All Reviews')",
-        "button:has-text('View More')",
-        "[class*='loadMore']",
-        "[class*='load-more']",
-        "[class*='showMore']",
-    ]
-    for _ in range(SCROLL_ROUNDS):
-        try:
-            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            page.wait_for_timeout(SCROLL_WAIT_MS)
-            for sel in load_more_sels:
-                try:
-                    btn = page.locator(sel).first
-                    if btn.count() and btn.is_visible():
-                        btn.scroll_into_view_if_needed()
-                        btn.click()
-                        page.wait_for_timeout(SCROLL_WAIT_MS)
-                        break
-                except Exception:
-                    pass
-        except Exception:
-            pass
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Parsers — confirmed selectors from live HTML
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _parse_hexahealth(html: str, max_n: int) -> list:
-    """
-    Confirmed live selectors (user-verified):
-      div.reviewCard  — card
-      p.review        — text
-      span.text-capitalize — reviewer
-      img[src*='staryellow'] — filled star
-    """
-    soup  = BeautifulSoup(html, "html.parser")
-    cards = soup.select("div.reviewCard")
-    out, seen = [], set()
-    for card in cards:
-        if len(out) >= max_n:
-            break
-        p    = card.select_one("p.review")
-        text = p.get_text(strip=True) if p else ""
-        if not text or len(text) < 10 or text in seen:
-            continue
-        seen.add(text)
-        name_tag = card.select_one("span.text-capitalize")
-        reviewer = name_tag.get_text(strip=True) if name_tag else "Unknown"
-        rating   = len(card.select("img[src*='staryellow']"))
-        date = ""
-        spans = card.select("span")
-        if len(spans) >= 2:
-            date = spans[-1].get_text(strip=True)
-        out.append({"reviewer": reviewer, "rating": rating, "review": text, "date": date})
-    return out
-
-
-def _parse_practo(html: str, max_n: int) -> list:
-    soup  = BeautifulSoup(html, "html.parser")
-    cards = (
-        soup.select("div[data-qa-id='review_card']")
-        or soup.select("div[class*='doctor-review']")
-        or soup.select("div[class*='review-card']")
-        or soup.select("div[class*='ReviewCard']")
-        or soup.select("div[class*='review_card']")
-        or soup.select("div[class*='reviewCard']")
-    )
-    out, seen = [], set()
-    for card in cards:
-        if len(out) >= max_n:
-            break
-        name_tag = (
-            card.find(attrs={"data-qa-id": "reviewer_name"})
-            or card.find("p", class_=re.compile(r"reviewer|author|username", re.I))
-            or card.find("span", class_=re.compile(r"reviewer|author|username", re.I))
-            or card.find("strong")
-        )
-        reviewer = name_tag.get_text(strip=True) if name_tag else "Unknown"
-        stars  = card.select("i.c-icon--star-filled, i[class*='star'][class*='fill'], "
-                              "span[class*='star-fill']")
-        rating = len(stars)
-        text_tag = (
-            card.find(attrs={"data-qa-id": "review_text"})
-            or card.find("p", class_=re.compile(r"review.?text|comment|body", re.I))
-            or card.find("div", class_=re.compile(r"review.?text|comment|body", re.I))
-            or card.find("p")
-        )
-        text = text_tag.get_text(strip=True) if text_tag else ""
-        if not text or len(text) < 10 or text in seen:
-            continue
-        seen.add(text)
-        date_tag = card.find(class_=re.compile(r"date|time|when|ago", re.I))
-        date     = date_tag.get_text(strip=True) if date_tag else ""
-        out.append({"reviewer": reviewer, "rating": rating, "review": text, "date": date})
-    return out
-
-
-def _parse_justdial(html: str, max_n: int) -> list:
-    soup  = BeautifulSoup(html, "html.parser")
-    cards = (
-        soup.select("div.reviewBox")
-        or soup.select("div[class*='review-box']")
-        or soup.select("div[class*='ReviewBox']")
-        or soup.select("li[class*='review']")
-        or soup.select("div[class*='user-review']")
-    )
-    out, seen = [], set()
-    for card in cards:
-        if len(out) >= max_n:
-            break
-        name_tag = (
-            card.find(class_=re.compile(r"reviewer|username|user.?name|ratinguser", re.I))
-            or card.find("strong")
-            or card.find("b")
-        )
-        reviewer = name_tag.get_text(strip=True) if name_tag else "Unknown"
-        rating_tag = card.find(class_=re.compile(r"rating|stars|score", re.I))
-        rating = 0
-        if rating_tag:
-            m = re.search(r"(\d+\.?\d*)", rating_tag.get_text())
-            if m:
-                rating = float(m.group(1))
-        text_tag = (
-            card.find(class_=re.compile(r"review.?text|comment|description|rating.?text", re.I))
-            or card.find("p")
-        )
-        text = text_tag.get_text(strip=True) if text_tag else ""
-        if not text or len(text) < 10 or text in seen:
-            continue
-        seen.add(text)
-        date_tag = card.find(class_=re.compile(r"date|time|when|ago", re.I))
-        date     = date_tag.get_text(strip=True) if date_tag else ""
-        out.append({"reviewer": reviewer, "rating": rating, "review": text, "date": date})
-    return out
-
-
-_PARSERS = {
-    "hexahealth.com": _parse_hexahealth,
-    "practo.com":     _parse_practo,
-    "justdial.com":   _parse_justdial,
-}
-
-
-def _scrape_known_url(page, site: str, url: str, max_n: int) -> list:
-    """Navigate directly to a known URL and parse reviews. No searching needed."""
-    if not _safe_navigate(page, url):
-        return []
-    page.wait_for_timeout(PAGE_WAIT_MS)
-    _scroll_and_load(page)
-    try:
-        html = page.content()
-    except Exception:
-        return []
-    parser = _PARSERS.get(site, _PARSERS["hexahealth.com"])
-    results = parser(html, max_n)
-    log.info(f"  Parsed {len(results)} reviews from {url}")
-    return results
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Process one hospital
 # ─────────────────────────────────────────────────────────────────────────────
 
-def process_hospital(page, hospital: dict, existing_hashes: set,
-                     max_reviews: int) -> list:
-    name      = hospital["name"]
-    edit_url  = hospital.get("edit_url", "").strip()
-    new_rows  = []
+def process_hospital(page, hospital: dict, writer: ExcelWriter,
+                      existing_keys: set, max_reviews: int) -> int:
+    """
+    Find and scrape reviews for one hospital, write to Excel.
+    Returns the number of NEW reviews added.
+    """
+    name = hospital["name"]
+    log.info(f"Processing: {name}")
+    print(f"\n{'='*70}")
+    print(f"Hospital : {name}")
 
-    if edit_url:
-        # ── Fast path: URL already stored in Excel ──────────────────────────
-        site = _detect_site(edit_url)
-        url  = _fix_url(edit_url, site)
-        log.info(f"  Using stored URL ({site}): {url}")
-        raw = _scrape_known_url(page, site, url, max_reviews)
-        print(f"    [{site}] scraped={len(raw)}", end="")
-
-    else:
-        # ── Slow path: find URL via DDG browser search ───────────────────────
-        log.info(f"  No stored URL — searching via DDG browser…")
+    # ── Step 1: Find review URL using proven review_finder.py ─────────────
+    try:
         site, url = find_review_url(page, name)
-        if not url:
-            log.info(f"  No URL found for '{name}'")
-            print("  — No URL found on any site.")
-            return []
-        # Save it to Excel so future runs skip the search
-        save_url_to_excel(name, url)
-        # Page is already at the URL from _has_reviews check — just parse
-        _scroll_and_load(page)
-        try:
-            html = page.content()
-        except Exception:
-            html = ""
-        parser = _PARSERS.get(site, _PARSERS["hexahealth.com"])
-        raw = parser(html, max_reviews)
-        print(f"    [{site}] scraped={len(raw)}", end="")
+    except Exception as exc:
+        log.error(f"review_finder crashed for {name}: {exc}")
+        site, url = None, None
 
-    added = 0
-    for r in raw:
-        h = _hash(name, r.get("reviewer", ""), r.get("review", ""))
-        if h in existing_hashes or not r.get("review", "").strip():
+    if not url:
+        print("  Source   : None")
+        print("  Status   : No Match")
+        writer.add_summary_row(
+            hospital=name,
+            status="No Match",
+            reviews_found=0,
+            reason="Not found on HexaHealth, Practo, or Justdial",
+        )
+        writer.update_collection_status(name, 0, "No Match")
+        return 0
+
+    print(f"  Source   : {site}")
+    print(f"  URL      : {url}")
+
+    # ── Step 2: Scrape reviews using the right scraper ────────────────────
+    # Load existing review texts from Excel for this hospital to skip dups
+    from openpyxl import load_workbook as _lwb
+    hosp_existing = set()
+    try:
+        _wb = _lwb(writer.file)
+        _ws = _wb["Reviews"]
+        for _row in _ws.iter_rows(min_row=2, values_only=True):
+            if _row[0] == name:
+                _text = str(_row[3] or "").strip().lower()
+                if _text:
+                    hosp_existing.add(_text)
+        _wb.close()
+    except Exception as _exc:
+        log.warning(f"Could not read existing reviews for {name}: {_exc}")
+
+    try:
+        fetch_target = max_reviews + len(hosp_existing)
+        reviews = scrape_for_site(site, url, max_reviews=fetch_target, page=page)
+    except Exception as exc:
+        log.error(f"Scraper failed for {name} ({site}): {exc}")
+        print(f"  Status   : Scraper Error — {exc}")
+        writer.add_summary_row(
+            hospital=name,
+            status="Scraper Error",
+            reviews_found=0,
+            reason=str(exc),
+            source=site,
+            url=url,
+        )
+        writer.update_collection_status(name, 0, "Scraper Error")
+        return 0
+
+    # Drop reviews already stored from a previous run
+    unique_reviews = []
+    for r in reviews:
+        key = (r.get("review", "") or "").strip().lower()
+        if key and key in hosp_existing:
             continue
-        existing_hashes.add(h)
-        new_rows.append({
-            "hospital_name": name,
-            "reviewer":      r.get("reviewer", "Unknown"),
-            "rating":        r.get("rating",   0),
-            "review":        r.get("review",   ""),
-            "date":          r.get("date",     ""),
-            "source":        site if edit_url else site,
-        })
-        added += 1
+        hosp_existing.add(key)
+        unique_reviews.append(r)
+        if len(unique_reviews) >= max_reviews:
+            break
 
-    print(f", new={added}")
-    return new_rows
+    reviews = unique_reviews
+    count = len(reviews)
+    print(f"  Reviews  : {count}")
+
+    # ── Step 3: Categorise ───────────────────────────────────────────────
+    if count == 0:
+        status = "No Reviews"
+        reason = "Review page found but contains no scrapeable reviews"
+    elif count < LOW_REVIEW_THRESHOLD:
+        status = "Low Reviews"
+        reason = f"Only {count} review(s) found (threshold: {LOW_REVIEW_THRESHOLD})"
+    else:
+        status = "Success"
+        reason = ""
+
+    # ── Step 4: Write reviews to Excel ───────────────────────────────────
+    for r in reviews:
+        writer.add_review(
+            hospital_name=name,
+            reviewer=r.get("reviewer", "Unknown"),
+            rating=r.get("rating", ""),
+            review=r.get("review", ""),
+            review_date=r.get("date", ""),
+            source=site,
+            upload_status="",
+        )
+        print(f"  -> {r.get('reviewer','Unknown')} | {r.get('rating','?')} star")
+
+    # ── Step 5: Write summary + update hospital status ────────────────────
+    writer.add_summary_row(
+        hospital=name,
+        status=status,
+        reviews_found=count,
+        reason=reason,
+        source=site,
+        url=url,
+    )
+    writer.update_collection_status(name, count, status)
+
+    print(f"  Status   : {status}")
+    return count
+
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Phase 1 — Non-success hospitals
+# Phase 1 — Non-success hospitals (need fresh search)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def run_phase1(page, hospitals, hashes, checkpoint):
-    candidates = [h for h in hospitals if h["status"] in NON_SUCCESS_STATUSES]
+def run_phase1(page, hospitals, writer, existing_keys, checkpoint):
+    candidates = [h for h in hospitals if h["collection_status"] in NON_SUCCESS_STATUSES]
     total, total_new, start = len(candidates), 0, 0
 
     if checkpoint and checkpoint.get("phase") == "phase1":
-        start     = checkpoint.get("index", 0)
-        total_new = checkpoint.get("total_new", 0)
+        start = checkpoint.get("hospital_index", 0)
+        total_new = checkpoint.get("total_new", total_new)
         print(f"\n[RESUME] Phase 1 from #{start} | Collected: {total_new:,}")
 
     print(f"\n{'='*70}")
@@ -732,36 +499,31 @@ def run_phase1(page, hospitals, hashes, checkpoint):
         log.info(f"Phase 1 [{i+1}/{total}]: {name}")
 
         try:
-            rows = process_hospital(page, hosp, hashes, PHASE1_MAX_PER_SOURCE)
+            added = process_hospital(page, hosp, writer, existing_keys,
+                                      PHASE1_MAX_PER_HOSPITAL)
         except Exception as e:
             log.error(f"  Unhandled error for '{name}': {e}")
             log.debug(traceback.format_exc())
-            rows = []
+            added = 0
 
-        if rows:
-            append_reviews(rows)
-            total_new += len(rows)
-            update_hospital_status(name, len(rows), "Success")
-            print(f"  ✓ +{len(rows)} reviews | Total: {total_new:,} / {TARGET_NEW_REVIEWS:,}")
-        else:
-            update_hospital_status(name, 0, "No Reviews")
-            print("  — No reviews found.")
-
+        total_new += added
         save_checkpoint("phase1", i + 1, name, total_new)
+        print(f"  Total new: {total_new:,} / {TARGET_NEW_REVIEWS:,}")
 
     print(f"\nPhase 1 done. New reviews this run: {total_new:,}")
     return total_new
 
+
 # ─────────────────────────────────────────────────────────────────────────────
-# Phase 2 — Gap fill on already-successful hospitals (URLs stored, just scrape)
+# Phase 2 — Gap fill on already-successful hospitals
 # ─────────────────────────────────────────────────────────────────────────────
 
-def run_phase2(page, hospitals, hashes, checkpoint, so_far):
-    candidates = [h for h in hospitals if h["status"] not in NON_SUCCESS_STATUSES]
+def run_phase2(page, hospitals, writer, existing_keys, checkpoint, so_far):
+    candidates = [h for h in hospitals if h["collection_status"] not in NON_SUCCESS_STATUSES]
     total, added, start = len(candidates), 0, 0
 
     if checkpoint and checkpoint.get("phase") == "phase2":
-        start = checkpoint.get("index", 0)
+        start = checkpoint.get("hospital_index", 0)
         added = max(0, checkpoint.get("total_new", 0) - so_far)
         print(f"\n[RESUME] Phase 2 from #{start}")
 
@@ -780,22 +542,19 @@ def run_phase2(page, hospitals, hashes, checkpoint, so_far):
         log.info(f"Phase 2 [{i+1}/{total}]: {name}")
 
         try:
-            rows = process_hospital(page, hosp, hashes, PHASE2_PER_HOSPITAL)
+            new = process_hospital(page, hosp, writer, existing_keys,
+                                    PHASE2_PER_HOSPITAL)
         except Exception as e:
             log.error(f"  Unhandled error for '{name}': {e}")
-            rows = []
+            new = 0
 
-        if rows:
-            append_reviews(rows)
-            added += len(rows)
-            print(f"  ✓ +{len(rows)} reviews | Total: {so_far + added:,} / {TARGET_NEW_REVIEWS:,}")
-        else:
-            print("  — No new reviews.")
-
+        added += new
         save_checkpoint("phase2", i + 1, name, so_far + added)
+        print(f"  Total: {so_far + added:,} / {TARGET_NEW_REVIEWS:,}")
 
     print(f"\nPhase 2 done. Additional reviews: {added:,}")
     return added
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Main
@@ -803,28 +562,30 @@ def run_phase2(page, hospitals, hashes, checkpoint, so_far):
 
 def main():
     print("=" * 70)
-    print("  HOSPITAL REVIEW AUTOMATION — scraper_final.py v11.0")
+    print("  HOSPITAL REVIEW AUTOMATION — scraper_final.py v13.0")
     print(f"  Excel : {EXCEL_FILE}")
     print(f"  Target: {TARGET_NEW_REVIEWS:,} new unique reviews")
+    print(f"  Browser: {'HEADLESS' if HEADLESS else 'VISIBLE'}")
     print(f"  Start : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 70)
 
     checkpoint = load_checkpoint()
     if checkpoint:
-        print(f"\n[CHECKPOINT] phase='{checkpoint['phase']}' | "
-              f"index={checkpoint['index']} | collected={checkpoint['total_new']:,}")
+        print(f"\n[CHECKPOINT] phase='{checkpoint.get('phase')}' | "
+              f"index={checkpoint.get('hospital_index')} | "
+              f"collected={checkpoint.get('total_new', 0):,}")
     else:
         print("\n[FRESH START] No checkpoint found.")
 
     hospitals = load_hospitals()
-    hashes    = load_existing_hashes()
+    writer = ExcelWriter()
+    existing_keys = load_existing_review_keys()
     total_new = 0
 
     with sync_playwright() as pw:
         browser = pw.chromium.launch(
             headless=HEADLESS,
-            args=["--disable-gpu", "--disable-dev-shm-usage",
-                  "--no-sandbox", "--disable-extensions"],
+            args=["--disable-dev-shm-usage", "--no-sandbox"],
         )
         context = browser.new_context(
             user_agent=(
@@ -835,29 +596,26 @@ def main():
             locale="en-US",
             viewport={"width": 1280, "height": 800},
         )
-        # Block images/fonts/media to speed up page loads
-        context.route(
-            "**/*.{png,jpg,jpeg,gif,webp,svg,ico,woff,woff2,ttf,eot,mp4,mp3}",
-            lambda route: route.abort(),
-        )
         page = context.new_page()
 
-        # Run phases
-        skip_phase1 = checkpoint and checkpoint.get("phase") == "phase2"
-        if skip_phase1:
-            total_new = checkpoint.get("total_new", 0)
-            print(f"\n[SKIP] Phase 1 already done ({total_new:,} reviews) — Phase 2…")
-        else:
-            total_new = run_phase1(page, hospitals, hashes, checkpoint)
+        try:
+            # Run phases
+            skip_phase1 = checkpoint and checkpoint.get("phase") == "phase2"
+            if skip_phase1:
+                total_new = checkpoint.get("total_new", 0)
+                print(f"\n[SKIP] Phase 1 already done ({total_new:,} reviews) — Phase 2…")
+            else:
+                total_new = run_phase1(page, hospitals, writer, existing_keys, checkpoint)
 
-        if total_new < TARGET_NEW_REVIEWS:
-            total_new += run_phase2(page, hospitals, hashes,
-                                     None if skip_phase1 else checkpoint,
-                                     total_new)
-        else:
-            print(f"\n[TARGET MET] {total_new:,} reviews — Phase 2 not needed.")
+            if total_new < TARGET_NEW_REVIEWS:
+                total_new += run_phase2(page, hospitals, writer, existing_keys,
+                                         None if skip_phase1 else checkpoint,
+                                         total_new)
+            else:
+                print(f"\n[TARGET MET] {total_new:,} reviews — Phase 2 not needed.")
 
-        browser.close()
+        finally:
+            browser.close()
 
     clear_checkpoint()
     print("\n" + "=" * 70)

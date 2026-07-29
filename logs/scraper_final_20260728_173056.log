@@ -1,0 +1,24 @@
+[2026-07-28 17:30:57] INFO | Loaded 1,426 hospitals from Excel.
+[2026-07-28 17:30:57] INFO | Loaded 3,017 existing review hashes.
+[2026-07-28 17:30:57] INFO | URL cache has 0 cached hospitals.
+[2026-07-28 17:31:05] INFO | Phase 2 [1/311]: Demo Hospital
+[2026-07-28 17:31:05] INFO |   Searching hexahealth.com for: Demo Hospital
+[2026-07-28 17:31:05] INFO |   DDG: https://duckduckgo.com/?q=Demo+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:31:11] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:31:16] INFO |   Candidate URL: https://www.hexahealth.com/delhi/hospitals/cardiology/reviews
+[2026-07-28 17:31:18] INFO |   Keyword 'review' found — page has reviews.
+[2026-07-28 17:31:18] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-28 17:31:25] INFO | Phase 2 [2/311]: Max Hospital
+[2026-07-28 17:31:25] INFO |   Searching hexahealth.com for: Max Hospital
+[2026-07-28 17:31:25] INFO |   DDG: https://duckduckgo.com/?q=Max+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:31:30] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:31:32] INFO |   Candidate URL: https://www.hexahealth.com/delhi/hospitals/cardiology/reviews
+[2026-07-28 17:31:35] INFO |   Keyword 'review' found — page has reviews.
+[2026-07-28 17:31:35] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-28 17:31:42] INFO | Phase 2 [3/311]: DGD VASUNDHARA ENCLAVE
+[2026-07-28 17:31:42] INFO |   Searching hexahealth.com for: DGD VASUNDHARA ENCLAVE
+[2026-07-28 17:31:42] INFO |   DDG: https://duckduckgo.com/?q=DGD+VASUNDHARA+ENCLAVE+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-28 17:31:47] INFO |   DDG empty — trying direct site search…
+[2026-07-28 17:31:50] ERROR | Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed

@@ -54,7 +54,7 @@ MAX_HOSPITALS = None
 # Site-specific scrapers
 # ─────────────────────────────────────────────
 
-def _scrape_practo(url: str, max_reviews: int = 5, page=None) -> list[dict]:
+def _scrape_practo(url: str, max_reviews: int = 4, page=None) -> list[dict]:
     """
     Scrape reviews from a Practo hospital page.
     Returns list of {reviewer, rating, review, date}.
@@ -63,6 +63,23 @@ def _scrape_practo(url: str, max_reviews: int = 5, page=None) -> list[dict]:
     used directly — avoids 404s on JS-rendered pages.
     """
     if page is not None:
+        # Scroll to load lazy reviews before extracting
+        prev_count = 0
+        for _scroll in range(8):
+            try:
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(2_000)
+            except Exception:
+                pass
+            try:
+                cur_count = page.locator(
+                    "div.doctor-review-text, div[class*='review-card'], div[class*='review_card'], div[class*='ReviewCard'], div[data-qa-id='review_card']"
+                ).count()
+            except Exception:
+                cur_count = 0
+            if cur_count <= prev_count and _scroll >= 2:
+                break
+            prev_count = cur_count
         html = page.content()
     else:
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -126,7 +143,7 @@ def _scrape_practo(url: str, max_reviews: int = 5, page=None) -> list[dict]:
     return reviews
 
 
-def _scrape_justdial(url: str, max_reviews: int = 5, page=None) -> list[dict]:
+def _scrape_justdial(url: str, max_reviews: int = 4, page=None) -> list[dict]:
     """
     Scrape reviews from a Justdial listing page.
     Returns list of {reviewer, rating, review, date}.
@@ -135,6 +152,23 @@ def _scrape_justdial(url: str, max_reviews: int = 5, page=None) -> list[dict]:
     used directly — avoids 404s on JS-rendered pages.
     """
     if page is not None:
+        # Scroll to load lazy reviews before extracting
+        prev_count = 0
+        for _scroll in range(8):
+            try:
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(2_000)
+            except Exception:
+                pass
+            try:
+                cur_count = page.locator(
+                    "div.review-box, div[class*='reviewdesc'], div[class*='review_box'], div[class*='ReviewBox'], li.review-item"
+                ).count()
+            except Exception:
+                cur_count = 0
+            if cur_count <= prev_count and _scroll >= 2:
+                break
+            prev_count = cur_count
         html = page.content()
     else:
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -196,7 +230,7 @@ def _scrape_justdial(url: str, max_reviews: int = 5, page=None) -> list[dict]:
     return reviews
 
 
-def scrape_for_site(site: str, url: str, max_reviews: int = 5, page=None) -> list[dict]:
+def scrape_for_site(site: str, url: str, max_reviews: int = 4, page=None) -> list[dict]:
     """
     Dispatch to the right scraper based on which site the URL is from.
     Falls back to the HexaHealth scraper if site is unrecognised.
@@ -228,6 +262,7 @@ def load_hospitals() -> list[dict]:
             "Run extract_hospitals.py first."
         )
 
+    from openpyxl import load_workbook
     wb = load_workbook(EXCEL_FILE)
     ws = wb["Hospitals"]
 
@@ -288,8 +323,26 @@ def process_hospital(page, hospital: dict, writer: ExcelWriter) -> str:
     print(f"  URL      : {url}")
 
     # ── Step 2: Scrape reviews using the right scraper ───────────────────
+    # Load existing review texts from the Excel so we can skip duplicates
+    from openpyxl import load_workbook as _lwb
+    existing_keys = set()
     try:
-        reviews = scrape_for_site(site, url, max_reviews=MAX_REVIEWS_PER_HOSPITAL, page=page)
+        _wb = _lwb(writer.file)
+        _ws = _wb["Reviews"]
+        for _row in _ws.iter_rows(min_row=2, values_only=True):
+            if _row[0] == name:
+                _text = str(_row[3] or "").strip().lower()
+                if _text:
+                    existing_keys.add(_text)
+        _wb.close()
+    except Exception as _exc:
+        log.warning(f"Could not read existing reviews for {name}: {_exc}")
+
+    try:
+        # Request more than the limit so we still hit the target after
+        # filtering out reviews already collected in a previous run.
+        fetch_target = MAX_REVIEWS_PER_HOSPITAL + len(existing_keys)
+        reviews = scrape_for_site(site, url, max_reviews=fetch_target, page=page)
     except Exception as exc:
         log.error(f"Scraper failed for {name} ({site}): {exc}")
         print(f"  Status   : Scraper Error — {exc}")
@@ -304,6 +357,18 @@ def process_hospital(page, hospital: dict, writer: ExcelWriter) -> str:
         writer.update_collection_status(name, 0, "Scraper Error")
         return "Scraper Error"
 
+    # Drop reviews already stored from a previous run
+    unique_reviews = []
+    for r in reviews:
+        key = (r.get("review", "") or "").strip().lower()
+        if key and key in existing_keys:
+            continue
+        existing_keys.add(key)
+        unique_reviews.append(r)
+        if len(unique_reviews) >= MAX_REVIEWS_PER_HOSPITAL:
+            break
+
+    reviews = unique_reviews
     count = len(reviews)
     print(f"  Reviews  : {count}")
 
@@ -327,7 +392,7 @@ def process_hospital(page, hospital: dict, writer: ExcelWriter) -> str:
             review=r.get("review", ""),
             review_date=r.get("date", ""),
             source=site,
-            upload_status="Pending",
+            upload_status="",
         )
         print(f"  → {r.get('reviewer','Unknown')} | {r.get('rating','?')}★")
 

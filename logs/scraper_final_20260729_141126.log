@@ -1,0 +1,49 @@
+[2026-07-29 14:11:27] INFO | Loaded 2,566 hospitals from Excel.
+[2026-07-29 14:11:29] INFO | Loaded 3,870 existing review keys for dedup.
+[2026-07-29 14:11:32] INFO | Phase 1 [1/1996]: Prakash Hospital - Best Hospital in Noida
+[2026-07-29 14:11:32] INFO | Processing: Prakash Hospital - Best Hospital in Noida
+[2026-07-29 14:11:32] INFO | Trying hexahealth.com for: Prakash Hospital - Best Hospital in Noida
+[2026-07-29 14:11:32] INFO |   DDG: https://duckduckgo.com/?q=Prakash+Hospital+-+Best+Hospital+in+Noida+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:11:35] INFO |   DDG result: https://www.hexahealth.com/noida/hospital/prakash-hospital-greater-noida
+[2026-07-29 14:11:35] INFO |   Candidate URL: https://www.hexahealth.com/noida/hospital/prakash-hospital-greater-noida/reviews
+[2026-07-29 14:11:38] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:11:38] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:11:41] INFO | Summary row: Prakash Hospital - Best Hospital in Noida → No Reviews (0 reviews)
+[2026-07-29 14:11:42] ERROR |   Unhandled error for 'Prakash Hospital - Best Hospital in Noida': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:11:42] INFO | Checkpoint saved -> Prakash Hospital - Best Hospital in Noida
+[2026-07-29 14:11:42] INFO | Phase 1 [2/1996]: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-29 14:11:42] INFO | Processing: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-29 14:11:42] INFO | Trying hexahealth.com for: SR HOSPITAL & MATERNITY CENTRE
+[2026-07-29 14:11:42] INFO |   DDG: https://duckduckgo.com/?q=SR+HOSPITAL+%26+MATERNITY+CENTRE+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:11:45] INFO |   DDG result: https://www.hexahealth.com/pune/hospital/surya-mother-and-child-super-specialty-hospital-pune
+[2026-07-29 14:11:45] INFO |   Candidate URL: https://www.hexahealth.com/pune/hospital/surya-mother-and-child-super-specialty-hospital-pune/reviews
+[2026-07-29 14:11:47] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:11:47] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:11:50] INFO | Summary row: SR HOSPITAL & MATERNITY CENTRE → No Reviews (0 reviews)
+[2026-07-29 14:11:52] ERROR |   Unhandled error for 'SR HOSPITAL & MATERNITY CENTRE': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:11:52] INFO | Checkpoint saved -> SR HOSPITAL & MATERNITY CENTRE
+[2026-07-29 14:11:52] INFO | Phase 1 [3/1996]: Yashoda Super Speciality Hospital
+[2026-07-29 14:11:52] INFO | Processing: Yashoda Super Speciality Hospital
+[2026-07-29 14:11:52] INFO | Trying hexahealth.com for: Yashoda Super Speciality Hospital
+[2026-07-29 14:11:52] INFO |   DDG: https://duckduckgo.com/?q=Yashoda+Super+Speciality+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:11:55] INFO |   DDG result: https://www.hexahealth.com/ghaziabad/hospital/yashoda-super-speciality-hospital
+[2026-07-29 14:11:55] INFO |   Candidate URL: https://www.hexahealth.com/ghaziabad/hospital/yashoda-super-speciality-hospital/reviews
+[2026-07-29 14:11:58] INFO |   Review keyword 'review' found on page.
+[2026-07-29 14:11:58] INFO |   ✓ Reviews confirmed on hexahealth.com
+[2026-07-29 14:12:02] INFO | Summary row: Yashoda Super Speciality Hospital → No Reviews (0 reviews)
+[2026-07-29 14:12:03] ERROR |   Unhandled error for 'Yashoda Super Speciality Hospital': 'Worksheet Hospitals does not exist.'
+[2026-07-29 14:12:03] INFO | Checkpoint saved -> Yashoda Super Speciality Hospital
+[2026-07-29 14:12:03] INFO | Phase 1 [4/1996]: Shakuntala Devi Hospital
+[2026-07-29 14:12:03] INFO | Processing: Shakuntala Devi Hospital
+[2026-07-29 14:12:03] INFO | Trying hexahealth.com for: Shakuntala Devi Hospital
+[2026-07-29 14:12:03] INFO |   DDG: https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Ahexahealth.com&ia=web
+[2026-07-29 14:12:05] WARNING |   DDG error (hexahealth.com): Page.wait_for_timeout: Target page, context or browser has been closed
+[2026-07-29 14:12:05] INFO |   DDG empty — trying direct site search…
+[2026-07-29 14:12:05] WARNING |   Direct search error (hexahealth.com): Page.goto: Target page, context or browser has been closed
+[2026-07-29 14:12:05] INFO |   No URL found on hexahealth.com.
+[2026-07-29 14:12:09] INFO | Trying practo.com for: Shakuntala Devi Hospital
+[2026-07-29 14:12:09] INFO |   DDG: https://duckduckgo.com/?q=Shakuntala+Devi+Hospital+reviews+site%3Apracto.com&ia=web
+[2026-07-29 14:12:09] WARNING |   DDG error (practo.com): Page.goto: Target page, context or browser has been closed
+[2026-07-29 14:12:09] INFO |   DDG empty — trying direct site search…
+[2026-07-29 14:12:09] WARNING |   Direct search error (practo.com): Page.goto: Target page, context or browser has been closed
+[2026-07-29 14:12:09] INFO |   No URL found on practo.com.
